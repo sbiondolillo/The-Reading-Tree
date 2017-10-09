@@ -129,7 +129,7 @@
             this.btnEE.Name = "btnEE";
             this.btnEE.Size = new System.Drawing.Size(125, 70);
             this.btnEE.TabIndex = 31;
-            this.btnEE.Text = "EE";
+            this.btnEE.Text = "ee";
             this.btnEE.UseVisualStyleBackColor = true;
             this.btnEE.Click += new System.EventHandler(this.btnEE_Click);
             // 

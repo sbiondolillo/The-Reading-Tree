@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAYSounds = new System.Windows.Forms.Button();
-            this.btnAUSounds = new System.Windows.Forms.Button();
-            this.btnAISounds = new System.Windows.Forms.Button();
-            this.btnAESounds = new System.Windows.Forms.Button();
+            this.btnAY = new System.Windows.Forms.Button();
+            this.btnAU = new System.Windows.Forms.Button();
+            this.btnAI = new System.Windows.Forms.Button();
+            this.btnAE = new System.Windows.Forms.Button();
             this.ASoundsPromptLabel = new System.Windows.Forms.Label();
             this.ASoundsLabel = new System.Windows.Forms.Label();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnAYSounds
+            // btnAY
             // 
-            this.btnAYSounds.Location = new System.Drawing.Point(391, 223);
-            this.btnAYSounds.Name = "btnAYSounds";
-            this.btnAYSounds.Size = new System.Drawing.Size(125, 70);
-            this.btnAYSounds.TabIndex = 22;
-            this.btnAYSounds.Text = "A-Y Sounds";
-            this.btnAYSounds.UseVisualStyleBackColor = true;
-            this.btnAYSounds.Click += new System.EventHandler(this.btnAYSounds_Click);
+            this.btnAY.Location = new System.Drawing.Point(391, 223);
+            this.btnAY.Name = "btnAY";
+            this.btnAY.Size = new System.Drawing.Size(125, 70);
+            this.btnAY.TabIndex = 22;
+            this.btnAY.Text = "ay";
+            this.btnAY.UseVisualStyleBackColor = true;
+            this.btnAY.Click += new System.EventHandler(this.btnAYSounds_Click);
             // 
-            // btnAUSounds
+            // btnAU
             // 
-            this.btnAUSounds.Location = new System.Drawing.Point(262, 223);
-            this.btnAUSounds.Name = "btnAUSounds";
-            this.btnAUSounds.Size = new System.Drawing.Size(125, 70);
-            this.btnAUSounds.TabIndex = 21;
-            this.btnAUSounds.Text = "A-U Sounds";
-            this.btnAUSounds.UseVisualStyleBackColor = true;
-            this.btnAUSounds.Click += new System.EventHandler(this.btnAUSounds_Click);
+            this.btnAU.Location = new System.Drawing.Point(262, 223);
+            this.btnAU.Name = "btnAU";
+            this.btnAU.Size = new System.Drawing.Size(125, 70);
+            this.btnAU.TabIndex = 21;
+            this.btnAU.Text = "au";
+            this.btnAU.UseVisualStyleBackColor = true;
+            this.btnAU.Click += new System.EventHandler(this.btnAUSounds_Click);
             // 
-            // btnAISounds
+            // btnAI
             // 
-            this.btnAISounds.Location = new System.Drawing.Point(391, 140);
-            this.btnAISounds.Name = "btnAISounds";
-            this.btnAISounds.Size = new System.Drawing.Size(125, 70);
-            this.btnAISounds.TabIndex = 20;
-            this.btnAISounds.Text = "A-I Sounds";
-            this.btnAISounds.UseVisualStyleBackColor = true;
-            this.btnAISounds.Click += new System.EventHandler(this.btnAISounds_Click);
+            this.btnAI.Location = new System.Drawing.Point(391, 140);
+            this.btnAI.Name = "btnAI";
+            this.btnAI.Size = new System.Drawing.Size(125, 70);
+            this.btnAI.TabIndex = 20;
+            this.btnAI.Text = "ai";
+            this.btnAI.UseVisualStyleBackColor = true;
+            this.btnAI.Click += new System.EventHandler(this.btnAISounds_Click);
             // 
-            // btnAESounds
+            // btnAE
             // 
-            this.btnAESounds.Location = new System.Drawing.Point(262, 140);
-            this.btnAESounds.Name = "btnAESounds";
-            this.btnAESounds.Size = new System.Drawing.Size(125, 70);
-            this.btnAESounds.TabIndex = 19;
-            this.btnAESounds.Text = "A-E Sounds";
-            this.btnAESounds.UseVisualStyleBackColor = true;
-            this.btnAESounds.Click += new System.EventHandler(this.btnAESounds_Click);
+            this.btnAE.Location = new System.Drawing.Point(262, 140);
+            this.btnAE.Name = "btnAE";
+            this.btnAE.Size = new System.Drawing.Size(125, 70);
+            this.btnAE.TabIndex = 19;
+            this.btnAE.Text = "a-e";
+            this.btnAE.UseVisualStyleBackColor = true;
+            this.btnAE.Click += new System.EventHandler(this.btnAESounds_Click);
             // 
             // ASoundsPromptLabel
             // 
@@ -115,10 +115,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.btnMainMenu);
-            this.Controls.Add(this.btnAYSounds);
-            this.Controls.Add(this.btnAUSounds);
-            this.Controls.Add(this.btnAISounds);
-            this.Controls.Add(this.btnAESounds);
+            this.Controls.Add(this.btnAY);
+            this.Controls.Add(this.btnAU);
+            this.Controls.Add(this.btnAI);
+            this.Controls.Add(this.btnAE);
             this.Controls.Add(this.ASoundsPromptLabel);
             this.Controls.Add(this.ASoundsLabel);
             this.Name = "ASoundsMenu";
@@ -131,10 +131,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAYSounds;
-        private System.Windows.Forms.Button btnAUSounds;
-        private System.Windows.Forms.Button btnAISounds;
-        private System.Windows.Forms.Button btnAESounds;
+        private System.Windows.Forms.Button btnAY;
+        private System.Windows.Forms.Button btnAU;
+        private System.Windows.Forms.Button btnAI;
+        private System.Windows.Forms.Button btnAE;
         private System.Windows.Forms.Label ASoundsPromptLabel;
         private System.Windows.Forms.Label ASoundsLabel;
         private System.Windows.Forms.Button btnMainMenu;
