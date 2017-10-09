@@ -40,7 +40,9 @@ namespace ReadingTree
 
         private void btnYSounds_Click(object sender, EventArgs e)
         {
-
+            YSoundsMenu ysounds = new YSoundsMenu();
+            ysounds.Show();
+            Hide();
         }
 
         private void btnUSounds_Click(object sender, EventArgs e)

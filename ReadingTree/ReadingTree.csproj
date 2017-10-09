@@ -89,6 +89,12 @@
     <Compile Include="VowelSoundsMenu.Designer.cs">
       <DependentUpon>VowelSoundsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="YSoundsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YSoundsMenu.Designer.cs">
+      <DependentUpon>YSoundsMenu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ASoundsMenu.resx">
       <DependentUpon>ASoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VowelSoundsMenu.resx">
       <DependentUpon>VowelSoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YSoundsMenu.resx">
+      <DependentUpon>YSoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
