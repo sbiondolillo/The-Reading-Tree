@@ -45,7 +45,9 @@ namespace ReadingTree
 
         private void btnUSounds_Click(object sender, EventArgs e)
         {
-
+            USoundsMenu usounds = new USoundsMenu();
+            usounds.Show();
+            Hide();
         }
 
         private void btnOSounds_Click(object sender, EventArgs e)
