@@ -37,5 +37,37 @@ namespace ReadingTree
             esounds.Show();
             Hide();
         }
+
+        private void btnYSounds_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUSounds_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOSounds_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnISounds_Click(object sender, EventArgs e)
+        {
+            ISoundsMenu isounds = new ISoundsMenu();
+            isounds.Show();
+            Hide();
+        }
+
+        private void VowelSoundsPromptLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VoweSoundslabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

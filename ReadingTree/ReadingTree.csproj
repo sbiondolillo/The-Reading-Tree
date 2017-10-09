@@ -57,6 +57,12 @@
     <Compile Include="ESoundsMenu.Designer.cs">
       <DependentUpon>ESoundsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ISoundsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISoundsMenu.Designer.cs">
+      <DependentUpon>ISoundsMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ESoundsMenu.resx">
       <DependentUpon>ESoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISoundsMenu.resx">
+      <DependentUpon>ISoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
