@@ -88,6 +88,7 @@
             this.btnBlends.TabIndex = 3;
             this.btnBlends.Text = "Blends";
             this.btnBlends.UseVisualStyleBackColor = true;
+            this.btnBlends.Click += new System.EventHandler(this.btnBlends_Click);
             // 
             // btnRs
             // 
@@ -97,6 +98,7 @@
             this.btnRs.TabIndex = 4;
             this.btnRs.Text = "Rs";
             this.btnRs.UseVisualStyleBackColor = true;
+            this.btnRs.Click += new System.EventHandler(this.btnRs_Click);
             // 
             // btnCVC
             // 
@@ -106,6 +108,7 @@
             this.btnCVC.TabIndex = 5;
             this.btnCVC.Text = "CVC";
             this.btnCVC.UseVisualStyleBackColor = true;
+            this.btnCVC.Click += new System.EventHandler(this.btnCVC_Click);
             // 
             // btnOOSounds
             // 
@@ -115,6 +118,7 @@
             this.btnOOSounds.TabIndex = 9;
             this.btnOOSounds.Text = "OO Sounds";
             this.btnOOSounds.UseVisualStyleBackColor = true;
+            this.btnOOSounds.Click += new System.EventHandler(this.btnOOSounds_Click);
             // 
             // btnRoots
             // 
@@ -124,6 +128,7 @@
             this.btnRoots.TabIndex = 8;
             this.btnRoots.Text = "Roots";
             this.btnRoots.UseVisualStyleBackColor = true;
+            this.btnRoots.Click += new System.EventHandler(this.btnRoots_Click);
             // 
             // btnSuffix
             // 
@@ -133,6 +138,7 @@
             this.btnSuffix.TabIndex = 7;
             this.btnSuffix.Text = "Suffix";
             this.btnSuffix.UseVisualStyleBackColor = true;
+            this.btnSuffix.Click += new System.EventHandler(this.btnSuffix_Click);
             // 
             // btnPrefix
             // 
@@ -142,6 +148,7 @@
             this.btnPrefix.TabIndex = 6;
             this.btnPrefix.Text = "Prefix";
             this.btnPrefix.UseVisualStyleBackColor = true;
+            this.btnPrefix.Click += new System.EventHandler(this.btnPrefix_Click);
             // 
             // btnPossessiveNoun
             // 
@@ -151,6 +158,7 @@
             this.btnPossessiveNoun.TabIndex = 13;
             this.btnPossessiveNoun.Text = "Possessive Noun";
             this.btnPossessiveNoun.UseVisualStyleBackColor = true;
+            this.btnPossessiveNoun.Click += new System.EventHandler(this.btnPossessiveNoun_Click);
             // 
             // btnConsonantManipulation
             // 
@@ -160,6 +168,7 @@
             this.btnConsonantManipulation.TabIndex = 12;
             this.btnConsonantManipulation.Text = "Consonant Manipulation";
             this.btnConsonantManipulation.UseVisualStyleBackColor = true;
+            this.btnConsonantManipulation.Click += new System.EventHandler(this.btnConsonantManipulation_Click);
             // 
             // btnDigraph
             // 
@@ -169,6 +178,7 @@
             this.btnDigraph.TabIndex = 11;
             this.btnDigraph.Text = "Digraph";
             this.btnDigraph.UseVisualStyleBackColor = true;
+            this.btnDigraph.Click += new System.EventHandler(this.btnDigraph_Click);
             // 
             // btnVCVariables
             // 
@@ -178,6 +188,7 @@
             this.btnVCVariables.TabIndex = 10;
             this.btnVCVariables.Text = "VC Variables";
             this.btnVCVariables.UseVisualStyleBackColor = true;
+            this.btnVCVariables.Click += new System.EventHandler(this.btnVCVariables_Click);
             // 
             // btnMisc
             // 
@@ -187,6 +198,7 @@
             this.btnMisc.TabIndex = 16;
             this.btnMisc.Text = "Misc";
             this.btnMisc.UseVisualStyleBackColor = true;
+            this.btnMisc.Click += new System.EventHandler(this.btnMisc_Click);
             // 
             // btnContractions
             // 
@@ -196,6 +208,7 @@
             this.btnContractions.TabIndex = 15;
             this.btnContractions.Text = "Contractions";
             this.btnContractions.UseVisualStyleBackColor = true;
+            this.btnContractions.Click += new System.EventHandler(this.btnContractions_Click);
             // 
             // MainMenu
             // 
