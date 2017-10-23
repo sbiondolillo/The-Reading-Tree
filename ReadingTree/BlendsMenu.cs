@@ -54,7 +54,9 @@ namespace ReadingTree
 
         private void btnPhonics_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            BlendsPhonicsMenu blendsPhonicsMenu = new BlendsPhonicsMenu();
+            blendsPhonicsMenu.Show();
+            Hide();
         }
     }
 }

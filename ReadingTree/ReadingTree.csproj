@@ -75,6 +75,12 @@
     <Compile Include="BlendsMenu.Designer.cs">
       <DependentUpon>BlendsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="BlendsPhonicsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsPhonicsMenu.Designer.cs">
+      <DependentUpon>BlendsPhonicsMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="BlendsSpellingRulesMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BlendsMenu.resx">
       <DependentUpon>BlendsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsPhonicsMenu.resx">
+      <DependentUpon>BlendsPhonicsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BlendsSpellingRulesMenu.resx">
       <DependentUpon>BlendsSpellingRulesMenu.cs</DependentUpon>
