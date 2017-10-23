@@ -47,7 +47,9 @@ namespace ReadingTree
 
         private void btnSpellingRules_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            BlendsSpellingRulesMenu blendsSpellingRulesMenu = new BlendsSpellingRulesMenu();
+            blendsSpellingRulesMenu.Show();
+            Hide();
         }
 
         private void btnPhonics_Click(object sender, EventArgs e)
