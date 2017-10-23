@@ -67,6 +67,7 @@
             this.btnPhonics.TabIndex = 23;
             this.btnPhonics.Text = "Phonics";
             this.btnPhonics.UseVisualStyleBackColor = true;
+            this.btnPhonics.Click += new System.EventHandler(this.btnPhonics_Click);
             // 
             // btnSpellingRules
             // 
@@ -76,6 +77,7 @@
             this.btnSpellingRules.TabIndex = 22;
             this.btnSpellingRules.Text = "Spelling Rules";
             this.btnSpellingRules.UseVisualStyleBackColor = true;
+            this.btnSpellingRules.Click += new System.EventHandler(this.btnSpellingRules_Click);
             // 
             // btnLetterBlends
             // 
@@ -85,6 +87,7 @@
             this.btnLetterBlends.TabIndex = 21;
             this.btnLetterBlends.Text = "Letter Blends";
             this.btnLetterBlends.UseVisualStyleBackColor = true;
+            this.btnLetterBlends.Click += new System.EventHandler(this.btnLetterBlends_Click);
             // 
             // btnBlendsFinalDigraph
             // 
@@ -94,6 +97,7 @@
             this.btnBlendsFinalDigraph.TabIndex = 20;
             this.btnBlendsFinalDigraph.Text = "Final, Digraph";
             this.btnBlendsFinalDigraph.UseVisualStyleBackColor = true;
+            this.btnBlendsFinalDigraph.Click += new System.EventHandler(this.btnBlendsFinalDigraph_Click);
             // 
             // btnBlendsInitial
             // 
@@ -103,6 +107,7 @@
             this.btnBlendsInitial.TabIndex = 19;
             this.btnBlendsInitial.Text = "Initial";
             this.btnBlendsInitial.UseVisualStyleBackColor = true;
+            this.btnBlendsInitial.Click += new System.EventHandler(this.btnBlendsInitial_Click);
             // 
             // btnMainMenu
             // 

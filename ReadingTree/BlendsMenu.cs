@@ -23,5 +23,32 @@ namespace ReadingTree
             main.Show();
             Hide();
         }
+
+        private void btnBlendsInitial_Click(object sender, EventArgs e)
+        {
+            BlendsInitialMenu blendsInitialMenu = new BlendsInitialMenu();
+            blendsInitialMenu.Show();
+            Hide();
+        }
+
+        private void btnBlendsFinalDigraph_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not Implemented");
+        }
+
+        private void btnLetterBlends_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not Implemented");
+        }
+
+        private void btnSpellingRules_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not Implemented");
+        }
+
+        private void btnPhonics_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not Implemented");
+        }
     }
 }
