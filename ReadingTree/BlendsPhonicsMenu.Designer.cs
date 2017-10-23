@@ -158,11 +158,11 @@
             // BlendsPhonicslabel
             // 
             this.BlendsPhonicslabel.AutoSize = true;
-            this.BlendsPhonicslabel.Location = new System.Drawing.Point(357, 25);
+            this.BlendsPhonicslabel.Location = new System.Drawing.Point(328, 25);
             this.BlendsPhonicslabel.Name = "BlendsPhonicslabel";
-            this.BlendsPhonicslabel.Size = new System.Drawing.Size(65, 20);
+            this.BlendsPhonicslabel.Size = new System.Drawing.Size(122, 20);
             this.BlendsPhonicslabel.TabIndex = 26;
-            this.BlendsPhonicslabel.Text = "Phonics";
+            this.BlendsPhonicslabel.Text = "Blends, Phonics";
             // 
             // btnMainMenu
             // 

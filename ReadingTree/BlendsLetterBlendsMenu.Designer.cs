@@ -183,11 +183,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BlendsLetterBlendslabel.AutoSize = true;
-            this.BlendsLetterBlendslabel.Location = new System.Drawing.Point(337, 24);
+            this.BlendsLetterBlendslabel.Location = new System.Drawing.Point(309, 24);
             this.BlendsLetterBlendslabel.Name = "BlendsLetterBlendslabel";
-            this.BlendsLetterBlendslabel.Size = new System.Drawing.Size(104, 20);
+            this.BlendsLetterBlendslabel.Size = new System.Drawing.Size(161, 20);
             this.BlendsLetterBlendslabel.TabIndex = 14;
-            this.BlendsLetterBlendslabel.Text = "Letter Blends";
+            this.BlendsLetterBlendslabel.Text = "Blends, Letter Blends";
             // 
             // btnMainMenu
             // 
