@@ -183,7 +183,7 @@
             this.Controls.Add(this.btnBlendsInitialB);
             this.Name = "BlendsInitialMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BlendsInitialMenu";
+            this.Text = "The Reading Tree";
             this.ResumeLayout(false);
             this.PerformLayout();
 

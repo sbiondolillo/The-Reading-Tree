@@ -111,7 +111,7 @@
             this.Controls.Add(this.btnBlendsDigraph);
             this.Name = "BlendsFinalDigraphMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BlendsFinalDigraphMenu";
+            this.Text = "The Reading Tree";
             this.ResumeLayout(false);
             this.PerformLayout();
 

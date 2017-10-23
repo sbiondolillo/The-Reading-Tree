@@ -135,7 +135,7 @@
             this.Controls.Add(this.Blendslabel);
             this.Name = "BlendsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BlendsMenu";
+            this.Text = "The Reading Tree";
             this.ResumeLayout(false);
             this.PerformLayout();
 
