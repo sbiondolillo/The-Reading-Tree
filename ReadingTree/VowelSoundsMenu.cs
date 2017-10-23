@@ -1,13 +1,4 @@
-﻿/*
- * VowelSoundsMenu Class
- * Samuel Biondolillo
- * CSCN210M:HY1 Fall 2017
- * Goal: Create a class for the Reading Tree menu which points to the different
- *       sub-groups of words which focus on 'Vowel' Sounds
- * Version  0.0.1   10/10/17
- */
- 
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,44 +36,6 @@ namespace ReadingTree
             ESoundsMenu esounds = new ESoundsMenu();
             esounds.Show();
             Hide();
-        }
-
-        private void btnYSounds_Click(object sender, EventArgs e)
-        {
-            YSoundsMenu ysounds = new YSoundsMenu();
-            ysounds.Show();
-            Hide();
-        }
-
-        private void btnUSounds_Click(object sender, EventArgs e)
-        {
-            USoundsMenu usounds = new USoundsMenu();
-            usounds.Show();
-            Hide();
-        }
-
-        private void btnOSounds_Click(object sender, EventArgs e)
-        {
-            OSoundsMenu osounds = new OSoundsMenu();
-            osounds.Show();
-            Hide();
-        }
-
-        private void btnISounds_Click(object sender, EventArgs e)
-        {
-            ISoundsMenu isounds = new ISoundsMenu();
-            isounds.Show();
-            Hide();
-        }
-
-        private void VowelSoundsPromptLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VoweSoundslabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,13 +1,4 @@
-﻿/*
- * MainMenu Class
- * Samuel Biondolillo
- * CSCN210M:HY1 Fall 2017
- * Goal: Create a class for the Reading Tree starting screen menu
- *       All sub-groups can be accessed from here
- * Version  0.0.1   10/10/17
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,75 +29,39 @@ namespace ReadingTree
 
         }
 
-        private void btnBlends_Click(object sender, EventArgs e)
-        {
-            BlendsMenu blendsMenu = new BlendsMenu();
-            blendsMenu.Show();
-            Hide();
-        }
-
-        private void btnRs_Click(object sender, EventArgs e)
-        {
-            RsMenu rsMenu = new RsMenu();
-            rsMenu.Show();
-            Hide();
-        }
-
-        private void btnCVC_Click(object sender, EventArgs e)
-        {
-            CVCMenu cvcMenu = new CVCMenu();
-            cvcMenu.Show();
-            Hide();
-        }
-
         private void btnPrefix_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            PrefixesMenu prefixmenu = new PrefixesMenu();
+            prefixmenu.Show();
+            this.Hide();
         }
 
         private void btnSuffix_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            SuffixesMenu suffixmenu = new SuffixesMenu();
+            suffixmenu.Show();
+            this.Hide();
         }
 
         private void btnRoots_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            RootMenu rootmenu = new RootMenu();
+            rootmenu.Show();
+            this.Hide();
         }
 
         private void btnOOSounds_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
-        }
-
-        private void btnVCVariables_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Not Implemented");
-        }
-
-        private void btnDigraph_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Not Implemented");
-        }
-
-        private void btnConsonantManipulation_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Not Implemented");
-        }
-
-        private void btnPossessiveNoun_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Not Implemented");
-        }
-
-        private void btnContractions_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Not Implemented");
+            OOMenu oomenu = new OOMenu();
+            oomenu.Show();
+            this.Hide();
         }
 
         private void btnMisc_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            MiscMenu miscmenu = new MiscMenu();
+            miscmenu.Show();
+            this.Hide();
         }
     }
 }

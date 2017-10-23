@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.VowelSoundslabel = new System.Windows.Forms.Label();
+            this.VoweSoundslabel = new System.Windows.Forms.Label();
             this.VowelSoundsPromptLabel = new System.Windows.Forms.Label();
             this.btnYSounds = new System.Windows.Forms.Button();
             this.btnUSounds = new System.Windows.Forms.Button();
@@ -39,15 +39,15 @@
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // VowelSoundslabel
+            // VoweSoundslabel
             // 
-            this.VowelSoundslabel.AutoSize = true;
-            this.VowelSoundslabel.Location = new System.Drawing.Point(334, 28);
-            this.VowelSoundslabel.Name = "VowelSoundslabel";
-            this.VowelSoundslabel.Size = new System.Drawing.Size(111, 20);
-            this.VowelSoundslabel.TabIndex = 0;
-            this.VowelSoundslabel.Text = "Vowel Sounds";
-            this.VowelSoundslabel.Click += new System.EventHandler(this.VoweSoundslabel_Click);
+            this.VoweSoundslabel.AutoSize = true;
+            this.VoweSoundslabel.Location = new System.Drawing.Point(223, 18);
+            this.VoweSoundslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.VoweSoundslabel.Name = "VoweSoundslabel";
+            this.VoweSoundslabel.Size = new System.Drawing.Size(75, 13);
+            this.VoweSoundslabel.TabIndex = 0;
+            this.VoweSoundslabel.Text = "Vowel Sounds";
             // 
             // VowelSoundsPromptLabel
             // 
@@ -55,58 +55,59 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VowelSoundsPromptLabel.AutoSize = true;
-            this.VowelSoundsPromptLabel.Location = new System.Drawing.Point(233, 75);
+            this.VowelSoundsPromptLabel.Location = new System.Drawing.Point(155, 49);
+            this.VowelSoundsPromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.VowelSoundsPromptLabel.Name = "VowelSoundsPromptLabel";
-            this.VowelSoundsPromptLabel.Size = new System.Drawing.Size(313, 20);
+            this.VowelSoundsPromptLabel.Size = new System.Drawing.Size(213, 13);
             this.VowelSoundsPromptLabel.TabIndex = 2;
             this.VowelSoundsPromptLabel.Text = "Please select a category below to continue!";
-            this.VowelSoundsPromptLabel.Click += new System.EventHandler(this.VowelSoundsPromptLabel_Click);
             // 
             // btnYSounds
             // 
-            this.btnYSounds.Location = new System.Drawing.Point(391, 306);
+            this.btnYSounds.Location = new System.Drawing.Point(261, 199);
+            this.btnYSounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnYSounds.Name = "btnYSounds";
-            this.btnYSounds.Size = new System.Drawing.Size(125, 70);
+            this.btnYSounds.Size = new System.Drawing.Size(83, 45);
             this.btnYSounds.TabIndex = 18;
             this.btnYSounds.Text = "Y Sounds";
             this.btnYSounds.UseVisualStyleBackColor = true;
-            this.btnYSounds.Click += new System.EventHandler(this.btnYSounds_Click);
             // 
             // btnUSounds
             // 
-            this.btnUSounds.Location = new System.Drawing.Point(262, 306);
+            this.btnUSounds.Location = new System.Drawing.Point(175, 199);
+            this.btnUSounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUSounds.Name = "btnUSounds";
-            this.btnUSounds.Size = new System.Drawing.Size(125, 70);
+            this.btnUSounds.Size = new System.Drawing.Size(83, 45);
             this.btnUSounds.TabIndex = 17;
             this.btnUSounds.Text = "U Sounds";
             this.btnUSounds.UseVisualStyleBackColor = true;
-            this.btnUSounds.Click += new System.EventHandler(this.btnUSounds_Click);
             // 
             // btnOSounds
             // 
-            this.btnOSounds.Location = new System.Drawing.Point(391, 217);
+            this.btnOSounds.Location = new System.Drawing.Point(261, 141);
+            this.btnOSounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOSounds.Name = "btnOSounds";
-            this.btnOSounds.Size = new System.Drawing.Size(125, 70);
+            this.btnOSounds.Size = new System.Drawing.Size(83, 45);
             this.btnOSounds.TabIndex = 16;
             this.btnOSounds.Text = "O Sounds";
             this.btnOSounds.UseVisualStyleBackColor = true;
-            this.btnOSounds.Click += new System.EventHandler(this.btnOSounds_Click);
             // 
             // btnISounds
             // 
-            this.btnISounds.Location = new System.Drawing.Point(262, 217);
+            this.btnISounds.Location = new System.Drawing.Point(175, 141);
+            this.btnISounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnISounds.Name = "btnISounds";
-            this.btnISounds.Size = new System.Drawing.Size(125, 70);
+            this.btnISounds.Size = new System.Drawing.Size(83, 45);
             this.btnISounds.TabIndex = 15;
             this.btnISounds.Text = "I Sounds";
             this.btnISounds.UseVisualStyleBackColor = true;
-            this.btnISounds.Click += new System.EventHandler(this.btnISounds_Click);
             // 
             // btnESounds
             // 
-            this.btnESounds.Location = new System.Drawing.Point(391, 134);
+            this.btnESounds.Location = new System.Drawing.Point(261, 87);
+            this.btnESounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnESounds.Name = "btnESounds";
-            this.btnESounds.Size = new System.Drawing.Size(125, 70);
+            this.btnESounds.Size = new System.Drawing.Size(83, 45);
             this.btnESounds.TabIndex = 14;
             this.btnESounds.Text = "E Sounds";
             this.btnESounds.UseVisualStyleBackColor = true;
@@ -114,9 +115,10 @@
             // 
             // btnASounds
             // 
-            this.btnASounds.Location = new System.Drawing.Point(262, 134);
+            this.btnASounds.Location = new System.Drawing.Point(175, 87);
+            this.btnASounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnASounds.Name = "btnASounds";
-            this.btnASounds.Size = new System.Drawing.Size(125, 70);
+            this.btnASounds.Size = new System.Drawing.Size(83, 45);
             this.btnASounds.TabIndex = 13;
             this.btnASounds.Text = "A Sounds";
             this.btnASounds.UseVisualStyleBackColor = true;
@@ -124,9 +126,10 @@
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(327, 425);
+            this.btnMainMenu.Location = new System.Drawing.Point(218, 276);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 19;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -134,10 +137,10 @@
             // 
             // VowelSoundsMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(778, 544);
+            this.ClientSize = new System.Drawing.Size(519, 354);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnYSounds);
             this.Controls.Add(this.btnUSounds);
@@ -146,7 +149,8 @@
             this.Controls.Add(this.btnESounds);
             this.Controls.Add(this.btnASounds);
             this.Controls.Add(this.VowelSoundsPromptLabel);
-            this.Controls.Add(this.VowelSoundslabel);
+            this.Controls.Add(this.VoweSoundslabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VowelSoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
@@ -157,7 +161,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label VowelSoundslabel;
+        private System.Windows.Forms.Label VoweSoundslabel;
         private System.Windows.Forms.Label VowelSoundsPromptLabel;
         private System.Windows.Forms.Button btnYSounds;
         private System.Windows.Forms.Button btnUSounds;
