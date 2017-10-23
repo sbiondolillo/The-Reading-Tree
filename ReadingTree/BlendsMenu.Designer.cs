@@ -61,7 +61,7 @@
             // 
             // btnPhonics
             // 
-            this.btnPhonics.Location = new System.Drawing.Point(327, 323);
+            this.btnPhonics.Location = new System.Drawing.Point(392, 223);
             this.btnPhonics.Name = "btnPhonics";
             this.btnPhonics.Size = new System.Drawing.Size(125, 70);
             this.btnPhonics.TabIndex = 23;
@@ -71,7 +71,7 @@
             // 
             // btnSpellingRules
             // 
-            this.btnSpellingRules.Location = new System.Drawing.Point(391, 234);
+            this.btnSpellingRules.Location = new System.Drawing.Point(261, 223);
             this.btnSpellingRules.Name = "btnSpellingRules";
             this.btnSpellingRules.Size = new System.Drawing.Size(125, 70);
             this.btnSpellingRules.TabIndex = 22;
@@ -81,7 +81,7 @@
             // 
             // btnLetterBlends
             // 
-            this.btnLetterBlends.Location = new System.Drawing.Point(262, 234);
+            this.btnLetterBlends.Location = new System.Drawing.Point(457, 147);
             this.btnLetterBlends.Name = "btnLetterBlends";
             this.btnLetterBlends.Size = new System.Drawing.Size(125, 70);
             this.btnLetterBlends.TabIndex = 21;
@@ -91,7 +91,7 @@
             // 
             // btnBlendsFinalDigraph
             // 
-            this.btnBlendsFinalDigraph.Location = new System.Drawing.Point(391, 151);
+            this.btnBlendsFinalDigraph.Location = new System.Drawing.Point(326, 147);
             this.btnBlendsFinalDigraph.Name = "btnBlendsFinalDigraph";
             this.btnBlendsFinalDigraph.Size = new System.Drawing.Size(125, 70);
             this.btnBlendsFinalDigraph.TabIndex = 20;
@@ -101,7 +101,7 @@
             // 
             // btnBlendsInitial
             // 
-            this.btnBlendsInitial.Location = new System.Drawing.Point(262, 151);
+            this.btnBlendsInitial.Location = new System.Drawing.Point(197, 147);
             this.btnBlendsInitial.Name = "btnBlendsInitial";
             this.btnBlendsInitial.Size = new System.Drawing.Size(125, 70);
             this.btnBlendsInitial.TabIndex = 19;
@@ -111,7 +111,7 @@
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(327, 421);
+            this.btnMainMenu.Location = new System.Drawing.Point(326, 311);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
             this.btnMainMenu.TabIndex = 24;

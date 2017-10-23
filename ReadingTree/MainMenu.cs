@@ -47,7 +47,9 @@ namespace ReadingTree
 
         private void btnRs_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            RsMenu rsMenu = new RsMenu();
+            rsMenu.Show();
+            Hide();
         }
 
         private void btnCVC_Click(object sender, EventArgs e)
