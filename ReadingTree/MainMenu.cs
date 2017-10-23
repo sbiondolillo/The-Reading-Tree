@@ -40,7 +40,9 @@ namespace ReadingTree
 
         private void btnBlends_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            BlendsMenu blendsMenu = new BlendsMenu();
+            blendsMenu.Show();
+            Hide();
         }
 
         private void btnRs_Click(object sender, EventArgs e)
