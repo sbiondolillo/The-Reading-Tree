@@ -21,7 +21,7 @@ namespace ReadingTree
         {
             VowelSoundsMenu vsmenu = new VowelSoundsMenu();
             vsmenu.Show();
-            this.Hide();
+            Hide();
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
@@ -62,6 +62,27 @@ namespace ReadingTree
             MiscMenu miscmenu = new MiscMenu();
             miscmenu.Show();
             this.Hide();
+        }
+
+        private void btnRs_Click(object sender, EventArgs e)
+        {
+            RsMenu rsMenu = new RsMenu();
+            rsMenu.Show();
+            Hide();
+        }
+
+        private void btnBlends_Click(object sender, EventArgs e)
+        {
+            BlendsMenu blendsMenu = new BlendsMenu();
+            blendsMenu.Show();
+            Hide();
+        }
+
+        private void btnCVC_Click(object sender, EventArgs e)
+        {
+            CVCMenu cvcMenu = new CVCMenu();
+            cvcMenu.Show();
+            Hide();
         }
     }
 }
