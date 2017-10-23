@@ -54,7 +54,9 @@ namespace ReadingTree
 
         private void btnCVC_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            CVCMenu cvcMenu = new CVCMenu();
+            cvcMenu.Show();
+            Hide();
         }
 
         private void btnPrefix_Click(object sender, EventArgs e)
