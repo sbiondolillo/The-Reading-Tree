@@ -51,6 +51,12 @@
     <Compile Include="ASoundsMenu.Designer.cs">
       <DependentUpon>ASoundsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="BlendsFinalDigraphMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsFinalDigraphMenu.Designer.cs">
+      <DependentUpon>BlendsFinalDigraphMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="BlendsInitialMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="ASoundsMenu.resx">
       <DependentUpon>ASoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsFinalDigraphMenu.resx">
+      <DependentUpon>BlendsFinalDigraphMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BlendsInitialMenu.resx">
       <DependentUpon>BlendsInitialMenu.cs</DependentUpon>

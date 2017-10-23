@@ -33,7 +33,9 @@ namespace ReadingTree
 
         private void btnBlendsFinalDigraph_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            BlendsFinalDigraphMenu blendsFinalDigraphMenu = new BlendsFinalDigraphMenu();
+            blendsFinalDigraphMenu.Show();
+            Hide();
         }
 
         private void btnLetterBlends_Click(object sender, EventArgs e)
