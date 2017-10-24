@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ReadingTree</RootNamespace>
     <AssemblyName>ReadingTree</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,11 +52,101 @@
     <Compile Include="ASoundsMenu.Designer.cs">
       <DependentUpon>ASoundsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="BlendsFinalDigraphMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsFinalDigraphMenu.Designer.cs">
+      <DependentUpon>BlendsFinalDigraphMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlendsInitialMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsInitialMenu.Designer.cs">
+      <DependentUpon>BlendsInitialMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlendsLetterBlendsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsLetterBlendsMenu.Designer.cs">
+      <DependentUpon>BlendsLetterBlendsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlendsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsMenu.Designer.cs">
+      <DependentUpon>BlendsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlendsPhonicsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsPhonicsMenu.Designer.cs">
+      <DependentUpon>BlendsPhonicsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlendsSpellingRulesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlendsSpellingRulesMenu.Designer.cs">
+      <DependentUpon>BlendsSpellingRulesMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsonantManipulationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsonantManipulationMenu.Designer.cs">
+      <DependentUpon>ConsonantManipulationMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractionsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractionsMenu.Designer.cs">
+      <DependentUpon>ContractionsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CVCMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CVCMenu.Designer.cs">
+      <DependentUpon>CVCMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigraphMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigraphMenu.Designer.cs">
+      <DependentUpon>DigraphMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="ESoundsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ESoundsMenu.Designer.cs">
       <DependentUpon>ESoundsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISoundsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISoundsMenu.Designer.cs">
+      <DependentUpon>ISoundsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LatinChamPrefixMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LatinChamPrefixMenu.Designer.cs">
+      <DependentUpon>LatinChamPrefixMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LatinPrefixMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LatinPrefixMenu.Designer.cs">
+      <DependentUpon>LatinPrefixMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LatinSuffixMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LatinSuffixMenu.Designer.cs">
+      <DependentUpon>LatinSuffixMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelsMenu.Designer.cs">
+      <DependentUpon>LevelsMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -63,22 +154,193 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiscMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiscMenu.Designer.cs">
+      <DependentUpon>MiscMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormPrefixMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NormPrefixMenu.Designer.cs">
+      <DependentUpon>NormPrefixMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="OOMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOMenu.Designer.cs">
+      <DependentUpon>OOMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OSoundsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OSoundsMenu.Designer.cs">
+      <DependentUpon>OSoundsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PossessiveNounMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PossessiveNounMenu.Designer.cs">
+      <DependentUpon>PossessiveNounMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrefixesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrefixesMenu.Designer.cs">
+      <DependentUpon>PrefixesMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RootMenu.Designer.cs">
+      <DependentUpon>RootMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RsMenu.Designer.cs">
+      <DependentUpon>RsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuffixesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuffixesMenu.Designer.cs">
+      <DependentUpon>SuffixesMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuffixSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuffixSubMenu.Designer.cs">
+      <DependentUpon>SuffixSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USoundsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USoundsMenu.Designer.cs">
+      <DependentUpon>USoundsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VCVariablesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VCVariablesMenu.Designer.cs">
+      <DependentUpon>VCVariablesMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="VowelSoundsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VowelSoundsMenu.Designer.cs">
       <DependentUpon>VowelSoundsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="YSoundsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YSoundsMenu.Designer.cs">
+      <DependentUpon>YSoundsMenu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ASoundsMenu.resx">
       <DependentUpon>ASoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsFinalDigraphMenu.resx">
+      <DependentUpon>BlendsFinalDigraphMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsInitialMenu.resx">
+      <DependentUpon>BlendsInitialMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsLetterBlendsMenu.resx">
+      <DependentUpon>BlendsLetterBlendsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsMenu.resx">
+      <DependentUpon>BlendsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsPhonicsMenu.resx">
+      <DependentUpon>BlendsPhonicsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlendsSpellingRulesMenu.resx">
+      <DependentUpon>BlendsSpellingRulesMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsonantManipulationMenu.resx">
+      <DependentUpon>ConsonantManipulationMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractionsMenu.resx">
+      <DependentUpon>ContractionsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CVCMenu.resx">
+      <DependentUpon>CVCMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigraphMenu.resx">
+      <DependentUpon>DigraphMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ESoundsMenu.resx">
       <DependentUpon>ESoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ISoundsMenu.resx">
+      <DependentUpon>ISoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LatinChamPrefixMenu.resx">
+      <DependentUpon>LatinChamPrefixMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LatinPrefixMenu.resx">
+      <DependentUpon>LatinPrefixMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LatinSuffixMenu.resx">
+      <DependentUpon>LatinSuffixMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelsMenu.resx">
+      <DependentUpon>LevelsMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiscMenu.resx">
+      <DependentUpon>MiscMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormPrefixMenu.resx">
+      <DependentUpon>NormPrefixMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ReadingTree.ASoundsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.BlendsFinalDigraphMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.BlendsInitialMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.BlendsLetterBlendsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.BlendsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.BlendsPhonicsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.BlendsSpellingRulesMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.CVCMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.ESoundsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.ISoundsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.LatinChamPrefixMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.LatinPrefixMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.LatinSuffixMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.MainMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.MiscMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.NormPrefixMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.OOMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.OSoundsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.PrefixesMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.RootMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.RsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.SuffixesMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.SuffixSubMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.USoundsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.VowelSoundsMenu.resources" />
+    <EmbeddedResource Include="obj\Debug\ReadingTree.YSoundsMenu.resources" />
+    <EmbeddedResource Include="OOMenu.resx">
+      <DependentUpon>OOMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OSoundsMenu.resx">
+      <DependentUpon>OSoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PossessiveNounMenu.resx">
+      <DependentUpon>PossessiveNounMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrefixesMenu.resx">
+      <DependentUpon>PrefixesMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,10 +350,41 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RootMenu.resx">
+      <DependentUpon>RootMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RsMenu.resx">
+      <DependentUpon>RsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuffixesMenu.resx">
+      <DependentUpon>SuffixesMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuffixSubMenu.resx">
+      <DependentUpon>SuffixSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USoundsMenu.resx">
+      <DependentUpon>USoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCVariablesMenu.resx">
+      <DependentUpon>VCVariablesMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VowelSoundsMenu.resx">
       <DependentUpon>VowelSoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="YSoundsMenu.resx">
+      <DependentUpon>YSoundsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\ReadingTree.exe.config" />
+    <None Include="bin\Debug\ReadingTree.vshost.exe.config" />
+    <None Include="bin\Debug\ReadingTree.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ReadingTree.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\ReadingTree.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\ReadingTree.csproj.CoreCompileInputs.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,7 +396,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ReadingTree.exe" />
+    <Content Include="bin\Debug\ReadingTree.pdb" />
+    <Content Include="bin\Debug\ReadingTree.vshost.exe" />
+    <Content Include="obj\Debug\ReadingTree.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ReadingTree.exe" />
+    <Content Include="obj\Debug\ReadingTree.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

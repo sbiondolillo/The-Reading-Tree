@@ -41,7 +41,7 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            this.Hide();
+            Hide();
         }
     }
 }
