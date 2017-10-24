@@ -158,6 +158,7 @@
             this.btnPossessiveNoun.TabIndex = 13;
             this.btnPossessiveNoun.Text = "Possessive Noun";
             this.btnPossessiveNoun.UseVisualStyleBackColor = true;
+            this.btnPossessiveNoun.Click += new System.EventHandler(this.btnPossessiveNoun_Click);
             // 
             // btnConsonantManipulation
             // 
@@ -167,6 +168,7 @@
             this.btnConsonantManipulation.TabIndex = 12;
             this.btnConsonantManipulation.Text = "Consonant Manipulation";
             this.btnConsonantManipulation.UseVisualStyleBackColor = true;
+            this.btnConsonantManipulation.Click += new System.EventHandler(this.btnConsonantManipulation_Click);
             // 
             // btnDigraph
             // 
@@ -176,6 +178,7 @@
             this.btnDigraph.TabIndex = 11;
             this.btnDigraph.Text = "Digraph";
             this.btnDigraph.UseVisualStyleBackColor = true;
+            this.btnDigraph.Click += new System.EventHandler(this.btnDigraph_Click);
             // 
             // btnVCVariables
             // 
@@ -185,6 +188,7 @@
             this.btnVCVariables.TabIndex = 10;
             this.btnVCVariables.Text = "VC Variables";
             this.btnVCVariables.UseVisualStyleBackColor = true;
+            this.btnVCVariables.Click += new System.EventHandler(this.btnVCVariables_Click);
             // 
             // btnMisc
             // 
@@ -204,6 +208,7 @@
             this.btnContractions.TabIndex = 15;
             this.btnContractions.Text = "Contractions";
             this.btnContractions.UseVisualStyleBackColor = true;
+            this.btnContractions.Click += new System.EventHandler(this.btnContractions_Click);
             // 
             // MainMenu
             // 

@@ -58,3 +58,9 @@ C:\Users\Sam\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.OSo
 C:\Users\Sam\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.RsMenu.resources
 C:\Users\Sam\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.USoundsMenu.resources
 C:\Users\Sam\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.YSoundsMenu.resources
+C:\Users\Sam\source\repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.VCVariablesMenu.resources
+C:\Users\Sam\source\repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ConsonantManipulationMenu.resources
+C:\Users\Sam\source\repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ContractionsMenu.resources
+C:\Users\Sam\source\repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LevelsMenu.resources
+C:\Users\Sam\source\repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.PossessiveNounMenu.resources
+C:\Users\Sam\source\repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.DigraphMenu.resources

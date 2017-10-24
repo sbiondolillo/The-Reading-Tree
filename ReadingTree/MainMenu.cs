@@ -84,5 +84,40 @@ namespace ReadingTree
             cvcMenu.Show();
             Hide();
         }
+
+        private void btnVCVariables_Click(object sender, EventArgs e)
+        {
+            VCVariablesMenu vcvVariablesMenu = new VCVariablesMenu();
+            vcvVariablesMenu.Show();
+            Hide();
+        }
+
+        private void btnDigraph_Click(object sender, EventArgs e)
+        {
+            DigraphMenu digraphMenu = new DigraphMenu();
+            digraphMenu.Show();
+            Hide();
+        }
+
+        private void btnConsonantManipulation_Click(object sender, EventArgs e)
+        {
+            ConsonantManipulationMenu consonantManipulationMenu = new ConsonantManipulationMenu();
+            consonantManipulationMenu.Show();
+            Hide();
+        }
+
+        private void btnPossessiveNoun_Click(object sender, EventArgs e)
+        {
+            PossessiveNounMenu possessiveNounMenu = new PossessiveNounMenu();
+            possessiveNounMenu.Show();
+            Hide();
+        }
+
+        private void btnContractions_Click(object sender, EventArgs e)
+        {
+            ContractionsMenu contractionsMenu = new ContractionsMenu();
+            contractionsMenu.Show();
+            Hide();
+        }
     }
 }

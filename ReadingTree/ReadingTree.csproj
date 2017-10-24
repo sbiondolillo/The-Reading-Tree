@@ -88,11 +88,29 @@
     <Compile Include="BlendsSpellingRulesMenu.Designer.cs">
       <DependentUpon>BlendsSpellingRulesMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsonantManipulationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsonantManipulationMenu.Designer.cs">
+      <DependentUpon>ConsonantManipulationMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractionsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractionsMenu.Designer.cs">
+      <DependentUpon>ContractionsMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="CVCMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CVCMenu.Designer.cs">
       <DependentUpon>CVCMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigraphMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigraphMenu.Designer.cs">
+      <DependentUpon>DigraphMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="ESoundsMenu.cs">
       <SubType>Form</SubType>
@@ -123,6 +141,12 @@
     </Compile>
     <Compile Include="LatinSuffixMenu.Designer.cs">
       <DependentUpon>LatinSuffixMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelsMenu.Designer.cs">
+      <DependentUpon>LevelsMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -156,6 +180,12 @@
     </Compile>
     <Compile Include="OSoundsMenu.Designer.cs">
       <DependentUpon>OSoundsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PossessiveNounMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PossessiveNounMenu.Designer.cs">
+      <DependentUpon>PossessiveNounMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="PrefixesMenu.cs">
       <SubType>Form</SubType>
@@ -195,6 +225,12 @@
     <Compile Include="USoundsMenu.Designer.cs">
       <DependentUpon>USoundsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="VCVariablesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VCVariablesMenu.Designer.cs">
+      <DependentUpon>VCVariablesMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="VowelSoundsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,8 +264,17 @@
     <EmbeddedResource Include="BlendsSpellingRulesMenu.resx">
       <DependentUpon>BlendsSpellingRulesMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsonantManipulationMenu.resx">
+      <DependentUpon>ConsonantManipulationMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractionsMenu.resx">
+      <DependentUpon>ContractionsMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CVCMenu.resx">
       <DependentUpon>CVCMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigraphMenu.resx">
+      <DependentUpon>DigraphMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ESoundsMenu.resx">
       <DependentUpon>ESoundsMenu.cs</DependentUpon>
@@ -245,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LatinSuffixMenu.resx">
       <DependentUpon>LatinSuffixMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelsMenu.resx">
+      <DependentUpon>LevelsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -288,6 +336,9 @@
     <EmbeddedResource Include="OSoundsMenu.resx">
       <DependentUpon>OSoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PossessiveNounMenu.resx">
+      <DependentUpon>PossessiveNounMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrefixesMenu.resx">
       <DependentUpon>PrefixesMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +367,9 @@
     <EmbeddedResource Include="USoundsMenu.resx">
       <DependentUpon>USoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VCVariablesMenu.resx">
+      <DependentUpon>VCVariablesMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VowelSoundsMenu.resx">
       <DependentUpon>VowelSoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,7 +396,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\ReadingTree.exe" />
