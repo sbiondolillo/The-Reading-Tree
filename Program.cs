@@ -14,11 +14,12 @@ namespace CSV_ReadWrite
 		{
 			//AddWord(2, "dis-(prefix)", "Testing");
 			//DeleteWord(2, "dis-(prefix)", "Testing");
-			GetWords(2, "ng & nk", 12);
+			//GetWords(2, "ng & nk", 12);
 		}
-		// The location of the master CSV file
-		static string filepath = "/home/bradford/Development/c_sharp/CS_Inno1/CSV_ReadWrite/all_levels.csv";
-
+		// The locations of the master and temp CSV files
+		static string baseFP = Directory.GetCurrentDirectory();
+		static string masterFP = baseFP + "/csv/all_levels.csv";
+		static string tempFP = baseFP + "/csv/temp.csv";
 
 		public static void AddWord(int lvl, string listname, string word)
 		{
@@ -26,12 +27,18 @@ namespace CSV_ReadWrite
 			listname = listname.Trim ();
 			word = word.Trim ().ToLower ();
 
+			// Remove any commas or quotation marks from the word
+			if (word.Contains (","))
+				word = word.Replace (",", "");
+			if (word.Contains ("\""))
+				word = word.Replace ("\"", "");
+
 			// Create a File Stream to read from
-			FileStream fs = new FileStream (@filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
+			FileStream fs = new FileStream (@masterFP, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
 			
 			// Add a word to the end of the desired list
 			using (CsvReader reader = new CsvReader(fs))
-			using (CsvWriter writer = new CsvWriter("/home/bradford/Development/c_sharp/CS_Inno1/CSV_ReadWrite/temp.csv"))
+			using (CsvWriter writer = new CsvWriter(tempFP))
 			{
 				CsvRow row = new CsvRow ();
 				while (reader.ReadRow (row)) 
@@ -56,10 +63,10 @@ namespace CSV_ReadWrite
 						writer.WriteRow (row);	
 				}
 			}
-			File.Delete(filepath);
+			File.Delete(masterFP);
 
 			// Rename temp.csv to all_levels
-			File.Move("/home/bradford/Development/c_sharp/CS_Inno1/CSV_ReadWrite/temp.csv", filepath);
+			File.Move(tempFP, masterFP);
 		}
 
 
@@ -70,11 +77,11 @@ namespace CSV_ReadWrite
 			word = word.Trim ().ToLower ();
 
 			// Create a File Stream to read from
-			FileStream fs = new FileStream (@filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
+			FileStream fs = new FileStream (@masterFP, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
 
 			// Remove a word from a list
 			using (CsvReader reader = new CsvReader (fs))
-			using (CsvWriter writer = new CsvWriter ("/home/bradford/Development/c_sharp/CS_Inno1/CSV_ReadWrite/temp.csv")) {
+			using (CsvWriter writer = new CsvWriter (tempFP)) {
 				CsvRow row = new CsvRow ();
 				while (reader.ReadRow (row)) 
 				{
@@ -95,10 +102,10 @@ namespace CSV_ReadWrite
 						writer.WriteRow (row);
 				}
 			}
-			File.Delete(filepath);
+			File.Delete(masterFP);
 
 			// Rename temp.csv to all_levels
-			File.Move("/home/bradford/Development/c_sharp/CS_Inno1/CSV_ReadWrite/temp.csv", filepath);					
+			File.Move(tempFP, masterFP);				
 		}
 
 		// Get words from a list
@@ -110,7 +117,7 @@ namespace CSV_ReadWrite
 			// This list holds the words to display
 			List<string> words = new List<string> ();
 
-			using (CsvReader reader = new CsvReader (filepath))
+			using (CsvReader reader = new CsvReader (masterFP))
 			{
 				CsvRow row = new CsvRow ();
 				Random random = new Random ();
