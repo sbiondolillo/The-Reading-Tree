@@ -23,6 +23,9 @@ namespace CSV_ReadWrite
 		public CsvReader(Stream stream) : base(stream)
 		{
 		}
+			
+		static string baseFP = Directory.GetCurrentDirectory();
+		static string masterFP = baseFP + "/csv/all_levels.csv";
 
 		// Read a row from the file
 		public bool ReadRow(CsvRow row)
@@ -64,6 +67,7 @@ namespace CSV_ReadWrite
 
 			return (row.Count > 0);
 		}
+
 	}
 
 	// Class to write to a csv file
@@ -91,6 +95,59 @@ namespace CSV_ReadWrite
 			row.RowText = build.ToString ();
 			WriteLine (row.RowText);
 		}
+	}
+
+	// Class to hold other methods (get words, add & delete words)
+	public class Methods
+	{
+		/* Method to get all the words from a list on all levels
+		 * Call this method from the Main method like this:
+		 * List<List<string>> allWords = Methods.GetAllWords ("ject (Latin word root)");
+		 */
+		public static List<List<string>> GetAllWords(string groupname)
+		{
+			groupname = groupname.Trim();
+
+			// Array to hold multiple lists
+			List<List<string>> lists = new List<List<string>>();
+
+			for (int i = 1; i <= 5; i++)
+			{
+				string lvl = i.ToString();
+				using (CsvReader reader = new CsvReader (MainClass.masterFP))
+				{
+					CsvRow row = new CsvRow();
+
+					// This list holds the words to display
+					List<string> words = new List<string>();
+
+					while (reader.ReadRow(row))
+					{
+						// Locate the list to get words from
+						if (row [0].Equals (lvl) && (row [1].Equals (groupname)))
+						{
+							// Get rid of any extra empty cells
+							row.RemoveAll (string.IsNullOrWhiteSpace);
+
+							// Delete the first two elements because we don't want them in our words
+							row.RemoveAt (1);
+							row.RemoveAt (0);
+
+							// Add all words in the row to the words list
+							foreach (string s in row)
+								words.Add (s);
+						}
+					}
+					lists.Insert(i - 1, words);
+				}
+			}
+			//foreach (List<string> wrds in lists)
+			//	foreach (string s in wrds)
+			//		Console.WriteLine (s);
+
+			return lists;
+		}
+
 	}
 }
 
