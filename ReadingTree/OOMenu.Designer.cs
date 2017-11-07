@@ -69,6 +69,7 @@
             this.BTN_OO.TabIndex = 2;
             this.BTN_OO.Text = "OO (Book)";
             this.BTN_OO.UseVisualStyleBackColor = true;
+            this.BTN_OO.Click += new System.EventHandler(this.BTN_OO_Click);
             // 
             // BTN_EU
             // 
@@ -78,6 +79,7 @@
             this.BTN_EU.TabIndex = 3;
             this.BTN_EU.Text = "EU";
             this.BTN_EU.UseVisualStyleBackColor = true;
+            this.BTN_EU.Click += new System.EventHandler(this.BTN_EU_Click);
             // 
             // BTN_Zeus
             // 
@@ -87,6 +89,7 @@
             this.BTN_Zeus.TabIndex = 4;
             this.BTN_Zeus.Text = "EU as /oo/ (Zeus)";
             this.BTN_Zeus.UseVisualStyleBackColor = true;
+            this.BTN_Zeus.Click += new System.EventHandler(this.BTN_Zeus_Click);
             // 
             // BTN_FEUD
             // 
@@ -96,6 +99,7 @@
             this.BTN_FEUD.TabIndex = 5;
             this.BTN_FEUD.Text = "EU as /yoo/ (Feud)";
             this.BTN_FEUD.UseVisualStyleBackColor = true;
+            this.BTN_FEUD.Click += new System.EventHandler(this.BTN_FEUD_Click);
             // 
             // BTN_EW
             // 
@@ -105,6 +109,7 @@
             this.BTN_EW.TabIndex = 6;
             this.BTN_EW.Text = "EW";
             this.BTN_EW.UseVisualStyleBackColor = true;
+            this.BTN_EW.Click += new System.EventHandler(this.BTN_EW_Click);
             // 
             // BTN_Grew
             // 
@@ -114,6 +119,7 @@
             this.BTN_Grew.TabIndex = 7;
             this.BTN_Grew.Text = "EW as /oo/ (Grew)";
             this.BTN_Grew.UseVisualStyleBackColor = true;
+            this.BTN_Grew.Click += new System.EventHandler(this.BTN_Grew_Click);
             // 
             // BTN_FEW
             // 
@@ -123,6 +129,7 @@
             this.BTN_FEW.TabIndex = 8;
             this.BTN_FEW.Text = "EW as /yoo/ (Few)";
             this.BTN_FEW.UseVisualStyleBackColor = true;
+            this.BTN_FEW.Click += new System.EventHandler(this.BTN_FEW_Click);
             // 
             // BTN_School
             // 
@@ -132,6 +139,7 @@
             this.BTN_School.TabIndex = 9;
             this.BTN_School.Text = "OO (School)";
             this.BTN_School.UseVisualStyleBackColor = true;
+            this.BTN_School.Click += new System.EventHandler(this.BTN_School_Click);
             // 
             // BTN_Blue
             // 
@@ -141,6 +149,7 @@
             this.BTN_Blue.TabIndex = 10;
             this.BTN_Blue.Text = "UE as /oo/ (Blue)";
             this.BTN_Blue.UseVisualStyleBackColor = true;
+            this.BTN_Blue.Click += new System.EventHandler(this.BTN_Blue_Click);
             // 
             // BTN_Argue
             // 
@@ -150,6 +159,7 @@
             this.BTN_Argue.TabIndex = 11;
             this.BTN_Argue.Text = "UE as /yoo/ (Argue)";
             this.BTN_Argue.UseVisualStyleBackColor = true;
+            this.BTN_Argue.Click += new System.EventHandler(this.BTN_Argue_Click);
             // 
             // BTN_MainMenu
             // 
