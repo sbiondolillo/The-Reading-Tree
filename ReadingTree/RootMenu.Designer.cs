@@ -70,6 +70,7 @@
             this.BTN_Duct.TabIndex = 2;
             this.BTN_Duct.Text = "Duct ";
             this.BTN_Duct.UseVisualStyleBackColor = true;
+            this.BTN_Duct.Click += new System.EventHandler(this.BTN_Duct_Click);
             // 
             // BTN_Flex
             // 
@@ -79,6 +80,7 @@
             this.BTN_Flex.TabIndex = 3;
             this.BTN_Flex.Text = "Flect/Flex";
             this.BTN_Flex.UseVisualStyleBackColor = true;
+            this.BTN_Flex.Click += new System.EventHandler(this.BTN_Flex_Click);
             // 
             // BTN_Form
             // 
@@ -88,6 +90,7 @@
             this.BTN_Form.TabIndex = 4;
             this.BTN_Form.Text = "Form";
             this.BTN_Form.UseVisualStyleBackColor = true;
+            this.BTN_Form.Click += new System.EventHandler(this.BTN_Form_Click);
             // 
             // BTN_Ject
             // 
@@ -97,6 +100,7 @@
             this.BTN_Ject.TabIndex = 5;
             this.BTN_Ject.Text = "Ject";
             this.BTN_Ject.UseVisualStyleBackColor = true;
+            this.BTN_Ject.Click += new System.EventHandler(this.BTN_Ject_Click);
             // 
             // BTN_Mit
             // 
@@ -106,6 +110,7 @@
             this.BTN_Mit.TabIndex = 6;
             this.BTN_Mit.Text = "Mit/Mis";
             this.BTN_Mit.UseVisualStyleBackColor = true;
+            this.BTN_Mit.Click += new System.EventHandler(this.BTN_Mit_Click);
             // 
             // BTN_Port
             // 
@@ -115,6 +120,7 @@
             this.BTN_Port.TabIndex = 7;
             this.BTN_Port.Text = "Port";
             this.BTN_Port.UseVisualStyleBackColor = true;
+            this.BTN_Port.Click += new System.EventHandler(this.BTN_Port_Click);
             // 
             // BTN_Rupt
             // 
@@ -124,6 +130,7 @@
             this.BTN_Rupt.TabIndex = 8;
             this.BTN_Rupt.Text = "Rupt";
             this.BTN_Rupt.UseVisualStyleBackColor = true;
+            this.BTN_Rupt.Click += new System.EventHandler(this.BTN_Rupt_Click);
             // 
             // BTN_Sist
             // 
@@ -133,6 +140,7 @@
             this.BTN_Sist.TabIndex = 9;
             this.BTN_Sist.Text = "Sist";
             this.BTN_Sist.UseVisualStyleBackColor = true;
+            this.BTN_Sist.Click += new System.EventHandler(this.BTN_Sist_Click);
             // 
             // BTN_Spect
             // 
@@ -142,6 +150,7 @@
             this.BTN_Spect.TabIndex = 10;
             this.BTN_Spect.Text = "Spect";
             this.BTN_Spect.UseVisualStyleBackColor = true;
+            this.BTN_Spect.Click += new System.EventHandler(this.BTN_Spect_Click);
             // 
             // BTN_Stuct
             // 
@@ -151,6 +160,7 @@
             this.BTN_Stuct.TabIndex = 11;
             this.BTN_Stuct.Text = "Struct";
             this.BTN_Stuct.UseVisualStyleBackColor = true;
+            this.BTN_Stuct.Click += new System.EventHandler(this.BTN_Stuct_Click);
             // 
             // BTN_Tract
             // 
@@ -160,6 +170,7 @@
             this.BTN_Tract.TabIndex = 12;
             this.BTN_Tract.Text = "Tract";
             this.BTN_Tract.UseVisualStyleBackColor = true;
+            this.BTN_Tract.Click += new System.EventHandler(this.BTN_Tract_Click);
             // 
             // BTN_MainMenu
             // 
