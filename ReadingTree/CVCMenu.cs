@@ -29,7 +29,9 @@ namespace ReadingTree
 
         private void btnCVCi_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            LevelsMenu level = new LevelsMenu(btnCVCi.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnCVCo_Click(object sender, EventArgs e)
