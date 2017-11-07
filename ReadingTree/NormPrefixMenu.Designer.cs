@@ -64,6 +64,7 @@
             this.BTN_Mis.TabIndex = 6;
             this.BTN_Mis.Text = "Mis-";
             this.BTN_Mis.UseVisualStyleBackColor = true;
+            this.BTN_Mis.Click += new System.EventHandler(this.BTN_Mis_Click);
             // 
             // BTN_Non
             // 
@@ -73,6 +74,7 @@
             this.BTN_Non.TabIndex = 7;
             this.BTN_Non.Text = "Non-";
             this.BTN_Non.UseVisualStyleBackColor = true;
+            this.BTN_Non.Click += new System.EventHandler(this.BTN_Non_Click);
             // 
             // BTN_Dis
             // 
@@ -82,6 +84,7 @@
             this.BTN_Dis.TabIndex = 8;
             this.BTN_Dis.Text = "Dis-";
             this.BTN_Dis.UseVisualStyleBackColor = true;
+            this.BTN_Dis.Click += new System.EventHandler(this.BTN_Dis_Click);
             // 
             // BTN_Sub
             // 
@@ -91,6 +94,7 @@
             this.BTN_Sub.TabIndex = 9;
             this.BTN_Sub.Text = "Sub-";
             this.BTN_Sub.UseVisualStyleBackColor = true;
+            this.BTN_Sub.Click += new System.EventHandler(this.BTN_Sub_Click);
             // 
             // BTN_Un
             // 
@@ -100,6 +104,7 @@
             this.BTN_Un.TabIndex = 10;
             this.BTN_Un.Text = "Un-";
             this.BTN_Un.UseVisualStyleBackColor = true;
+            this.BTN_Un.Click += new System.EventHandler(this.BTN_Un_Click);
             // 
             // BTN_MainMenu
             // 

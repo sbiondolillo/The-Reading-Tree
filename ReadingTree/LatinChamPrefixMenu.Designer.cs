@@ -83,7 +83,7 @@
             this.BTN_Di.TabIndex = 18;
             this.BTN_Di.Text = "Di/Dif/Dis";
             this.BTN_Di.UseVisualStyleBackColor = true;
-            this.BTN_Di.Click += new System.EventHandler(this.button2_Click);
+            this.BTN_Di.Click += new System.EventHandler(this.BTN_Di_Click);
             // 
             // BTN_In
             // 
@@ -93,6 +93,7 @@
             this.BTN_In.TabIndex = 19;
             this.BTN_In.Text = "In/Im/Il/Ir";
             this.BTN_In.UseVisualStyleBackColor = true;
+            this.BTN_In.Click += new System.EventHandler(this.BTN_In_Click);
             // 
             // BTN_Sub
             // 
@@ -102,6 +103,7 @@
             this.BTN_Sub.TabIndex = 20;
             this.BTN_Sub.Text = "Sub/Sus/Sur/Suc/ Suf/Sum/Sup";
             this.BTN_Sub.UseVisualStyleBackColor = true;
+            this.BTN_Sub.Click += new System.EventHandler(this.BTN_Sub_Click);
             // 
             // LatinChamPrefixMenu
             // 
@@ -119,7 +121,6 @@
             this.Name = "LatinChamPrefixMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
-            this.Load += new System.EventHandler(this.LatinChamPrefixMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

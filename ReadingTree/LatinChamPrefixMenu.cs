@@ -17,26 +17,43 @@ namespace ReadingTree
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BTN_MainMenu_Click(object sender, EventArgs e)
         {
             MainMenu main = new MainMenu();
             main.Show();
-            this.Hide();
+            Close();
         }
 
-        private void LatinChamPrefixMenu_Load(object sender, EventArgs e)
+        private void BTN_Di_Click(object sender, EventArgs e)
         {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
 
+        private void BTN_In_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void BTN_Sub_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void BTN_Con_Click(object sender, EventArgs e)
         {
-            
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
     }
 }
