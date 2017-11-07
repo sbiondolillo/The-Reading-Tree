@@ -41,44 +41,51 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PNPromptLabel.AutoSize = true;
-            this.PNPromptLabel.Location = new System.Drawing.Point(233, 85);
+            this.PNPromptLabel.Location = new System.Drawing.Point(155, 55);
+            this.PNPromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PNPromptLabel.Name = "PNPromptLabel";
-            this.PNPromptLabel.Size = new System.Drawing.Size(313, 20);
+            this.PNPromptLabel.Size = new System.Drawing.Size(213, 13);
             this.PNPromptLabel.TabIndex = 24;
             this.PNPromptLabel.Text = "Please select a category below to continue!";
             // 
             // PNLabel
             // 
             this.PNLabel.AutoSize = true;
-            this.PNLabel.Location = new System.Drawing.Point(324, 46);
+            this.PNLabel.Location = new System.Drawing.Point(216, 30);
+            this.PNLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PNLabel.Name = "PNLabel";
-            this.PNLabel.Size = new System.Drawing.Size(130, 20);
+            this.PNLabel.Size = new System.Drawing.Size(89, 13);
             this.PNLabel.TabIndex = 23;
             this.PNLabel.Text = "Possessive Noun";
             // 
             // btnPossessivesSingular
             // 
-            this.btnPossessivesSingular.Location = new System.Drawing.Point(393, 163);
+            this.btnPossessivesSingular.Location = new System.Drawing.Point(262, 106);
+            this.btnPossessivesSingular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPossessivesSingular.Name = "btnPossessivesSingular";
-            this.btnPossessivesSingular.Size = new System.Drawing.Size(124, 69);
+            this.btnPossessivesSingular.Size = new System.Drawing.Size(83, 45);
             this.btnPossessivesSingular.TabIndex = 25;
             this.btnPossessivesSingular.Text = "Possessives, singular";
             this.btnPossessivesSingular.UseVisualStyleBackColor = true;
+            this.btnPossessivesSingular.Click += new System.EventHandler(this.btnPossessivesSingular_Click);
             // 
             // buttonPossessivesPlural
             // 
-            this.buttonPossessivesPlural.Location = new System.Drawing.Point(262, 163);
+            this.buttonPossessivesPlural.Location = new System.Drawing.Point(175, 106);
+            this.buttonPossessivesPlural.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPossessivesPlural.Name = "buttonPossessivesPlural";
-            this.buttonPossessivesPlural.Size = new System.Drawing.Size(124, 69);
+            this.buttonPossessivesPlural.Size = new System.Drawing.Size(83, 45);
             this.buttonPossessivesPlural.TabIndex = 26;
             this.buttonPossessivesPlural.Text = "Possessives, plural";
             this.buttonPossessivesPlural.UseVisualStyleBackColor = true;
+            this.buttonPossessivesPlural.Click += new System.EventHandler(this.buttonPossessivesPlural_Click);
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(327, 268);
+            this.btnMainMenu.Location = new System.Drawing.Point(218, 174);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 27;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -86,20 +93,18 @@
             // 
             // PossessiveNounMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(778, 544);
+            this.ClientSize = new System.Drawing.Size(519, 354);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.buttonPossessivesPlural);
             this.Controls.Add(this.btnPossessivesSingular);
             this.Controls.Add(this.PNPromptLabel);
             this.Controls.Add(this.PNLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PossessiveNounMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
-            this.Load += new System.EventHandler(this.PossessiveNounMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

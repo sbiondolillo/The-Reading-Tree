@@ -19,34 +19,49 @@ namespace ReadingTree
 
         private void btnCVCa_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnCVCe_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnCVCi_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnCVCo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnCVCu_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
         }
     }
 }

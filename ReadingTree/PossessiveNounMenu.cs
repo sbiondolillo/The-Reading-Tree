@@ -16,17 +16,27 @@ namespace ReadingTree
         {
             InitializeComponent();
         }
-
-        private void PossessiveNounMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
+        }
+
+        private void buttonPossessivesPlural_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnPossessivesSingular_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
     }
 }

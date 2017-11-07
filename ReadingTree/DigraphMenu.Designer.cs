@@ -42,66 +42,80 @@
             // 
             // btnDigraph_ch
             // 
-            this.btnDigraph_ch.Location = new System.Drawing.Point(197, 151);
+            this.btnDigraph_ch.Location = new System.Drawing.Point(131, 98);
+            this.btnDigraph_ch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDigraph_ch.Name = "btnDigraph_ch";
-            this.btnDigraph_ch.Size = new System.Drawing.Size(124, 69);
+            this.btnDigraph_ch.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_ch.TabIndex = 12;
             this.btnDigraph_ch.Text = "Digraph ch";
             this.btnDigraph_ch.UseVisualStyleBackColor = true;
+            this.btnDigraph_ch.Click += new System.EventHandler(this.btnDigraph_ch_Click);
             // 
             // btnDigraph_th_unvoiced
             // 
-            this.btnDigraph_th_unvoiced.Location = new System.Drawing.Point(197, 226);
+            this.btnDigraph_th_unvoiced.Location = new System.Drawing.Point(131, 147);
+            this.btnDigraph_th_unvoiced.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDigraph_th_unvoiced.Name = "btnDigraph_th_unvoiced";
-            this.btnDigraph_th_unvoiced.Size = new System.Drawing.Size(124, 69);
+            this.btnDigraph_th_unvoiced.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_th_unvoiced.TabIndex = 13;
             this.btnDigraph_th_unvoiced.Text = "Digraph th unvoiced";
             this.btnDigraph_th_unvoiced.UseVisualStyleBackColor = true;
+            this.btnDigraph_th_unvoiced.Click += new System.EventHandler(this.btnDigraph_th_unvoiced_Click);
             // 
             // btnDigraph_ck
             // 
-            this.btnDigraph_ck.Location = new System.Drawing.Point(327, 151);
+            this.btnDigraph_ck.Location = new System.Drawing.Point(218, 98);
+            this.btnDigraph_ck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDigraph_ck.Name = "btnDigraph_ck";
-            this.btnDigraph_ck.Size = new System.Drawing.Size(124, 69);
+            this.btnDigraph_ck.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_ck.TabIndex = 14;
             this.btnDigraph_ck.Text = "Digraph ck";
             this.btnDigraph_ck.UseVisualStyleBackColor = true;
+            this.btnDigraph_ck.Click += new System.EventHandler(this.btnDigraph_ck_Click);
             // 
             // btnDigraph_sh
             // 
-            this.btnDigraph_sh.Location = new System.Drawing.Point(458, 151);
+            this.btnDigraph_sh.Location = new System.Drawing.Point(305, 98);
+            this.btnDigraph_sh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDigraph_sh.Name = "btnDigraph_sh";
-            this.btnDigraph_sh.Size = new System.Drawing.Size(124, 69);
+            this.btnDigraph_sh.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_sh.TabIndex = 15;
             this.btnDigraph_sh.Text = "Digraph sh";
             this.btnDigraph_sh.UseVisualStyleBackColor = true;
+            this.btnDigraph_sh.Click += new System.EventHandler(this.btnDigraph_sh_Click);
             // 
             // btnDigraph_th_voiced
             // 
-            this.btnDigraph_th_voiced.Location = new System.Drawing.Point(327, 226);
+            this.btnDigraph_th_voiced.Location = new System.Drawing.Point(218, 147);
+            this.btnDigraph_th_voiced.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDigraph_th_voiced.Name = "btnDigraph_th_voiced";
-            this.btnDigraph_th_voiced.Size = new System.Drawing.Size(124, 69);
+            this.btnDigraph_th_voiced.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_th_voiced.TabIndex = 16;
             this.btnDigraph_th_voiced.Text = "Digraph th voiced";
             this.btnDigraph_th_voiced.UseVisualStyleBackColor = true;
+            this.btnDigraph_th_voiced.Click += new System.EventHandler(this.btnDigraph_th_voiced_Click);
             // 
             // btnDigraph_wh
             // 
-            this.btnDigraph_wh.Location = new System.Drawing.Point(458, 226);
+            this.btnDigraph_wh.Location = new System.Drawing.Point(305, 147);
+            this.btnDigraph_wh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDigraph_wh.Name = "btnDigraph_wh";
-            this.btnDigraph_wh.Size = new System.Drawing.Size(124, 69);
+            this.btnDigraph_wh.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_wh.TabIndex = 17;
             this.btnDigraph_wh.Text = "Digraph wh";
             this.btnDigraph_wh.UseVisualStyleBackColor = true;
+            this.btnDigraph_wh.Click += new System.EventHandler(this.btnDigraph_wh_Click);
             // 
             // btnTch
             // 
-            this.btnTch.Location = new System.Drawing.Point(327, 302);
+            this.btnTch.Location = new System.Drawing.Point(218, 196);
+            this.btnTch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTch.Name = "btnTch";
-            this.btnTch.Size = new System.Drawing.Size(124, 69);
+            this.btnTch.Size = new System.Drawing.Size(83, 45);
             this.btnTch.TabIndex = 18;
             this.btnTch.Text = "tch";
             this.btnTch.UseVisualStyleBackColor = true;
+            this.btnTch.Click += new System.EventHandler(this.btnTch_Click);
             // 
             // DigraphPromptLabel
             // 
@@ -109,26 +123,29 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DigraphPromptLabel.AutoSize = true;
-            this.DigraphPromptLabel.Location = new System.Drawing.Point(233, 94);
+            this.DigraphPromptLabel.Location = new System.Drawing.Point(155, 61);
+            this.DigraphPromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DigraphPromptLabel.Name = "DigraphPromptLabel";
-            this.DigraphPromptLabel.Size = new System.Drawing.Size(313, 20);
+            this.DigraphPromptLabel.Size = new System.Drawing.Size(213, 13);
             this.DigraphPromptLabel.TabIndex = 22;
             this.DigraphPromptLabel.Text = "Please select a category below to continue!";
             // 
             // DigraphLabel
             // 
             this.DigraphLabel.AutoSize = true;
-            this.DigraphLabel.Location = new System.Drawing.Point(357, 45);
+            this.DigraphLabel.Location = new System.Drawing.Point(238, 29);
+            this.DigraphLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DigraphLabel.Name = "DigraphLabel";
-            this.DigraphLabel.Size = new System.Drawing.Size(65, 20);
+            this.DigraphLabel.Size = new System.Drawing.Size(44, 13);
             this.DigraphLabel.TabIndex = 21;
             this.DigraphLabel.Text = "Digraph";
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(326, 402);
+            this.btnMainMenu.Location = new System.Drawing.Point(217, 261);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 24;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -136,10 +153,10 @@
             // 
             // DigraphMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(778, 544);
+            this.ClientSize = new System.Drawing.Size(519, 354);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.DigraphPromptLabel);
             this.Controls.Add(this.DigraphLabel);
@@ -150,11 +167,9 @@
             this.Controls.Add(this.btnDigraph_ck);
             this.Controls.Add(this.btnDigraph_th_unvoiced);
             this.Controls.Add(this.btnDigraph_ch);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DigraphMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
-            this.Load += new System.EventHandler(this.Digraph_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

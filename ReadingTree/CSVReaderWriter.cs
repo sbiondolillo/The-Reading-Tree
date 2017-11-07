@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace CSV_ReadWrite
+namespace ReadingTree
 {
 	// Class to hold one csv row
 	public class CsvRow : List<string>
@@ -24,8 +24,7 @@ namespace CSV_ReadWrite
 		{
 		}
 			
-		static string baseFP = Directory.GetCurrentDirectory();
-		static string masterFP = baseFP + "/csv/all_levels.csv";
+		public static string masterFP = "..\\resources\\all_levels.csv";
 
 		// Read a row from the file
 		public bool ReadRow(CsvRow row)
@@ -114,7 +113,7 @@ namespace CSV_ReadWrite
 			for (int i = 1; i <= 5; i++)
 			{
 				string lvl = i.ToString();
-				using (CsvReader reader = new CsvReader (MainClass.masterFP))
+				using (CsvReader reader = new CsvReader (CsvReader.masterFP))
 				{
 					CsvRow row = new CsvRow();
 

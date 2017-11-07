@@ -30,28 +30,39 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
         }
 
-        private void btnAY_Click(object sender, EventArgs e)
+        private void btnSUE_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
-        private void btnAU_Click(object sender, EventArgs e)
+        private void btnUE_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
-        private void btnAI_Click(object sender, EventArgs e)
+        private void btnUECute_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
-        private void btnAE_Click(object sender, EventArgs e)
+        private void btnUEJune_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
-        
     }
 }

@@ -17,26 +17,91 @@ namespace ReadingTree
             InitializeComponent();
         }
 
-        private void VCVariablesMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VCVariablesLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
-            Hide();
+            Close();
+        }
+
+        private void btnVCCVE_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVCV_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVCCV_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVC_CCCV_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVC_CCV_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVCC_CCV_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVCC_CV_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVCCC_CV_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVCCCCVmixed_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnVCCCVmixed_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
     }
 }

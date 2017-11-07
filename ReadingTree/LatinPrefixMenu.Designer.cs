@@ -66,6 +66,7 @@
             this.BTN_Post.TabIndex = 8;
             this.BTN_Post.Text = "Post-";
             this.BTN_Post.UseVisualStyleBackColor = true;
+            this.BTN_Post.Click += new System.EventHandler(this.BTN_Post_Click);
             // 
             // BTN_MainMenu
             // 
@@ -85,6 +86,7 @@
             this.BTN_De.TabIndex = 14;
             this.BTN_De.Text = "De";
             this.BTN_De.UseVisualStyleBackColor = true;
+            this.BTN_De.Click += new System.EventHandler(this.BTN_De_Click);
             // 
             // BTN_Ex
             // 
@@ -94,6 +96,7 @@
             this.BTN_Ex.TabIndex = 15;
             this.BTN_Ex.Text = "E/Ex";
             this.BTN_Ex.UseVisualStyleBackColor = true;
+            this.BTN_Ex.Click += new System.EventHandler(this.BTN_Ex_Click);
             // 
             // BTN_Pre
             // 
@@ -103,6 +106,7 @@
             this.BTN_Pre.TabIndex = 16;
             this.BTN_Pre.Text = "Pre";
             this.BTN_Pre.UseVisualStyleBackColor = true;
+            this.BTN_Pre.Click += new System.EventHandler(this.BTN_Pre_Click);
             // 
             // BTN_Pro
             // 
@@ -112,6 +116,7 @@
             this.BTN_Pro.TabIndex = 17;
             this.BTN_Pro.Text = "Pro";
             this.BTN_Pro.UseVisualStyleBackColor = true;
+            this.BTN_Pro.Click += new System.EventHandler(this.BTN_Pro_Click);
             // 
             // BTN_Re
             // 
@@ -121,6 +126,7 @@
             this.BTN_Re.TabIndex = 18;
             this.BTN_Re.Text = "Re";
             this.BTN_Re.UseVisualStyleBackColor = true;
+            this.BTN_Re.Click += new System.EventHandler(this.BTN_Re_Click);
             // 
             // BTN_Trans
             // 
@@ -130,6 +136,7 @@
             this.BTN_Trans.TabIndex = 19;
             this.BTN_Trans.Text = "Trans";
             this.BTN_Trans.UseVisualStyleBackColor = true;
+            this.BTN_Trans.Click += new System.EventHandler(this.BTN_Trans_Click);
             // 
             // LatinPrefixMenu
             // 

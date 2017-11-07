@@ -100,6 +100,7 @@
     <Compile Include="ContractionsMenu.Designer.cs">
       <DependentUpon>ContractionsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="CSVReaderWriter.cs" />
     <Compile Include="CVCMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -394,6 +395,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="bin\resources\all_levels.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

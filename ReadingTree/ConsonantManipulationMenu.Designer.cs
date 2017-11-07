@@ -44,84 +44,102 @@
             // 
             // btnDoubleConsonants
             // 
-            this.btnDoubleConsonants.Location = new System.Drawing.Point(196, 172);
+            this.btnDoubleConsonants.Location = new System.Drawing.Point(131, 112);
+            this.btnDoubleConsonants.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDoubleConsonants.Name = "btnDoubleConsonants";
-            this.btnDoubleConsonants.Size = new System.Drawing.Size(124, 69);
+            this.btnDoubleConsonants.Size = new System.Drawing.Size(83, 45);
             this.btnDoubleConsonants.TabIndex = 13;
             this.btnDoubleConsonants.Text = "Double consonants (rabbit words)";
             this.btnDoubleConsonants.UseVisualStyleBackColor = true;
+            this.btnDoubleConsonants.Click += new System.EventHandler(this.btnDoubleConsonants_Click);
             // 
             // btnFlossRule
             // 
-            this.btnFlossRule.Location = new System.Drawing.Point(327, 172);
+            this.btnFlossRule.Location = new System.Drawing.Point(218, 112);
+            this.btnFlossRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFlossRule.Name = "btnFlossRule";
-            this.btnFlossRule.Size = new System.Drawing.Size(124, 69);
+            this.btnFlossRule.Size = new System.Drawing.Size(83, 45);
             this.btnFlossRule.TabIndex = 14;
             this.btnFlossRule.Text = "Floss rule";
             this.btnFlossRule.UseVisualStyleBackColor = true;
+            this.btnFlossRule.Click += new System.EventHandler(this.btnFlossRule_Click);
             // 
             // btnX
             // 
-            this.btnX.Location = new System.Drawing.Point(458, 172);
+            this.btnX.Location = new System.Drawing.Point(305, 112);
+            this.btnX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(124, 69);
+            this.btnX.Size = new System.Drawing.Size(83, 45);
             this.btnX.TabIndex = 15;
             this.btnX.Text = "x";
             this.btnX.UseVisualStyleBackColor = true;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // btnGh
             // 
-            this.btnGh.Location = new System.Drawing.Point(196, 248);
+            this.btnGh.Location = new System.Drawing.Point(131, 161);
+            this.btnGh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGh.Name = "btnGh";
-            this.btnGh.Size = new System.Drawing.Size(124, 69);
+            this.btnGh.Size = new System.Drawing.Size(83, 45);
             this.btnGh.TabIndex = 16;
             this.btnGh.Text = "gh";
             this.btnGh.UseVisualStyleBackColor = true;
+            this.btnGh.Click += new System.EventHandler(this.btnGh_Click);
             // 
             // btnGn
             // 
-            this.btnGn.Location = new System.Drawing.Point(327, 248);
+            this.btnGn.Location = new System.Drawing.Point(218, 161);
+            this.btnGn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGn.Name = "btnGn";
-            this.btnGn.Size = new System.Drawing.Size(124, 69);
+            this.btnGn.Size = new System.Drawing.Size(83, 45);
             this.btnGn.TabIndex = 17;
             this.btnGn.Text = "gn";
             this.btnGn.UseVisualStyleBackColor = true;
+            this.btnGn.Click += new System.EventHandler(this.btnGn_Click);
             // 
             // btnWr
             // 
-            this.btnWr.Location = new System.Drawing.Point(458, 248);
+            this.btnWr.Location = new System.Drawing.Point(305, 161);
+            this.btnWr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWr.Name = "btnWr";
-            this.btnWr.Size = new System.Drawing.Size(124, 69);
+            this.btnWr.Size = new System.Drawing.Size(83, 45);
             this.btnWr.TabIndex = 18;
             this.btnWr.Text = "wr";
             this.btnWr.UseVisualStyleBackColor = true;
+            this.btnWr.Click += new System.EventHandler(this.btnWr_Click);
             // 
             // btnG
             // 
-            this.btnG.Location = new System.Drawing.Point(196, 323);
+            this.btnG.Location = new System.Drawing.Point(131, 210);
+            this.btnG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnG.Name = "btnG";
-            this.btnG.Size = new System.Drawing.Size(124, 69);
+            this.btnG.Size = new System.Drawing.Size(83, 45);
             this.btnG.TabIndex = 19;
             this.btnG.Text = "g, soft (cage)";
             this.btnG.UseVisualStyleBackColor = true;
+            this.btnG.Click += new System.EventHandler(this.btnG_Click);
             // 
             // btnY
             // 
-            this.btnY.Location = new System.Drawing.Point(327, 323);
+            this.btnY.Location = new System.Drawing.Point(218, 210);
+            this.btnY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnY.Name = "btnY";
-            this.btnY.Size = new System.Drawing.Size(124, 69);
+            this.btnY.Size = new System.Drawing.Size(83, 45);
             this.btnY.TabIndex = 20;
             this.btnY.Text = "y Spelling rule";
             this.btnY.UseVisualStyleBackColor = true;
+            this.btnY.Click += new System.EventHandler(this.btnY_Click);
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(458, 323);
+            this.btnC.Location = new System.Drawing.Point(305, 210);
+            this.btnC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(124, 69);
+            this.btnC.Size = new System.Drawing.Size(83, 45);
             this.btnC.TabIndex = 21;
             this.btnC.Text = "c, soft  (face)\t";
             this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // DigraphPromptLabel
             // 
@@ -129,26 +147,29 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DigraphPromptLabel.AutoSize = true;
-            this.DigraphPromptLabel.Location = new System.Drawing.Point(233, 117);
+            this.DigraphPromptLabel.Location = new System.Drawing.Point(155, 76);
+            this.DigraphPromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DigraphPromptLabel.Name = "DigraphPromptLabel";
-            this.DigraphPromptLabel.Size = new System.Drawing.Size(313, 20);
+            this.DigraphPromptLabel.Size = new System.Drawing.Size(213, 13);
             this.DigraphPromptLabel.TabIndex = 24;
             this.DigraphPromptLabel.Text = "Please select a category below to continue!";
             // 
             // DigraphLabel
             // 
             this.DigraphLabel.AutoSize = true;
-            this.DigraphLabel.Location = new System.Drawing.Point(299, 72);
+            this.DigraphLabel.Location = new System.Drawing.Point(199, 47);
+            this.DigraphLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DigraphLabel.Name = "DigraphLabel";
-            this.DigraphLabel.Size = new System.Drawing.Size(181, 20);
+            this.DigraphLabel.Size = new System.Drawing.Size(121, 13);
             this.DigraphLabel.TabIndex = 23;
             this.DigraphLabel.Text = "Consonant Manipulation";
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(327, 422);
+            this.btnMainMenu.Location = new System.Drawing.Point(218, 274);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 25;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -156,10 +177,10 @@
             // 
             // ConsonantManipulationMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(778, 544);
+            this.ClientSize = new System.Drawing.Size(519, 354);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.DigraphPromptLabel);
             this.Controls.Add(this.DigraphLabel);
@@ -172,7 +193,6 @@
             this.Controls.Add(this.btnX);
             this.Controls.Add(this.btnFlossRule);
             this.Controls.Add(this.btnDoubleConsonants);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ConsonantManipulationMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";

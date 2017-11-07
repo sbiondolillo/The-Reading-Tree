@@ -30,27 +30,35 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
         }
-
         private void btnIE_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
-
         private void btnIEasIPie_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
-
         private void btnIGH_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
-
         private void btnIasECalcium_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
     }
 }

@@ -43,6 +43,7 @@
             this.BTN_Compound.TabIndex = 0;
             this.BTN_Compound.Text = "Compound Words";
             this.BTN_Compound.UseVisualStyleBackColor = true;
+            this.BTN_Compound.Click += new System.EventHandler(this.BTN_Compound_Click);
             // 
             // BTN_Crete
             // 
@@ -52,6 +53,7 @@
             this.BTN_Crete.TabIndex = 1;
             this.BTN_Crete.Text = "Crete";
             this.BTN_Crete.UseVisualStyleBackColor = true;
+            this.BTN_Crete.Click += new System.EventHandler(this.BTN_Crete_Click);
             // 
             // BTN_MainMenu
             // 
