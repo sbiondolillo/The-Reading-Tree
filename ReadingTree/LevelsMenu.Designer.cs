@@ -39,9 +39,9 @@
             this.level4Box = new System.Windows.Forms.ListBox();
             this.level5Box = new System.Windows.Forms.ListBox();
             this.headerName = new System.Windows.Forms.GroupBox();
-            this.btnMainMenu = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.btnMainMenu = new System.Windows.Forms.Button();
             this.printlistButton = new System.Windows.Forms.Button();
             this.scrambleButton = new System.Windows.Forms.Button();
             this.wordsList = new System.Windows.Forms.ListBox();
@@ -102,7 +102,6 @@
             this.level3Label.Size = new System.Drawing.Size(76, 13);
             this.level3Label.TabIndex = 5;
             this.level3Label.Text = "Level 3 Words";
-            this.level3Label.Click += new System.EventHandler(this.label4_Click);
             // 
             // level2Box
             // 
@@ -156,18 +155,6 @@
             this.headerName.TabIndex = 10;
             this.headerName.TabStop = false;
             this.headerName.Text = "Change this to applicable header title";
-            this.headerName.Enter += new System.EventHandler(this.headerName_Enter);
-            // 
-            // btnMainMenu
-            // 
-            this.btnMainMenu.Location = new System.Drawing.Point(425, 298);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
-            this.btnMainMenu.TabIndex = 20;
-            this.btnMainMenu.Text = "Main Menu";
-            this.btnMainMenu.UseVisualStyleBackColor = true;
-            this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
             // 
             // addButton
             // 
@@ -188,6 +175,17 @@
             this.deleteButton.TabIndex = 22;
             this.deleteButton.Text = "Delete Word";
             this.deleteButton.UseVisualStyleBackColor = true;
+            // 
+            // btnMainMenu
+            // 
+            this.btnMainMenu.Location = new System.Drawing.Point(425, 298);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMainMenu.Name = "btnMainMenu";
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
+            this.btnMainMenu.TabIndex = 20;
+            this.btnMainMenu.Text = "Main Menu";
+            this.btnMainMenu.UseVisualStyleBackColor = true;
+            this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
             // 
             // printlistButton
             // 
