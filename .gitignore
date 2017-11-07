@@ -262,3 +262,5 @@ __pycache__/
 *.exe
 *.cache
 *.pdb
+*.Cache
+*.Cache
