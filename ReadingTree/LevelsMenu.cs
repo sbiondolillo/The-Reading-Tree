@@ -12,14 +12,19 @@ namespace ReadingTree
 {
     public partial class LevelsMenu : Form
     {
-        private static string group_name = "";
+        private string group_name = "";
         public LevelsMenu()
         {
             InitializeComponent();
         }
-        public static void SetGroupName(string group)
+        public LevelsMenu(string group_name)
         {
-            group_name = group;
+            InitializeComponent();
+            this.group_name = group_name;
+        }
+        public void SetGroupName(string group)
+        {
+            this.group_name = group;
         }
         private void LevelsMenu_Load(object sender, EventArgs e)
         {
