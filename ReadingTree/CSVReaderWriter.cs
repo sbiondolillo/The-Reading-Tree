@@ -24,8 +24,7 @@ namespace ReadingTree
 		{
 		}
 			
-		static string baseFP = Directory.GetCurrentDirectory();
-		public static string masterFP = baseFP + "/resources/all_levels.csv";
+		public static string masterFP = "..\\resources\\all_levels.csv";
 
 		// Read a row from the file
 		public bool ReadRow(CsvRow row)

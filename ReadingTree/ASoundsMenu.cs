@@ -19,7 +19,9 @@ namespace ReadingTree
 
         private void btnAESounds_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            LevelsMenu level = new LevelsMenu(btnAESounds.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnAISounds_Click(object sender, EventArgs e)
