@@ -17,16 +17,67 @@ namespace ReadingTree
             InitializeComponent();
         }
 
-        private void Digraph_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
+        }
+
+        private void btnDigraph_ch_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnDigraph_ck_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnDigraph_sh_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnDigraph_th_unvoiced_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnDigraph_th_voiced_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnDigraph_wh_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
+        }
+
+        private void btnTch_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
     }
 }
