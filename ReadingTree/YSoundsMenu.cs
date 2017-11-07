@@ -30,17 +30,23 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
         }
 
         private void btnYasECandy_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnYasIMy_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
     }
 }

@@ -19,31 +19,41 @@ namespace ReadingTree
 
         private void btnAESounds_Click(object sender, EventArgs e)
         {
-            LevelsMenu level = new LevelsMenu(btnAESounds.Text.ToString());
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
             Close();
         }
 
         private void btnAISounds_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnAUSounds_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnAYSounds_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Close();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
         }
     }
 }
