@@ -104,3 +104,4 @@ C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csproj.CoreCompileInputs.cache
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.exe
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.pdb
+C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
