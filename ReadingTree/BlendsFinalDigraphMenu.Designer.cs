@@ -42,46 +42,51 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BlendsFinalDigraphPromptLabel.AutoSize = true;
-            this.BlendsFinalDigraphPromptLabel.Location = new System.Drawing.Point(233, 97);
+            this.BlendsFinalDigraphPromptLabel.Location = new System.Drawing.Point(155, 63);
+            this.BlendsFinalDigraphPromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BlendsFinalDigraphPromptLabel.Name = "BlendsFinalDigraphPromptLabel";
-            this.BlendsFinalDigraphPromptLabel.Size = new System.Drawing.Size(313, 20);
+            this.BlendsFinalDigraphPromptLabel.Size = new System.Drawing.Size(213, 13);
             this.BlendsFinalDigraphPromptLabel.TabIndex = 28;
             this.BlendsFinalDigraphPromptLabel.Text = "Please select a category below to continue!";
             // 
             // BlendsFinalDigraphlabel
             // 
             this.BlendsFinalDigraphlabel.AutoSize = true;
-            this.BlendsFinalDigraphlabel.Location = new System.Drawing.Point(307, 50);
+            this.BlendsFinalDigraphlabel.Location = new System.Drawing.Point(205, 32);
+            this.BlendsFinalDigraphlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BlendsFinalDigraphlabel.Name = "BlendsFinalDigraphlabel";
-            this.BlendsFinalDigraphlabel.Size = new System.Drawing.Size(164, 20);
+            this.BlendsFinalDigraphlabel.Size = new System.Drawing.Size(110, 13);
             this.BlendsFinalDigraphlabel.TabIndex = 27;
             this.BlendsFinalDigraphlabel.Text = "Blends, Final, Digraph";
             // 
             // btnBlendsFinalDigraph
             // 
-            this.btnBlendsFinalDigraph.Location = new System.Drawing.Point(456, 160);
+            this.btnBlendsFinalDigraph.Location = new System.Drawing.Point(304, 104);
+            this.btnBlendsFinalDigraph.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBlendsFinalDigraph.Name = "btnBlendsFinalDigraph";
-            this.btnBlendsFinalDigraph.Size = new System.Drawing.Size(125, 70);
+            this.btnBlendsFinalDigraph.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsFinalDigraph.TabIndex = 26;
-            this.btnBlendsFinalDigraph.Text = "Final, Digraph";
+            this.btnBlendsFinalDigraph.Text = "Final Digraph";
             this.btnBlendsFinalDigraph.UseVisualStyleBackColor = true;
             this.btnBlendsFinalDigraph.Click += new System.EventHandler(this.btnBlendsFinalDigraph_Click);
             // 
             // btnBlendsFinalMixed
             // 
-            this.btnBlendsFinalMixed.Location = new System.Drawing.Point(327, 160);
+            this.btnBlendsFinalMixed.Location = new System.Drawing.Point(218, 104);
+            this.btnBlendsFinalMixed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBlendsFinalMixed.Name = "btnBlendsFinalMixed";
-            this.btnBlendsFinalMixed.Size = new System.Drawing.Size(125, 70);
+            this.btnBlendsFinalMixed.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsFinalMixed.TabIndex = 25;
-            this.btnBlendsFinalMixed.Text = "Final, Mixed";
+            this.btnBlendsFinalMixed.Text = "Final Mixed";
             this.btnBlendsFinalMixed.UseVisualStyleBackColor = true;
             this.btnBlendsFinalMixed.Click += new System.EventHandler(this.btnBlendsFinalMixed_Click);
             // 
             // btnBlendsDigraph
             // 
-            this.btnBlendsDigraph.Location = new System.Drawing.Point(198, 160);
+            this.btnBlendsDigraph.Location = new System.Drawing.Point(132, 104);
+            this.btnBlendsDigraph.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBlendsDigraph.Name = "btnBlendsDigraph";
-            this.btnBlendsDigraph.Size = new System.Drawing.Size(125, 70);
+            this.btnBlendsDigraph.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsDigraph.TabIndex = 24;
             this.btnBlendsDigraph.Text = "Digraph";
             this.btnBlendsDigraph.UseVisualStyleBackColor = true;
@@ -89,9 +94,10 @@
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(327, 264);
+            this.btnMainMenu.Location = new System.Drawing.Point(218, 172);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 29;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -99,16 +105,17 @@
             // 
             // BlendsFinalDigraphMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(778, 544);
+            this.ClientSize = new System.Drawing.Size(519, 354);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.BlendsFinalDigraphPromptLabel);
             this.Controls.Add(this.BlendsFinalDigraphlabel);
             this.Controls.Add(this.btnBlendsFinalDigraph);
             this.Controls.Add(this.btnBlendsFinalMixed);
             this.Controls.Add(this.btnBlendsDigraph);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BlendsFinalDigraphMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
