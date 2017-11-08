@@ -45,7 +45,7 @@
             // btnDoubleConsonants
             // 
             this.btnDoubleConsonants.Location = new System.Drawing.Point(131, 112);
-            this.btnDoubleConsonants.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDoubleConsonants.Margin = new System.Windows.Forms.Padding(2);
             this.btnDoubleConsonants.Name = "btnDoubleConsonants";
             this.btnDoubleConsonants.Size = new System.Drawing.Size(83, 45);
             this.btnDoubleConsonants.TabIndex = 13;
@@ -56,7 +56,7 @@
             // btnFlossRule
             // 
             this.btnFlossRule.Location = new System.Drawing.Point(218, 112);
-            this.btnFlossRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFlossRule.Margin = new System.Windows.Forms.Padding(2);
             this.btnFlossRule.Name = "btnFlossRule";
             this.btnFlossRule.Size = new System.Drawing.Size(83, 45);
             this.btnFlossRule.TabIndex = 14;
@@ -67,7 +67,7 @@
             // btnX
             // 
             this.btnX.Location = new System.Drawing.Point(305, 112);
-            this.btnX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnX.Margin = new System.Windows.Forms.Padding(2);
             this.btnX.Name = "btnX";
             this.btnX.Size = new System.Drawing.Size(83, 45);
             this.btnX.TabIndex = 15;
@@ -78,7 +78,7 @@
             // btnGh
             // 
             this.btnGh.Location = new System.Drawing.Point(131, 161);
-            this.btnGh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGh.Margin = new System.Windows.Forms.Padding(2);
             this.btnGh.Name = "btnGh";
             this.btnGh.Size = new System.Drawing.Size(83, 45);
             this.btnGh.TabIndex = 16;
@@ -89,7 +89,7 @@
             // btnGn
             // 
             this.btnGn.Location = new System.Drawing.Point(218, 161);
-            this.btnGn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGn.Margin = new System.Windows.Forms.Padding(2);
             this.btnGn.Name = "btnGn";
             this.btnGn.Size = new System.Drawing.Size(83, 45);
             this.btnGn.TabIndex = 17;
@@ -100,7 +100,7 @@
             // btnWr
             // 
             this.btnWr.Location = new System.Drawing.Point(305, 161);
-            this.btnWr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWr.Margin = new System.Windows.Forms.Padding(2);
             this.btnWr.Name = "btnWr";
             this.btnWr.Size = new System.Drawing.Size(83, 45);
             this.btnWr.TabIndex = 18;
@@ -111,18 +111,18 @@
             // btnG
             // 
             this.btnG.Location = new System.Drawing.Point(131, 210);
-            this.btnG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnG.Margin = new System.Windows.Forms.Padding(2);
             this.btnG.Name = "btnG";
             this.btnG.Size = new System.Drawing.Size(83, 45);
             this.btnG.TabIndex = 19;
-            this.btnG.Text = "g, soft (cage)";
+            this.btnG.Text = "g soft (cage)";
             this.btnG.UseVisualStyleBackColor = true;
             this.btnG.Click += new System.EventHandler(this.btnG_Click);
             // 
             // btnY
             // 
             this.btnY.Location = new System.Drawing.Point(218, 210);
-            this.btnY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnY.Margin = new System.Windows.Forms.Padding(2);
             this.btnY.Name = "btnY";
             this.btnY.Size = new System.Drawing.Size(83, 45);
             this.btnY.TabIndex = 20;
@@ -133,11 +133,11 @@
             // btnC
             // 
             this.btnC.Location = new System.Drawing.Point(305, 210);
-            this.btnC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnC.Margin = new System.Windows.Forms.Padding(2);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(83, 45);
             this.btnC.TabIndex = 21;
-            this.btnC.Text = "c, soft  (face)\t";
+            this.btnC.Text = "c soft  (face)\t";
             this.btnC.UseVisualStyleBackColor = true;
             this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
@@ -167,7 +167,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(218, 274);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 25;

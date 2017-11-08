@@ -43,7 +43,7 @@
             // btnDigraph_ch
             // 
             this.btnDigraph_ch.Location = new System.Drawing.Point(131, 98);
-            this.btnDigraph_ch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDigraph_ch.Margin = new System.Windows.Forms.Padding(2);
             this.btnDigraph_ch.Name = "btnDigraph_ch";
             this.btnDigraph_ch.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_ch.TabIndex = 12;
@@ -54,7 +54,7 @@
             // btnDigraph_th_unvoiced
             // 
             this.btnDigraph_th_unvoiced.Location = new System.Drawing.Point(131, 147);
-            this.btnDigraph_th_unvoiced.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDigraph_th_unvoiced.Margin = new System.Windows.Forms.Padding(2);
             this.btnDigraph_th_unvoiced.Name = "btnDigraph_th_unvoiced";
             this.btnDigraph_th_unvoiced.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_th_unvoiced.TabIndex = 13;
@@ -65,7 +65,7 @@
             // btnDigraph_ck
             // 
             this.btnDigraph_ck.Location = new System.Drawing.Point(218, 98);
-            this.btnDigraph_ck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDigraph_ck.Margin = new System.Windows.Forms.Padding(2);
             this.btnDigraph_ck.Name = "btnDigraph_ck";
             this.btnDigraph_ck.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_ck.TabIndex = 14;
@@ -76,7 +76,7 @@
             // btnDigraph_sh
             // 
             this.btnDigraph_sh.Location = new System.Drawing.Point(305, 98);
-            this.btnDigraph_sh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDigraph_sh.Margin = new System.Windows.Forms.Padding(2);
             this.btnDigraph_sh.Name = "btnDigraph_sh";
             this.btnDigraph_sh.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_sh.TabIndex = 15;
@@ -87,7 +87,7 @@
             // btnDigraph_th_voiced
             // 
             this.btnDigraph_th_voiced.Location = new System.Drawing.Point(218, 147);
-            this.btnDigraph_th_voiced.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDigraph_th_voiced.Margin = new System.Windows.Forms.Padding(2);
             this.btnDigraph_th_voiced.Name = "btnDigraph_th_voiced";
             this.btnDigraph_th_voiced.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_th_voiced.TabIndex = 16;
@@ -98,7 +98,7 @@
             // btnDigraph_wh
             // 
             this.btnDigraph_wh.Location = new System.Drawing.Point(305, 147);
-            this.btnDigraph_wh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDigraph_wh.Margin = new System.Windows.Forms.Padding(2);
             this.btnDigraph_wh.Name = "btnDigraph_wh";
             this.btnDigraph_wh.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph_wh.TabIndex = 17;
@@ -109,7 +109,7 @@
             // btnTch
             // 
             this.btnTch.Location = new System.Drawing.Point(218, 196);
-            this.btnTch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTch.Margin = new System.Windows.Forms.Padding(2);
             this.btnTch.Name = "btnTch";
             this.btnTch.Size = new System.Drawing.Size(83, 45);
             this.btnTch.TabIndex = 18;
@@ -143,7 +143,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(217, 261);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 24;
@@ -169,7 +169,7 @@
             this.Controls.Add(this.btnDigraph_ch);
             this.Name = "DigraphMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "The Reading Tree";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

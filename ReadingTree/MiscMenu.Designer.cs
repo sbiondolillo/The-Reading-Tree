@@ -51,7 +51,7 @@
             this.BTN_Crete.Name = "BTN_Crete";
             this.BTN_Crete.Size = new System.Drawing.Size(83, 45);
             this.BTN_Crete.TabIndex = 1;
-            this.BTN_Crete.Text = "Crete";
+            this.BTN_Crete.Text = "e-e";
             this.BTN_Crete.UseVisualStyleBackColor = true;
             this.BTN_Crete.Click += new System.EventHandler(this.BTN_Crete_Click);
             // 

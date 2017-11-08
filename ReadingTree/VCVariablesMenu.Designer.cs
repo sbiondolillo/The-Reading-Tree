@@ -69,7 +69,7 @@
             // btnVCCVE
             // 
             this.btnVCCVE.Location = new System.Drawing.Point(131, 82);
-            this.btnVCCVE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCCVE.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCCVE.Name = "btnVCCVE";
             this.btnVCCVE.Size = new System.Drawing.Size(83, 45);
             this.btnVCCVE.TabIndex = 21;
@@ -80,7 +80,7 @@
             // btnVCV
             // 
             this.btnVCV.Location = new System.Drawing.Point(218, 82);
-            this.btnVCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCV.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCV.Name = "btnVCV";
             this.btnVCV.Size = new System.Drawing.Size(83, 45);
             this.btnVCV.TabIndex = 22;
@@ -91,7 +91,7 @@
             // btnVCCV
             // 
             this.btnVCCV.Location = new System.Drawing.Point(305, 82);
-            this.btnVCCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCCV.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCCV.Name = "btnVCCV";
             this.btnVCCV.Size = new System.Drawing.Size(83, 45);
             this.btnVCCV.TabIndex = 23;
@@ -102,7 +102,7 @@
             // btnVC_CCCV
             // 
             this.btnVC_CCCV.Location = new System.Drawing.Point(131, 131);
-            this.btnVC_CCCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVC_CCCV.Margin = new System.Windows.Forms.Padding(2);
             this.btnVC_CCCV.Name = "btnVC_CCCV";
             this.btnVC_CCCV.Size = new System.Drawing.Size(83, 45);
             this.btnVC_CCCV.TabIndex = 24;
@@ -113,7 +113,7 @@
             // btnVC_CCV
             // 
             this.btnVC_CCV.Location = new System.Drawing.Point(218, 131);
-            this.btnVC_CCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVC_CCV.Margin = new System.Windows.Forms.Padding(2);
             this.btnVC_CCV.Name = "btnVC_CCV";
             this.btnVC_CCV.Size = new System.Drawing.Size(83, 45);
             this.btnVC_CCV.TabIndex = 25;
@@ -124,7 +124,7 @@
             // btnVCC_CCV
             // 
             this.btnVCC_CCV.Location = new System.Drawing.Point(305, 131);
-            this.btnVCC_CCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCC_CCV.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCC_CCV.Name = "btnVCC_CCV";
             this.btnVCC_CCV.Size = new System.Drawing.Size(83, 45);
             this.btnVCC_CCV.TabIndex = 26;
@@ -135,7 +135,7 @@
             // btnVCCC_CV
             // 
             this.btnVCCC_CV.Location = new System.Drawing.Point(218, 179);
-            this.btnVCCC_CV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCCC_CV.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCCC_CV.Name = "btnVCCC_CV";
             this.btnVCCC_CV.Size = new System.Drawing.Size(83, 45);
             this.btnVCCC_CV.TabIndex = 27;
@@ -146,7 +146,7 @@
             // btnVCC_CV
             // 
             this.btnVCC_CV.Location = new System.Drawing.Point(133, 179);
-            this.btnVCC_CV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCC_CV.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCC_CV.Name = "btnVCC_CV";
             this.btnVCC_CV.Size = new System.Drawing.Size(83, 45);
             this.btnVCC_CV.TabIndex = 28;
@@ -157,29 +157,29 @@
             // btnVCCCCVmixed
             // 
             this.btnVCCCCVmixed.Location = new System.Drawing.Point(305, 179);
-            this.btnVCCCCVmixed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCCCCVmixed.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCCCCVmixed.Name = "btnVCCCCVmixed";
             this.btnVCCCCVmixed.Size = new System.Drawing.Size(83, 45);
             this.btnVCCCCVmixed.TabIndex = 29;
-            this.btnVCCCCVmixed.Text = "VCCCCV, mixed";
+            this.btnVCCCCVmixed.Text = "VCCCCV mixed";
             this.btnVCCCCVmixed.UseVisualStyleBackColor = true;
             this.btnVCCCCVmixed.Click += new System.EventHandler(this.btnVCCCCVmixed_Click);
             // 
             // btnVCCCVmixed
             // 
             this.btnVCCCVmixed.Location = new System.Drawing.Point(219, 227);
-            this.btnVCCCVmixed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCCCVmixed.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCCCVmixed.Name = "btnVCCCVmixed";
             this.btnVCCCVmixed.Size = new System.Drawing.Size(83, 45);
             this.btnVCCCVmixed.TabIndex = 30;
-            this.btnVCCCVmixed.Text = "VCCCV, mixed";
+            this.btnVCCCVmixed.Text = "VCCCV mixed";
             this.btnVCCCVmixed.UseVisualStyleBackColor = true;
             this.btnVCCCVmixed.Click += new System.EventHandler(this.btnVCCCVmixed_Click);
             // 
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(218, 286);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 31;
