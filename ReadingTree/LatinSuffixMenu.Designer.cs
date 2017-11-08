@@ -73,7 +73,7 @@
             this.BTN_Ive.Name = "BTN_Ive";
             this.BTN_Ive.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ive.TabIndex = 22;
-            this.BTN_Ive.Text = "-Ive";
+            this.BTN_Ive.Text = "Ive";
             this.BTN_Ive.UseVisualStyleBackColor = true;
             this.BTN_Ive.Click += new System.EventHandler(this.BTN_Ive_Click);
             // 
@@ -83,7 +83,7 @@
             this.BTN_Chun.Name = "BTN_Chun";
             this.BTN_Chun.Size = new System.Drawing.Size(83, 45);
             this.BTN_Chun.TabIndex = 23;
-            this.BTN_Chun.Text = "-Sion /chun/";
+            this.BTN_Chun.Text = "Sion /chun/";
             this.BTN_Chun.UseVisualStyleBackColor = true;
             this.BTN_Chun.Click += new System.EventHandler(this.BTN_Chun_Click);
             // 
@@ -93,7 +93,7 @@
             this.BTN_Shun.Name = "BTN_Shun";
             this.BTN_Shun.Size = new System.Drawing.Size(83, 45);
             this.BTN_Shun.TabIndex = 24;
-            this.BTN_Shun.Text = "-Sion /shun/";
+            this.BTN_Shun.Text = "Sion /shun/";
             this.BTN_Shun.UseVisualStyleBackColor = true;
             this.BTN_Shun.Click += new System.EventHandler(this.BTN_Shun_Click);
             // 
@@ -103,7 +103,7 @@
             this.BTN_zhun.Name = "BTN_zhun";
             this.BTN_zhun.Size = new System.Drawing.Size(83, 45);
             this.BTN_zhun.TabIndex = 25;
-            this.BTN_zhun.Text = "-Sion /zhun/";
+            this.BTN_zhun.Text = "Sion /zhun/";
             this.BTN_zhun.UseVisualStyleBackColor = true;
             this.BTN_zhun.Click += new System.EventHandler(this.BTN_zhun_Click);
             // 
@@ -113,7 +113,7 @@
             this.BTN_Tion.Name = "BTN_Tion";
             this.BTN_Tion.Size = new System.Drawing.Size(83, 45);
             this.BTN_Tion.TabIndex = 26;
-            this.BTN_Tion.Text = "-Tion";
+            this.BTN_Tion.Text = "Tion";
             this.BTN_Tion.UseVisualStyleBackColor = true;
             this.BTN_Tion.Click += new System.EventHandler(this.BTN_Tion_Click);
             // 
@@ -123,7 +123,7 @@
             this.BTN_Ture.Name = "BTN_Ture";
             this.BTN_Ture.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ture.TabIndex = 27;
-            this.BTN_Ture.Text = "-Ture AND -Ure";
+            this.BTN_Ture.Text = "Ture AND -Ure";
             this.BTN_Ture.UseVisualStyleBackColor = true;
             this.BTN_Ture.Click += new System.EventHandler(this.BTN_Ture_Click);
             // 

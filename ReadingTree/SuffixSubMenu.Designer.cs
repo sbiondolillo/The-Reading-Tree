@@ -84,7 +84,7 @@
             this.BTN_Less.Name = "BTN_Less";
             this.BTN_Less.Size = new System.Drawing.Size(83, 45);
             this.BTN_Less.TabIndex = 19;
-            this.BTN_Less.Text = "-Less";
+            this.BTN_Less.Text = "Less";
             this.BTN_Less.UseVisualStyleBackColor = true;
             this.BTN_Less.Click += new System.EventHandler(this.BTN_Less_Click);
             // 
@@ -94,7 +94,7 @@
             this.BTN_Sailed.Name = "BTN_Sailed";
             this.BTN_Sailed.Size = new System.Drawing.Size(83, 45);
             this.BTN_Sailed.TabIndex = 20;
-            this.BTN_Sailed.Text = "-Ed /d/ (Sailed)";
+            this.BTN_Sailed.Text = "Ed /d/ (Sailed)";
             this.BTN_Sailed.UseVisualStyleBackColor = true;
             this.BTN_Sailed.Click += new System.EventHandler(this.BTN_Sailed_Click);
             // 
@@ -104,7 +104,7 @@
             this.BTN_Sanded.Name = "BTN_Sanded";
             this.BTN_Sanded.Size = new System.Drawing.Size(83, 45);
             this.BTN_Sanded.TabIndex = 21;
-            this.BTN_Sanded.Text = "-Ed /ed/ (Sanded)";
+            this.BTN_Sanded.Text = "Ed /ed/ (Sanded)";
             this.BTN_Sanded.UseVisualStyleBackColor = true;
             this.BTN_Sanded.Click += new System.EventHandler(this.BTN_Sanded_Click);
             // 
@@ -114,7 +114,7 @@
             this.BTN_Jumped.Name = "BTN_Jumped";
             this.BTN_Jumped.Size = new System.Drawing.Size(83, 45);
             this.BTN_Jumped.TabIndex = 22;
-            this.BTN_Jumped.Text = "-Ed /t/ (Jumped)";
+            this.BTN_Jumped.Text = "Ed /t/ (Jumped)";
             this.BTN_Jumped.UseVisualStyleBackColor = true;
             this.BTN_Jumped.Click += new System.EventHandler(this.BTN_Jumped_Click);
             // 
@@ -124,7 +124,7 @@
             this.BTN_En.Name = "BTN_En";
             this.BTN_En.Size = new System.Drawing.Size(83, 45);
             this.BTN_En.TabIndex = 23;
-            this.BTN_En.Text = "-En";
+            this.BTN_En.Text = "En";
             this.BTN_En.UseVisualStyleBackColor = true;
             this.BTN_En.Click += new System.EventHandler(this.BTN_En_Click);
             // 
@@ -134,7 +134,7 @@
             this.BTN_Er.Name = "BTN_Er";
             this.BTN_Er.Size = new System.Drawing.Size(83, 45);
             this.BTN_Er.TabIndex = 24;
-            this.BTN_Er.Text = "-Er";
+            this.BTN_Er.Text = "Er";
             this.BTN_Er.UseVisualStyleBackColor = true;
             this.BTN_Er.Click += new System.EventHandler(this.BTN_Er_Click);
             // 
@@ -144,7 +144,7 @@
             this.BTN_Est.Name = "BTN_Est";
             this.BTN_Est.Size = new System.Drawing.Size(83, 45);
             this.BTN_Est.TabIndex = 25;
-            this.BTN_Est.Text = "-Est";
+            this.BTN_Est.Text = "Est";
             this.BTN_Est.UseVisualStyleBackColor = true;
             this.BTN_Est.Click += new System.EventHandler(this.BTN_Est_Click);
             // 
@@ -154,7 +154,7 @@
             this.BTN_Ible.Name = "BTN_Ible";
             this.BTN_Ible.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ible.TabIndex = 26;
-            this.BTN_Ible.Text = "-Ible";
+            this.BTN_Ible.Text = "Ible";
             this.BTN_Ible.UseVisualStyleBackColor = true;
             this.BTN_Ible.Click += new System.EventHandler(this.BTN_Ible_Click);
             // 
@@ -164,7 +164,7 @@
             this.BTN_Ing.Name = "BTN_Ing";
             this.BTN_Ing.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ing.TabIndex = 27;
-            this.BTN_Ing.Text = "-Ing";
+            this.BTN_Ing.Text = "Ing";
             this.BTN_Ing.UseVisualStyleBackColor = true;
             this.BTN_Ing.Click += new System.EventHandler(this.BTN_Ing_Click);
             // 
@@ -174,7 +174,7 @@
             this.BTN_Ly.Name = "BTN_Ly";
             this.BTN_Ly.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ly.TabIndex = 28;
-            this.BTN_Ly.Text = "-Ly";
+            this.BTN_Ly.Text = "Ly";
             this.BTN_Ly.UseVisualStyleBackColor = true;
             this.BTN_Ly.Click += new System.EventHandler(this.BTN_Ly_Click);
             // 
@@ -184,7 +184,7 @@
             this.BTN_Ment.Name = "BTN_Ment";
             this.BTN_Ment.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ment.TabIndex = 29;
-            this.BTN_Ment.Text = "-Ment";
+            this.BTN_Ment.Text = "Ment";
             this.BTN_Ment.UseVisualStyleBackColor = true;
             this.BTN_Ment.Click += new System.EventHandler(this.BTN_Ment_Click);
             // 
@@ -194,7 +194,7 @@
             this.BTN_Ness.Name = "BTN_Ness";
             this.BTN_Ness.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ness.TabIndex = 30;
-            this.BTN_Ness.Text = "-Ness";
+            this.BTN_Ness.Text = "Ness";
             this.BTN_Ness.UseVisualStyleBackColor = true;
             this.BTN_Ness.Click += new System.EventHandler(this.BTN_Ness_Click);
             // 
@@ -204,7 +204,7 @@
             this.BTN_SandZ.Name = "BTN_SandZ";
             this.BTN_SandZ.Size = new System.Drawing.Size(83, 45);
             this.BTN_SandZ.TabIndex = 31;
-            this.BTN_SandZ.Text = "-S /s/ AND /z/ mixed";
+            this.BTN_SandZ.Text = "S /s/ AND /z/ mixed";
             this.BTN_SandZ.UseVisualStyleBackColor = true;
             this.BTN_SandZ.Click += new System.EventHandler(this.BTN_SandZ_Click);
             // 
@@ -214,7 +214,7 @@
             this.BTN_S.Name = "BTN_S";
             this.BTN_S.Size = new System.Drawing.Size(83, 45);
             this.BTN_S.TabIndex = 32;
-            this.BTN_S.Text = "-S /s/";
+            this.BTN_S.Text = "S /s/";
             this.BTN_S.UseVisualStyleBackColor = true;
             this.BTN_S.Click += new System.EventHandler(this.BTN_S_Click);
             // 
@@ -224,7 +224,7 @@
             this.BTN_Z.Name = "BTN_Z";
             this.BTN_Z.Size = new System.Drawing.Size(83, 45);
             this.BTN_Z.TabIndex = 33;
-            this.BTN_Z.Text = "-S /z/";
+            this.BTN_Z.Text = "S /z/";
             this.BTN_Z.UseVisualStyleBackColor = true;
             this.BTN_Z.Click += new System.EventHandler(this.BTN_Z_Click);
             // 
@@ -234,7 +234,7 @@
             this.BTN_Y.Name = "BTN_Y";
             this.BTN_Y.Size = new System.Drawing.Size(83, 45);
             this.BTN_Y.TabIndex = 34;
-            this.BTN_Y.Text = "-Y";
+            this.BTN_Y.Text = "Y";
             this.BTN_Y.UseVisualStyleBackColor = true;
             this.BTN_Y.Click += new System.EventHandler(this.BTN_Y_Click);
             // 
@@ -244,7 +244,7 @@
             this.BTN_Mix.Name = "BTN_Mix";
             this.BTN_Mix.Size = new System.Drawing.Size(83, 45);
             this.BTN_Mix.TabIndex = 35;
-            this.BTN_Mix.Text = "Mixed";
+            this.BTN_Mix.Text = "Mixed Suffixes";
             this.BTN_Mix.UseVisualStyleBackColor = true;
             this.BTN_Mix.Click += new System.EventHandler(this.BTN_Mix_Click);
             // 

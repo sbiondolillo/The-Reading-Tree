@@ -67,7 +67,6 @@ C:\Users\Sam\source\repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.Dig
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.exe.config
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.exe
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.pdb
-C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ASoundsMenu.resources
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsFinalDigraphMenu.resources
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsInitialMenu.resources
