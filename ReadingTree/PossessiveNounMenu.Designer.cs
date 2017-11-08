@@ -61,29 +61,29 @@
             // btnPossessivesSingular
             // 
             this.btnPossessivesSingular.Location = new System.Drawing.Point(262, 106);
-            this.btnPossessivesSingular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPossessivesSingular.Margin = new System.Windows.Forms.Padding(2);
             this.btnPossessivesSingular.Name = "btnPossessivesSingular";
             this.btnPossessivesSingular.Size = new System.Drawing.Size(83, 45);
             this.btnPossessivesSingular.TabIndex = 25;
-            this.btnPossessivesSingular.Text = "Possessives, singular";
+            this.btnPossessivesSingular.Text = "Possessives singular";
             this.btnPossessivesSingular.UseVisualStyleBackColor = true;
             this.btnPossessivesSingular.Click += new System.EventHandler(this.btnPossessivesSingular_Click);
             // 
             // buttonPossessivesPlural
             // 
             this.buttonPossessivesPlural.Location = new System.Drawing.Point(175, 106);
-            this.buttonPossessivesPlural.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonPossessivesPlural.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPossessivesPlural.Name = "buttonPossessivesPlural";
             this.buttonPossessivesPlural.Size = new System.Drawing.Size(83, 45);
             this.buttonPossessivesPlural.TabIndex = 26;
-            this.buttonPossessivesPlural.Text = "Possessives, plural";
+            this.buttonPossessivesPlural.Text = "Possessives plural";
             this.buttonPossessivesPlural.UseVisualStyleBackColor = true;
             this.buttonPossessivesPlural.Click += new System.EventHandler(this.buttonPossessivesPlural_Click);
             // 
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(218, 174);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 27;
