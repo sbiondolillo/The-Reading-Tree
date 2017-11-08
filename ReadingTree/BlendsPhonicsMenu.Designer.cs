@@ -45,9 +45,10 @@
             // 
             // btnConsonantLESyllable
             // 
-            this.btnConsonantLESyllable.Location = new System.Drawing.Point(458, 287);
+            this.btnConsonantLESyllable.Location = new System.Drawing.Point(305, 187);
+            this.btnConsonantLESyllable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConsonantLESyllable.Name = "btnConsonantLESyllable";
-            this.btnConsonantLESyllable.Size = new System.Drawing.Size(125, 70);
+            this.btnConsonantLESyllable.Size = new System.Drawing.Size(83, 45);
             this.btnConsonantLESyllable.TabIndex = 25;
             this.btnConsonantLESyllable.Text = "consonant-le syllable";
             this.btnConsonantLESyllable.UseVisualStyleBackColor = true;
@@ -55,9 +56,10 @@
             // 
             // btnOST
             // 
-            this.btnOST.Location = new System.Drawing.Point(327, 287);
+            this.btnOST.Location = new System.Drawing.Point(218, 187);
+            this.btnOST.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOST.Name = "btnOST";
-            this.btnOST.Size = new System.Drawing.Size(125, 70);
+            this.btnOST.Size = new System.Drawing.Size(83, 45);
             this.btnOST.TabIndex = 24;
             this.btnOST.Text = "-ost:";
             this.btnOST.UseVisualStyleBackColor = true;
@@ -65,9 +67,10 @@
             // 
             // btnOLT
             // 
-            this.btnOLT.Location = new System.Drawing.Point(196, 287);
+            this.btnOLT.Location = new System.Drawing.Point(131, 187);
+            this.btnOLT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOLT.Name = "btnOLT";
-            this.btnOLT.Size = new System.Drawing.Size(125, 70);
+            this.btnOLT.Size = new System.Drawing.Size(83, 45);
             this.btnOLT.TabIndex = 23;
             this.btnOLT.Text = "-olt:";
             this.btnOLT.UseVisualStyleBackColor = true;
@@ -75,9 +78,10 @@
             // 
             // btnOLL
             // 
-            this.btnOLL.Location = new System.Drawing.Point(458, 198);
+            this.btnOLL.Location = new System.Drawing.Point(305, 129);
+            this.btnOLL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOLL.Name = "btnOLL";
-            this.btnOLL.Size = new System.Drawing.Size(125, 70);
+            this.btnOLL.Size = new System.Drawing.Size(83, 45);
             this.btnOLL.TabIndex = 22;
             this.btnOLL.Text = "oll";
             this.btnOLL.UseVisualStyleBackColor = true;
@@ -85,9 +89,10 @@
             // 
             // btnOLD
             // 
-            this.btnOLD.Location = new System.Drawing.Point(327, 198);
+            this.btnOLD.Location = new System.Drawing.Point(218, 129);
+            this.btnOLD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOLD.Name = "btnOLD";
-            this.btnOLD.Size = new System.Drawing.Size(125, 70);
+            this.btnOLD.Size = new System.Drawing.Size(83, 45);
             this.btnOLD.TabIndex = 21;
             this.btnOLD.Text = "old";
             this.btnOLD.UseVisualStyleBackColor = true;
@@ -95,19 +100,21 @@
             // 
             // btnNGNK
             // 
-            this.btnNGNK.Location = new System.Drawing.Point(196, 198);
+            this.btnNGNK.Location = new System.Drawing.Point(131, 129);
+            this.btnNGNK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNGNK.Name = "btnNGNK";
-            this.btnNGNK.Size = new System.Drawing.Size(125, 70);
+            this.btnNGNK.Size = new System.Drawing.Size(83, 45);
             this.btnNGNK.TabIndex = 20;
-            this.btnNGNK.Text = "ng && nk";
+            this.btnNGNK.Text = "ng and nk";
             this.btnNGNK.UseVisualStyleBackColor = true;
             this.btnNGNK.Click += new System.EventHandler(this.btnNGNK_Click);
             // 
             // btnKN
             // 
-            this.btnKN.Location = new System.Drawing.Point(521, 115);
+            this.btnKN.Location = new System.Drawing.Point(347, 75);
+            this.btnKN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnKN.Name = "btnKN";
-            this.btnKN.Size = new System.Drawing.Size(125, 70);
+            this.btnKN.Size = new System.Drawing.Size(83, 45);
             this.btnKN.TabIndex = 19;
             this.btnKN.Text = "kn";
             this.btnKN.UseVisualStyleBackColor = true;
@@ -115,9 +122,10 @@
             // 
             // btnIND
             // 
-            this.btnIND.Location = new System.Drawing.Point(390, 115);
+            this.btnIND.Location = new System.Drawing.Point(260, 75);
+            this.btnIND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIND.Name = "btnIND";
-            this.btnIND.Size = new System.Drawing.Size(125, 70);
+            this.btnIND.Size = new System.Drawing.Size(83, 45);
             this.btnIND.TabIndex = 18;
             this.btnIND.Text = "ind:";
             this.btnIND.UseVisualStyleBackColor = true;
@@ -125,19 +133,21 @@
             // 
             // btnINDMixed
             // 
-            this.btnINDMixed.Location = new System.Drawing.Point(261, 115);
+            this.btnINDMixed.Location = new System.Drawing.Point(174, 75);
+            this.btnINDMixed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnINDMixed.Name = "btnINDMixed";
-            this.btnINDMixed.Size = new System.Drawing.Size(125, 70);
+            this.btnINDMixed.Size = new System.Drawing.Size(83, 45);
             this.btnINDMixed.TabIndex = 17;
-            this.btnINDMixed.Text = "ind,old,ild,ost, olt,oll mixed";
+            this.btnINDMixed.Text = "ind old ild ost olt oll mixed";
             this.btnINDMixed.UseVisualStyleBackColor = true;
             this.btnINDMixed.Click += new System.EventHandler(this.btnINDMixed_Click);
             // 
             // btnILD
             // 
-            this.btnILD.Location = new System.Drawing.Point(132, 115);
+            this.btnILD.Location = new System.Drawing.Point(88, 75);
+            this.btnILD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnILD.Name = "btnILD";
-            this.btnILD.Size = new System.Drawing.Size(125, 70);
+            this.btnILD.Size = new System.Drawing.Size(83, 45);
             this.btnILD.TabIndex = 16;
             this.btnILD.Text = "-ild:";
             this.btnILD.UseVisualStyleBackColor = true;
@@ -149,26 +159,29 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BlendsPhonicsPromptlabel.AutoSize = true;
-            this.BlendsPhonicsPromptlabel.Location = new System.Drawing.Point(233, 65);
+            this.BlendsPhonicsPromptlabel.Location = new System.Drawing.Point(155, 42);
+            this.BlendsPhonicsPromptlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BlendsPhonicsPromptlabel.Name = "BlendsPhonicsPromptlabel";
-            this.BlendsPhonicsPromptlabel.Size = new System.Drawing.Size(313, 20);
+            this.BlendsPhonicsPromptlabel.Size = new System.Drawing.Size(213, 13);
             this.BlendsPhonicsPromptlabel.TabIndex = 27;
             this.BlendsPhonicsPromptlabel.Text = "Please select a category below to continue!";
             // 
             // BlendsPhonicslabel
             // 
             this.BlendsPhonicslabel.AutoSize = true;
-            this.BlendsPhonicslabel.Location = new System.Drawing.Point(328, 25);
+            this.BlendsPhonicslabel.Location = new System.Drawing.Point(219, 16);
+            this.BlendsPhonicslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BlendsPhonicslabel.Name = "BlendsPhonicslabel";
-            this.BlendsPhonicslabel.Size = new System.Drawing.Size(122, 20);
+            this.BlendsPhonicslabel.Size = new System.Drawing.Size(83, 13);
             this.BlendsPhonicslabel.TabIndex = 26;
             this.BlendsPhonicslabel.Text = "Blends, Phonics";
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(327, 386);
+            this.btnMainMenu.Location = new System.Drawing.Point(218, 251);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 28;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -176,10 +189,10 @@
             // 
             // BlendsPhonicsMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(778, 544);
+            this.ClientSize = new System.Drawing.Size(519, 354);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.BlendsPhonicsPromptlabel);
             this.Controls.Add(this.BlendsPhonicslabel);
@@ -193,6 +206,7 @@
             this.Controls.Add(this.btnIND);
             this.Controls.Add(this.btnINDMixed);
             this.Controls.Add(this.btnILD);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BlendsPhonicsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
