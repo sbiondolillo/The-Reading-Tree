@@ -28,7 +28,20 @@ namespace ReadingTree
         }
         private void LevelsMenu_Load(object sender, EventArgs e)
         {
-            headerName.Text = group_name;
+            GroupNameLabel.Text = group_name;
+            InitializeLevelsListBoxes();
+            SelectDefaultRadioButton();
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            MainMenu main = new MainMenu();
+            main.Show();
+            Close();
+        }
+
+        private void InitializeLevelsListBoxes()
+        {
             List<List<string>> words = Methods.GetAllWords(group_name);
             level1Box.DataSource = words[0];
             level2Box.DataSource = words[1];
@@ -37,11 +50,27 @@ namespace ReadingTree
             level5Box.DataSource = words[4];
         }
 
-        private void btnMainMenu_Click(object sender, EventArgs e)
+        private void SelectDefaultRadioButton()
         {
-            MainMenu main = new MainMenu();
-            main.Show();
-            Close();
+            if (level1Box.Items.Count > 0) {
+                radioButtonLevel1.Select();
+            }
+            else if (level2Box.Items.Count > 0)
+            {
+                radioButtonLevel2.Select();
+            }
+            else if (level3Box.Items.Count > 0)
+            {
+                radioButtonLevel3.Select();
+            }
+            else if (level4Box.Items.Count > 0)
+            {
+                radioButtonLevel4.Select();
+            }
+            else
+            {
+                radioButtonLevel5.Select();
+            }
         }
     }
 }
