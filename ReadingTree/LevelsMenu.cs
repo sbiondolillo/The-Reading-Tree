@@ -28,7 +28,7 @@ namespace ReadingTree
         }
         private void LevelsMenu_Load(object sender, EventArgs e)
         {
-            headerName.Text = group_name;
+            GroupNameLabel.Text = group_name;
             List<List<string>> words = Methods.GetAllWords(group_name);
             level1Box.DataSource = words[0];
             level2Box.DataSource = words[1];
