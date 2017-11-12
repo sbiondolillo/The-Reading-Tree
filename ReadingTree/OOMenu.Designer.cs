@@ -41,12 +41,13 @@
             this.BTN_Blue = new System.Windows.Forms.Button();
             this.BTN_Argue = new System.Windows.Forms.Button();
             this.BTN_MainMenu = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LB_OO
             // 
             this.LB_OO.AutoSize = true;
-            this.LB_OO.Location = new System.Drawing.Point(191, 22);
+            this.LB_OO.Location = new System.Drawing.Point(223, 27);
             this.LB_OO.Name = "LB_OO";
             this.LB_OO.Size = new System.Drawing.Size(62, 13);
             this.LB_OO.TabIndex = 0;
@@ -55,7 +56,7 @@
             // LB_Select
             // 
             this.LB_Select.AutoSize = true;
-            this.LB_Select.Location = new System.Drawing.Point(124, 50);
+            this.LB_Select.Location = new System.Drawing.Point(148, 55);
             this.LB_Select.Name = "LB_Select";
             this.LB_Select.Size = new System.Drawing.Size(213, 13);
             this.LB_Select.TabIndex = 1;
@@ -63,7 +64,7 @@
             // 
             // BTN_OO
             // 
-            this.BTN_OO.Location = new System.Drawing.Point(68, 89);
+            this.BTN_OO.Location = new System.Drawing.Point(86, 102);
             this.BTN_OO.Name = "BTN_OO";
             this.BTN_OO.Size = new System.Drawing.Size(83, 45);
             this.BTN_OO.TabIndex = 2;
@@ -73,7 +74,7 @@
             // 
             // BTN_EU
             // 
-            this.BTN_EU.Location = new System.Drawing.Point(170, 89);
+            this.BTN_EU.Location = new System.Drawing.Point(175, 102);
             this.BTN_EU.Name = "BTN_EU";
             this.BTN_EU.Size = new System.Drawing.Size(83, 45);
             this.BTN_EU.TabIndex = 3;
@@ -83,7 +84,7 @@
             // 
             // BTN_Zeus
             // 
-            this.BTN_Zeus.Location = new System.Drawing.Point(271, 89);
+            this.BTN_Zeus.Location = new System.Drawing.Point(264, 102);
             this.BTN_Zeus.Name = "BTN_Zeus";
             this.BTN_Zeus.Size = new System.Drawing.Size(83, 45);
             this.BTN_Zeus.TabIndex = 4;
@@ -93,7 +94,7 @@
             // 
             // BTN_FEUD
             // 
-            this.BTN_FEUD.Location = new System.Drawing.Point(68, 153);
+            this.BTN_FEUD.Location = new System.Drawing.Point(86, 153);
             this.BTN_FEUD.Name = "BTN_FEUD";
             this.BTN_FEUD.Size = new System.Drawing.Size(83, 45);
             this.BTN_FEUD.TabIndex = 5;
@@ -103,7 +104,7 @@
             // 
             // BTN_EW
             // 
-            this.BTN_EW.Location = new System.Drawing.Point(170, 153);
+            this.BTN_EW.Location = new System.Drawing.Point(175, 153);
             this.BTN_EW.Name = "BTN_EW";
             this.BTN_EW.Size = new System.Drawing.Size(83, 45);
             this.BTN_EW.TabIndex = 6;
@@ -113,7 +114,7 @@
             // 
             // BTN_Grew
             // 
-            this.BTN_Grew.Location = new System.Drawing.Point(271, 153);
+            this.BTN_Grew.Location = new System.Drawing.Point(264, 153);
             this.BTN_Grew.Name = "BTN_Grew";
             this.BTN_Grew.Size = new System.Drawing.Size(83, 45);
             this.BTN_Grew.TabIndex = 7;
@@ -123,7 +124,7 @@
             // 
             // BTN_FEW
             // 
-            this.BTN_FEW.Location = new System.Drawing.Point(68, 216);
+            this.BTN_FEW.Location = new System.Drawing.Point(175, 204);
             this.BTN_FEW.Name = "BTN_FEW";
             this.BTN_FEW.Size = new System.Drawing.Size(83, 45);
             this.BTN_FEW.TabIndex = 8;
@@ -133,7 +134,7 @@
             // 
             // BTN_School
             // 
-            this.BTN_School.Location = new System.Drawing.Point(170, 216);
+            this.BTN_School.Location = new System.Drawing.Point(264, 204);
             this.BTN_School.Name = "BTN_School";
             this.BTN_School.Size = new System.Drawing.Size(83, 45);
             this.BTN_School.TabIndex = 9;
@@ -143,7 +144,7 @@
             // 
             // BTN_Blue
             // 
-            this.BTN_Blue.Location = new System.Drawing.Point(271, 216);
+            this.BTN_Blue.Location = new System.Drawing.Point(353, 153);
             this.BTN_Blue.Name = "BTN_Blue";
             this.BTN_Blue.Size = new System.Drawing.Size(83, 45);
             this.BTN_Blue.TabIndex = 10;
@@ -153,7 +154,7 @@
             // 
             // BTN_Argue
             // 
-            this.BTN_Argue.Location = new System.Drawing.Point(170, 278);
+            this.BTN_Argue.Location = new System.Drawing.Point(353, 102);
             this.BTN_Argue.Name = "BTN_Argue";
             this.BTN_Argue.Size = new System.Drawing.Size(83, 45);
             this.BTN_Argue.TabIndex = 11;
@@ -163,20 +164,32 @@
             // 
             // BTN_MainMenu
             // 
-            this.BTN_MainMenu.Location = new System.Drawing.Point(170, 356);
+            this.BTN_MainMenu.Location = new System.Drawing.Point(337, 309);
             this.BTN_MainMenu.Name = "BTN_MainMenu";
-            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 45);
+            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 33);
             this.BTN_MainMenu.TabIndex = 12;
             this.BTN_MainMenu.Text = "Main Menu";
             this.BTN_MainMenu.UseVisualStyleBackColor = true;
             this.BTN_MainMenu.Click += new System.EventHandler(this.BTN_MainMenu_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(425, 310);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 33);
+            this.btn_back.TabIndex = 27;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // OOMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(436, 433);
+            this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.BTN_MainMenu);
             this.Controls.Add(this.BTN_Argue);
             this.Controls.Add(this.BTN_Blue);
@@ -213,5 +226,6 @@
         private System.Windows.Forms.Button BTN_Blue;
         private System.Windows.Forms.Button BTN_Argue;
         private System.Windows.Forms.Button BTN_MainMenu;
+        private System.Windows.Forms.Button btn_back;
     }
 }

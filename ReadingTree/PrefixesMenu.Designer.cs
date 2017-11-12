@@ -34,12 +34,13 @@
             this.BTN_LP = new System.Windows.Forms.Button();
             this.BTN_LCP = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LB_Prefix
             // 
             this.LB_Prefix.AutoSize = true;
-            this.LB_Prefix.Location = new System.Drawing.Point(189, 20);
+            this.LB_Prefix.Location = new System.Drawing.Point(229, 35);
             this.LB_Prefix.Name = "LB_Prefix";
             this.LB_Prefix.Size = new System.Drawing.Size(44, 13);
             this.LB_Prefix.TabIndex = 0;
@@ -47,9 +48,12 @@
             // 
             // LB_Select
             // 
+            this.LB_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LB_Select.AutoSize = true;
             this.LB_Select.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.LB_Select.Location = new System.Drawing.Point(107, 61);
+            this.LB_Select.Location = new System.Drawing.Point(145, 71);
             this.LB_Select.Name = "LB_Select";
             this.LB_Select.Size = new System.Drawing.Size(213, 13);
             this.LB_Select.TabIndex = 1;
@@ -58,7 +62,7 @@
             // 
             // BTN_NP
             // 
-            this.BTN_NP.Location = new System.Drawing.Point(63, 110);
+            this.BTN_NP.Location = new System.Drawing.Point(124, 110);
             this.BTN_NP.Name = "BTN_NP";
             this.BTN_NP.Size = new System.Drawing.Size(83, 55);
             this.BTN_NP.TabIndex = 2;
@@ -68,7 +72,7 @@
             // 
             // BTN_LP
             // 
-            this.BTN_LP.Location = new System.Drawing.Point(170, 110);
+            this.BTN_LP.Location = new System.Drawing.Point(213, 110);
             this.BTN_LP.Name = "BTN_LP";
             this.BTN_LP.Size = new System.Drawing.Size(83, 55);
             this.BTN_LP.TabIndex = 3;
@@ -78,7 +82,7 @@
             // 
             // BTN_LCP
             // 
-            this.BTN_LCP.Location = new System.Drawing.Point(271, 110);
+            this.BTN_LCP.Location = new System.Drawing.Point(302, 110);
             this.BTN_LCP.Name = "BTN_LCP";
             this.BTN_LCP.Size = new System.Drawing.Size(83, 55);
             this.BTN_LCP.TabIndex = 4;
@@ -88,20 +92,32 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(170, 189);
+            this.button4.Location = new System.Drawing.Point(337, 310);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 43);
+            this.button4.Size = new System.Drawing.Size(83, 33);
             this.button4.TabIndex = 5;
             this.button4.Text = "Main Menu";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(425, 310);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 33);
+            this.btn_back.TabIndex = 26;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // PrefixesMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(419, 276);
+            this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.BTN_LCP);
             this.Controls.Add(this.BTN_LP);
@@ -124,5 +140,6 @@
         private System.Windows.Forms.Button BTN_LP;
         private System.Windows.Forms.Button BTN_LCP;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_back;
     }
 }

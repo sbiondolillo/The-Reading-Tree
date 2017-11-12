@@ -65,5 +65,12 @@ namespace ReadingTree
             ysounds.Show();
             Close();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            MainMenu m = new MainMenu();
+            m.Show();
+            Close();
+        }
     }
 }
