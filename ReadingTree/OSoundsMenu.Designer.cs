@@ -42,7 +42,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 35;
@@ -53,7 +53,7 @@
             // btnOWasOSnow
             // 
             this.btnOWasOSnow.Location = new System.Drawing.Point(260, 149);
-            this.btnOWasOSnow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOWasOSnow.Margin = new System.Windows.Forms.Padding(2);
             this.btnOWasOSnow.Name = "btnOWasOSnow";
             this.btnOWasOSnow.Size = new System.Drawing.Size(83, 45);
             this.btnOWasOSnow.TabIndex = 34;
@@ -64,7 +64,7 @@
             // btnOI
             // 
             this.btnOI.Location = new System.Drawing.Point(174, 149);
-            this.btnOI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOI.Margin = new System.Windows.Forms.Padding(2);
             this.btnOI.Name = "btnOI";
             this.btnOI.Size = new System.Drawing.Size(83, 45);
             this.btnOI.TabIndex = 33;
@@ -75,7 +75,7 @@
             // btnOE
             // 
             this.btnOE.Location = new System.Drawing.Point(217, 100);
-            this.btnOE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOE.Margin = new System.Windows.Forms.Padding(2);
             this.btnOE.Name = "btnOE";
             this.btnOE.Size = new System.Drawing.Size(83, 45);
             this.btnOE.TabIndex = 32;
@@ -86,7 +86,7 @@
             // btnOA
             // 
             this.btnOA.Location = new System.Drawing.Point(131, 100);
-            this.btnOA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOA.Margin = new System.Windows.Forms.Padding(2);
             this.btnOA.Name = "btnOA";
             this.btnOA.Size = new System.Drawing.Size(83, 45);
             this.btnOA.TabIndex = 31;
@@ -120,7 +120,7 @@
             // btnOE2
             // 
             this.btnOE2.Location = new System.Drawing.Point(305, 100);
-            this.btnOE2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOE2.Margin = new System.Windows.Forms.Padding(2);
             this.btnOE2.Name = "btnOE2";
             this.btnOE2.Size = new System.Drawing.Size(83, 45);
             this.btnOE2.TabIndex = 36;
@@ -154,7 +154,7 @@
             this.Controls.Add(this.btnOA);
             this.Controls.Add(this.OSoundsPromptLabel);
             this.Controls.Add(this.OSoundslabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "OSoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

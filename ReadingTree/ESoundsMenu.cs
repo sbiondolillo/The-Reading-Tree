@@ -15,6 +15,7 @@ namespace ReadingTree
         public ESoundsMenu()
         {
             InitializeComponent();
+            history.prev = "ESoundsMenu";
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace ReadingTree
         public ASoundsMenu()
         {
             InitializeComponent();
+            history.prev = "ASoundsMenu";
         }
 
         private void btnAESounds_Click(object sender, EventArgs e)

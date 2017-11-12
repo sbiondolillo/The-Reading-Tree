@@ -72,5 +72,11 @@ namespace ReadingTree
                 radioButtonLevel5.Select();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            history.doTheStuff();
+            Close();
+        }
     }
 }

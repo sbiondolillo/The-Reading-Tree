@@ -24,6 +24,7 @@ namespace ReadingTree
         public OSoundsMenu()
         {
             InitializeComponent();
+            history.prev = "OSoundsMenu";
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
