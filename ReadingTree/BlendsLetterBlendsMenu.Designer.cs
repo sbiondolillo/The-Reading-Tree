@@ -43,12 +43,13 @@
             this.BlendsLetterBlendsPromptlabel = new System.Windows.Forms.Label();
             this.BlendsLetterBlendslabel = new System.Windows.Forms.Label();
             this.btnMainMenu = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSchwaAAlaska
             // 
             this.btnSchwaAAlaska.Location = new System.Drawing.Point(347, 198);
-            this.btnSchwaAAlaska.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSchwaAAlaska.Margin = new System.Windows.Forms.Padding(2);
             this.btnSchwaAAlaska.Name = "btnSchwaAAlaska";
             this.btnSchwaAAlaska.Size = new System.Drawing.Size(83, 45);
             this.btnSchwaAAlaska.TabIndex = 27;
@@ -59,7 +60,7 @@
             // btnQUASquash
             // 
             this.btnQUASquash.Location = new System.Drawing.Point(261, 198);
-            this.btnQUASquash.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQUASquash.Margin = new System.Windows.Forms.Padding(2);
             this.btnQUASquash.Name = "btnQUASquash";
             this.btnQUASquash.Size = new System.Drawing.Size(83, 45);
             this.btnQUASquash.TabIndex = 26;
@@ -70,7 +71,7 @@
             // btnOY
             // 
             this.btnOY.Location = new System.Drawing.Point(175, 198);
-            this.btnOY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOY.Margin = new System.Windows.Forms.Padding(2);
             this.btnOY.Name = "btnOY";
             this.btnOY.Size = new System.Drawing.Size(83, 45);
             this.btnOY.TabIndex = 25;
@@ -81,7 +82,7 @@
             // btnWAWater
             // 
             this.btnWAWater.Location = new System.Drawing.Point(89, 198);
-            this.btnWAWater.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWAWater.Margin = new System.Windows.Forms.Padding(2);
             this.btnWAWater.Name = "btnWAWater";
             this.btnWAWater.Size = new System.Drawing.Size(83, 45);
             this.btnWAWater.TabIndex = 24;
@@ -92,7 +93,7 @@
             // btnDGE
             // 
             this.btnDGE.Location = new System.Drawing.Point(347, 140);
-            this.btnDGE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDGE.Margin = new System.Windows.Forms.Padding(2);
             this.btnDGE.Name = "btnDGE";
             this.btnDGE.Size = new System.Drawing.Size(83, 45);
             this.btnDGE.TabIndex = 23;
@@ -103,7 +104,7 @@
             // btnAbleLatinSuffix
             // 
             this.btnAbleLatinSuffix.Location = new System.Drawing.Point(261, 140);
-            this.btnAbleLatinSuffix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAbleLatinSuffix.Margin = new System.Windows.Forms.Padding(2);
             this.btnAbleLatinSuffix.Name = "btnAbleLatinSuffix";
             this.btnAbleLatinSuffix.Size = new System.Drawing.Size(83, 45);
             this.btnAbleLatinSuffix.TabIndex = 22;
@@ -114,7 +115,7 @@
             // btnOWPlow
             // 
             this.btnOWPlow.Location = new System.Drawing.Point(175, 140);
-            this.btnOWPlow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOWPlow.Margin = new System.Windows.Forms.Padding(2);
             this.btnOWPlow.Name = "btnOWPlow";
             this.btnOWPlow.Size = new System.Drawing.Size(83, 45);
             this.btnOWPlow.TabIndex = 21;
@@ -125,7 +126,7 @@
             // btnOUOut
             // 
             this.btnOUOut.Location = new System.Drawing.Point(89, 140);
-            this.btnOUOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOUOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnOUOut.Name = "btnOUOut";
             this.btnOUOut.Size = new System.Drawing.Size(83, 45);
             this.btnOUOut.TabIndex = 20;
@@ -136,7 +137,7 @@
             // btnAll
             // 
             this.btnAll.Location = new System.Drawing.Point(347, 86);
-            this.btnAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(2);
             this.btnAll.Name = "btnAll";
             this.btnAll.Size = new System.Drawing.Size(83, 45);
             this.btnAll.TabIndex = 19;
@@ -147,7 +148,7 @@
             // btnALALLMixed
             // 
             this.btnALALLMixed.Location = new System.Drawing.Point(261, 86);
-            this.btnALALLMixed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnALALLMixed.Margin = new System.Windows.Forms.Padding(2);
             this.btnALALLMixed.Name = "btnALALLMixed";
             this.btnALALLMixed.Size = new System.Drawing.Size(83, 45);
             this.btnALALLMixed.TabIndex = 18;
@@ -158,7 +159,7 @@
             // btnSEasZ
             // 
             this.btnSEasZ.Location = new System.Drawing.Point(175, 86);
-            this.btnSEasZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSEasZ.Margin = new System.Windows.Forms.Padding(2);
             this.btnSEasZ.Name = "btnSEasZ";
             this.btnSEasZ.Size = new System.Drawing.Size(83, 45);
             this.btnSEasZ.TabIndex = 17;
@@ -169,7 +170,7 @@
             // btnQU
             // 
             this.btnQU.Location = new System.Drawing.Point(89, 86);
-            this.btnQU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQU.Margin = new System.Windows.Forms.Padding(2);
             this.btnQU.Name = "btnQU";
             this.btnQU.Size = new System.Drawing.Size(83, 45);
             this.btnQU.TabIndex = 16;
@@ -205,14 +206,25 @@
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(218, 260);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 28;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(425, 310);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 33);
+            this.btn_back.TabIndex = 29;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // BlendsLetterBlendsMenu
             // 
@@ -220,6 +232,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnSchwaAAlaska);
             this.Controls.Add(this.btnQUASquash);
@@ -235,7 +248,7 @@
             this.Controls.Add(this.btnQU);
             this.Controls.Add(this.BlendsLetterBlendsPromptlabel);
             this.Controls.Add(this.BlendsLetterBlendslabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BlendsLetterBlendsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
@@ -261,5 +274,6 @@
         private System.Windows.Forms.Label BlendsLetterBlendsPromptlabel;
         private System.Windows.Forms.Label BlendsLetterBlendslabel;
         private System.Windows.Forms.Button btnMainMenu;
+        private System.Windows.Forms.Button btn_back;
     }
 }
