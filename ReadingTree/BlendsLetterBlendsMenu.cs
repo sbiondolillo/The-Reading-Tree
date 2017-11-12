@@ -15,6 +15,7 @@ namespace ReadingTree
         public BlendsLetterBlendsMenu()
         {
             InitializeComponent();
+            history.prev = "BlendsLetterBlendsMenu";
         }
 
         private void btnQU_Click(object sender, EventArgs e)

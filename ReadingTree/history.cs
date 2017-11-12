@@ -16,44 +16,79 @@ namespace ReadingTree
             {
                 case "ASoundsMenu":
                     {
-                        ASoundsMenu ASoundsMenu = new ASoundsMenu();
-                        ASoundsMenu.Show();
+                        ASoundsMenu previous = new ASoundsMenu();
+                        previous.Show();
                         break;
                     }
                 case "ESoundsMenu":
                     {
-                        ESoundsMenu ASoundsMenu = new ESoundsMenu();
-                        ASoundsMenu.Show();
+                        ESoundsMenu previous = new ESoundsMenu();
+                        previous.Show();
                         break;
                     }
                 case "ISoundsMenu":
                     {
-                        ISoundsMenu ASoundsMenu = new ISoundsMenu();
-                        ASoundsMenu.Show();
+                        ISoundsMenu previous = new ISoundsMenu();
+                        previous.Show();
                         break;
                     }
                 case "OSoundsMenu":
                     {
-                        OSoundsMenu ASoundsMenu = new OSoundsMenu();
-                        ASoundsMenu.Show();
+                        OSoundsMenu previous = new OSoundsMenu();
+                        previous.Show();
                         break;
                     }
                 case "USoundsMenu":
                     {
-                        USoundsMenu ASoundsMenu = new USoundsMenu();
-                        ASoundsMenu.Show();
+                        USoundsMenu previous = new USoundsMenu();
+                        previous.Show();
                         break;
                     }
                 case "YSoundsMenu":
                     {
-                        YSoundsMenu ASoundsMenu = new YSoundsMenu();
-                        ASoundsMenu.Show();
+                        YSoundsMenu previous = new YSoundsMenu();
+                        previous.Show();
                         break;
+                    }
+                case "BlendsSpellingRulesMenu":
+                    {
+                        BlendsSpellingRulesMenu previous = new BlendsSpellingRulesMenu();
+                        previous.Show();
+                        break;
+                    }
+                case "BlendsInitialMenu":
+                    {
+                        BlendsInitialMenu previous = new BlendsInitialMenu();
+                        previous.Show();
+                        break;
+                        
+                    }
+                case "BlendsPhonicsMenu":
+                    {
+                        BlendsPhonicsMenu previous = new BlendsPhonicsMenu();
+                        previous.Show();
+                        break;
+
+                    }
+                case "BlendsLetterBlendsMenu":
+                    {
+                        BlendsLetterBlendsMenu previous = new BlendsLetterBlendsMenu();
+                        previous.Show();
+                        break;
+
+                    }
+                case "BlendsFinalDigraphMenu":
+                    {
+                        BlendsFinalDigraphMenu previous = new BlendsFinalDigraphMenu();
+                        previous.Show();
+                        break;
+
                     }
                     defualt:
                     {
                         break;
                     }
+                    
             }
         }
     }

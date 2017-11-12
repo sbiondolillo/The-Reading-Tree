@@ -15,6 +15,7 @@ namespace ReadingTree
         public BlendsFinalDigraphMenu()
         {
             InitializeComponent();
+            history.prev = "BlendsFinalDigraphMenu";
         }
 
         private void btnBlendsDigraph_Click(object sender, EventArgs e)
