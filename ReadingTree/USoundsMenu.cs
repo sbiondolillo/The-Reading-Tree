@@ -64,5 +64,12 @@ namespace ReadingTree
             level.Show();
             Close();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            VowelSoundsMenu v = new VowelSoundsMenu();
+            v.Show();
+            Close();
+        }
     }
 }
