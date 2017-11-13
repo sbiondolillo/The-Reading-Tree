@@ -48,7 +48,6 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            History.ClearHistory();
             Close();
         }
 

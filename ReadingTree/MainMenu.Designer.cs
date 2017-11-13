@@ -75,7 +75,7 @@
             // btnVowelSounds
             // 
             this.btnVowelSounds.Location = new System.Drawing.Point(89, 89);
-            this.btnVowelSounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVowelSounds.Margin = new System.Windows.Forms.Padding(2);
             this.btnVowelSounds.Name = "btnVowelSounds";
             this.btnVowelSounds.Size = new System.Drawing.Size(83, 45);
             this.btnVowelSounds.TabIndex = 2;
@@ -86,7 +86,7 @@
             // btnBlends
             // 
             this.btnBlends.Location = new System.Drawing.Point(175, 89);
-            this.btnBlends.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlends.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlends.Name = "btnBlends";
             this.btnBlends.Size = new System.Drawing.Size(83, 45);
             this.btnBlends.TabIndex = 3;
@@ -97,7 +97,7 @@
             // btnRs
             // 
             this.btnRs.Location = new System.Drawing.Point(261, 89);
-            this.btnRs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRs.Margin = new System.Windows.Forms.Padding(2);
             this.btnRs.Name = "btnRs";
             this.btnRs.Size = new System.Drawing.Size(83, 45);
             this.btnRs.TabIndex = 4;
@@ -108,7 +108,7 @@
             // btnCVC
             // 
             this.btnCVC.Location = new System.Drawing.Point(347, 89);
-            this.btnCVC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCVC.Margin = new System.Windows.Forms.Padding(2);
             this.btnCVC.Name = "btnCVC";
             this.btnCVC.Size = new System.Drawing.Size(83, 45);
             this.btnCVC.TabIndex = 5;
@@ -119,7 +119,7 @@
             // btnOOSounds
             // 
             this.btnOOSounds.Location = new System.Drawing.Point(347, 143);
-            this.btnOOSounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOOSounds.Margin = new System.Windows.Forms.Padding(2);
             this.btnOOSounds.Name = "btnOOSounds";
             this.btnOOSounds.Size = new System.Drawing.Size(83, 45);
             this.btnOOSounds.TabIndex = 9;
@@ -130,7 +130,7 @@
             // btnRoots
             // 
             this.btnRoots.Location = new System.Drawing.Point(261, 143);
-            this.btnRoots.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRoots.Margin = new System.Windows.Forms.Padding(2);
             this.btnRoots.Name = "btnRoots";
             this.btnRoots.Size = new System.Drawing.Size(83, 45);
             this.btnRoots.TabIndex = 8;
@@ -141,7 +141,7 @@
             // btnSuffix
             // 
             this.btnSuffix.Location = new System.Drawing.Point(175, 143);
-            this.btnSuffix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSuffix.Margin = new System.Windows.Forms.Padding(2);
             this.btnSuffix.Name = "btnSuffix";
             this.btnSuffix.Size = new System.Drawing.Size(83, 45);
             this.btnSuffix.TabIndex = 7;
@@ -152,7 +152,7 @@
             // btnPrefix
             // 
             this.btnPrefix.Location = new System.Drawing.Point(89, 143);
-            this.btnPrefix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrefix.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrefix.Name = "btnPrefix";
             this.btnPrefix.Size = new System.Drawing.Size(83, 45);
             this.btnPrefix.TabIndex = 6;
@@ -163,7 +163,7 @@
             // btnPossessiveNoun
             // 
             this.btnPossessiveNoun.Location = new System.Drawing.Point(347, 201);
-            this.btnPossessiveNoun.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPossessiveNoun.Margin = new System.Windows.Forms.Padding(2);
             this.btnPossessiveNoun.Name = "btnPossessiveNoun";
             this.btnPossessiveNoun.Size = new System.Drawing.Size(83, 45);
             this.btnPossessiveNoun.TabIndex = 13;
@@ -174,7 +174,7 @@
             // btnConsonantManipulation
             // 
             this.btnConsonantManipulation.Location = new System.Drawing.Point(261, 201);
-            this.btnConsonantManipulation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsonantManipulation.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsonantManipulation.Name = "btnConsonantManipulation";
             this.btnConsonantManipulation.Size = new System.Drawing.Size(83, 45);
             this.btnConsonantManipulation.TabIndex = 12;
@@ -185,7 +185,7 @@
             // btnDigraph
             // 
             this.btnDigraph.Location = new System.Drawing.Point(175, 201);
-            this.btnDigraph.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDigraph.Margin = new System.Windows.Forms.Padding(2);
             this.btnDigraph.Name = "btnDigraph";
             this.btnDigraph.Size = new System.Drawing.Size(83, 45);
             this.btnDigraph.TabIndex = 11;
@@ -196,7 +196,7 @@
             // btnVCVariables
             // 
             this.btnVCVariables.Location = new System.Drawing.Point(89, 201);
-            this.btnVCVariables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVCVariables.Margin = new System.Windows.Forms.Padding(2);
             this.btnVCVariables.Name = "btnVCVariables";
             this.btnVCVariables.Size = new System.Drawing.Size(83, 45);
             this.btnVCVariables.TabIndex = 10;
@@ -207,7 +207,7 @@
             // btnMisc
             // 
             this.btnMisc.Location = new System.Drawing.Point(261, 255);
-            this.btnMisc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMisc.Margin = new System.Windows.Forms.Padding(2);
             this.btnMisc.Name = "btnMisc";
             this.btnMisc.Size = new System.Drawing.Size(83, 45);
             this.btnMisc.TabIndex = 16;
@@ -218,7 +218,7 @@
             // btnContractions
             // 
             this.btnContractions.Location = new System.Drawing.Point(175, 255);
-            this.btnContractions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnContractions.Margin = new System.Windows.Forms.Padding(2);
             this.btnContractions.Name = "btnContractions";
             this.btnContractions.Size = new System.Drawing.Size(83, 45);
             this.btnContractions.TabIndex = 15;
@@ -248,7 +248,7 @@
             this.Controls.Add(this.btnVowelSounds);
             this.Controls.Add(this.welcomePromptTwoLabel);
             this.Controls.Add(this.welcomePromptOneLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";

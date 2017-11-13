@@ -58,7 +58,6 @@ namespace ReadingTree
             MainMenu main = new MainMenu();
             main.Show();
             Close();
-            History.ClearHistory();
         }
 
         private void btn_back_Click(object sender, EventArgs e)

@@ -99,7 +99,6 @@ namespace ReadingTree
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
-            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();

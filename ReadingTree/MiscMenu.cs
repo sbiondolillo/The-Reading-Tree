@@ -19,7 +19,6 @@ namespace ReadingTree
 
         private void BTN_MainMenu_Click(object sender, EventArgs e)
         {
-            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();

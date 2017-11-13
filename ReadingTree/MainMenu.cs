@@ -15,6 +15,7 @@ namespace ReadingTree
         public MainMenu()
         {
             InitializeComponent();
+            History.ClearHistory();
         }
 
         private void btnVowelSounds_Click(object sender, EventArgs e)
@@ -128,5 +129,6 @@ namespace ReadingTree
             contractionsMenu.Show();
             Hide();
         }
+     
     }
 }

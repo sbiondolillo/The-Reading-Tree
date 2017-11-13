@@ -30,7 +30,10 @@ namespace ReadingTree
             {
                 foreach (System.Windows.Forms.Form form in prev)
                 {
-                    form.Close();
+                    if (form is MainMenu)
+                        form.Hide();
+                    else
+                        form.Close();
                 }
             }
             prev = new Stack<System.Windows.Forms.Form>();
