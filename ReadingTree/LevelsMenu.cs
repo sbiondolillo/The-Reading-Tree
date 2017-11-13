@@ -13,6 +13,7 @@ namespace ReadingTree
     public partial class LevelsMenu : Form
     {
         private string group_name = "";
+        private bool userClosed { get; set; }
         public LevelsMenu()
         {
             InitializeComponent();
@@ -78,6 +79,15 @@ namespace ReadingTree
             System.Windows.Forms.Form previous = History.GetPrev();
             previous.Show();
             Close();
+        }
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            userClosed = true;
+            Close();
+        }
+        private void LevelsMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
