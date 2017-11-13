@@ -48,6 +48,7 @@
             this.BTN_Z = new System.Windows.Forms.Button();
             this.BTN_Y = new System.Windows.Forms.Button();
             this.BTN_Mix = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LB_Select
@@ -70,9 +71,9 @@
             // 
             // BTN_MainMenu
             // 
-            this.BTN_MainMenu.Location = new System.Drawing.Point(200, 397);
+            this.BTN_MainMenu.Location = new System.Drawing.Point(290, 409);
             this.BTN_MainMenu.Name = "BTN_MainMenu";
-            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 45);
+            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 33);
             this.BTN_MainMenu.TabIndex = 18;
             this.BTN_MainMenu.Text = "Main Menu";
             this.BTN_MainMenu.UseVisualStyleBackColor = true;
@@ -248,12 +249,24 @@
             this.BTN_Mix.UseVisualStyleBackColor = true;
             this.BTN_Mix.Click += new System.EventHandler(this.BTN_Mix_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(378, 410);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 33);
+            this.btn_back.TabIndex = 36;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // SuffixSubMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(472, 454);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.BTN_Mix);
             this.Controls.Add(this.BTN_Y);
             this.Controls.Add(this.BTN_Z);
@@ -304,5 +317,6 @@
         private System.Windows.Forms.Button BTN_Z;
         private System.Windows.Forms.Button BTN_Y;
         private System.Windows.Forms.Button BTN_Mix;
+        private System.Windows.Forms.Button btn_back;
     }
 }
