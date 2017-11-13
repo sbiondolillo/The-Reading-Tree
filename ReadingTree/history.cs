@@ -8,6 +8,10 @@ namespace ReadingTree
 {
     public static class History
     {
+        static History()
+        {
+            prev = new Stack<System.Windows.Forms.Form>();
+        }
         public static Stack<System.Windows.Forms.Form> prev { get; set; }
         
         public static void SetPrev(System.Windows.Forms.Form parentForm)
@@ -20,5 +24,16 @@ namespace ReadingTree
             return prev.Pop();
         }
         
+        public static void ClearHistory()
+        {
+            if (prev != null)
+            {
+                foreach (System.Windows.Forms.Form form in prev)
+                {
+                    form.Close();
+                }
+            }
+            prev = new Stack<System.Windows.Forms.Form>();
+        }
     }
 }

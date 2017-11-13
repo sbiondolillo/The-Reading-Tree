@@ -19,46 +19,52 @@ namespace ReadingTree
 
         private void btnAR_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnER_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnIR_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnOR_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnUR_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
+            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();

@@ -19,6 +19,7 @@ namespace ReadingTree
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
+            History.ClearHistory();
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
             Close();
@@ -26,74 +27,83 @@ namespace ReadingTree
 
         private void btnDoubleConsonants_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnFlossRule_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnX_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnGh_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnGn_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnWr_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnG_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnY_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnC_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btn_back_Click(object sender, EventArgs e)

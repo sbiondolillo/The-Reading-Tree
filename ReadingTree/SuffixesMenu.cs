@@ -19,23 +19,26 @@ namespace ReadingTree
 
         private void BTN_MainMenu_Click(object sender, EventArgs e)
         {
+            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
-            this.Hide();
+            Close();
         }
 
         private void BTN_Suffix_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             SuffixSubMenu SufSubmenu = new SuffixSubMenu();
             SufSubmenu.Show();
-            this.Hide();
+            Hide();
         }
 
         private void BTN_LS_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             LatinSuffixMenu LSmenu = new LatinSuffixMenu();
             LSmenu.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btn_back_Click(object sender, EventArgs e)

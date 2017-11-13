@@ -19,6 +19,7 @@ namespace ReadingTree
 
         private void BTN_MainMenu_Click(object sender, EventArgs e)
         {
+            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();
@@ -29,7 +30,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void BTN_Non_Click(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void BTN_Dis_Click(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void BTN_Sub_Click(object sender, EventArgs e)
@@ -53,7 +54,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void BTN_Un_Click(object sender, EventArgs e)
@@ -61,7 +62,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
     }
 }

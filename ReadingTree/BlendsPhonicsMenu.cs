@@ -22,7 +22,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnINDMixed_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnIND_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnKN_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnNGNK_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnOLD_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnOLL_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnOLT_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnOST_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnConsonantLESyllable_Click(object sender, EventArgs e)
@@ -94,11 +94,12 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
+            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();

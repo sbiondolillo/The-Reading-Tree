@@ -23,7 +23,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnAISounds_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnAUSounds_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnAYSounds_Click(object sender, EventArgs e)
@@ -50,15 +50,15 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             MainMenu main = new MainMenu();
             main.Show();
             Close();
+            History.ClearHistory();
         }
 
         private void btn_back_Click(object sender, EventArgs e)

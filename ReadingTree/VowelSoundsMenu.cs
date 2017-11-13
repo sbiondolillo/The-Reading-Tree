@@ -19,7 +19,7 @@ namespace ReadingTree
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
+            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();
@@ -30,7 +30,7 @@ namespace ReadingTree
             History.SetPrev(this);
             ASoundsMenu asounds = new ASoundsMenu();
             asounds.Show();
-            Close();
+            Hide();
         }
 
         private void btnESounds_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace ReadingTree
             History.SetPrev(this);
             ESoundsMenu esounds = new ESoundsMenu();
             esounds.Show();
-            Close();
+            Hide();
         }
 
         private void btnISounds_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace ReadingTree
             History.SetPrev(this);
             ISoundsMenu isounds = new ISoundsMenu();
             isounds.Show();
-            Close();
+            Hide();
         }
 
         private void btnOSounds_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace ReadingTree
             History.SetPrev(this);
             OSoundsMenu osounds = new OSoundsMenu();
             osounds.Show();
-            Close();
+            Hide();
         }
 
         private void btnUSounds_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace ReadingTree
             History.SetPrev(this);
             USoundsMenu usounds = new USoundsMenu();
             usounds.Show();
-            Close();
+            Hide();
         }
 
         private void btnYSounds_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace ReadingTree
             History.SetPrev(this);
             YSoundsMenu ysounds = new YSoundsMenu();
             ysounds.Show();
-            Close();
+            Hide();
         }
 
         private void btn_back_Click(object sender, EventArgs e)

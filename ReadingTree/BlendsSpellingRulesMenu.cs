@@ -15,11 +15,11 @@ namespace ReadingTree
         public BlendsSpellingRulesMenu()
         {
             InitializeComponent();
-            history.prev = "BlendsSpellingRulesMenu";
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
+            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();
@@ -27,18 +27,20 @@ namespace ReadingTree
 
         private void btn111SpellingRule_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btn211SpellingRule_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btn_back_Click(object sender, EventArgs e)

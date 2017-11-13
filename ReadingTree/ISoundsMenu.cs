@@ -24,11 +24,11 @@ namespace ReadingTree
         public ISoundsMenu()
         {
             InitializeComponent();
-            history.prev = "ISoundsMenu";
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
+            History.ClearHistory();
             MainMenu main = new MainMenu();
             main.Show();
             Close();
@@ -39,7 +39,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
         private void btnIEasIPie_Click(object sender, EventArgs e)
         {
@@ -47,7 +47,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
         private void btnIGH_Click(object sender, EventArgs e)
         {
@@ -55,7 +55,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
         private void btnIasECalcium_Click(object sender, EventArgs e)
         {
@@ -63,7 +63,7 @@ namespace ReadingTree
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
