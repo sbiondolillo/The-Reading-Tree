@@ -12,9 +12,11 @@ namespace ReadingTree
 {
     public partial class ASoundsMenu : Form
     {
+        private bool userClosed { get; set; }
         public ASoundsMenu()
         {
             InitializeComponent();
+            userClosed = false;
         }
 
         private void btnAESounds_Click(object sender, EventArgs e)
@@ -65,6 +67,15 @@ namespace ReadingTree
             System.Windows.Forms.Form previous = History.GetPrev();
             previous.Show();
             Close();
+        }
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            userClosed = true;
+            Close();
+        }
+        private void ASoundsMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
