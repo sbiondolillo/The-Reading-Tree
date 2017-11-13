@@ -15,31 +15,33 @@ namespace ReadingTree
         public BlendsFinalDigraphMenu()
         {
             InitializeComponent();
-            history.prev = "BlendsFinalDigraphMenu";
         }
 
         private void btnBlendsDigraph_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnBlendsFinalMixed_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnBlendsFinalDigraph_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Close();
+            Hide();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
@@ -51,8 +53,8 @@ namespace ReadingTree
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            BlendsMenu b = new BlendsMenu();
-            b.Show();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }

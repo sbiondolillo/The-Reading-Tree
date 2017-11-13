@@ -21,27 +21,29 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            this.Hide();
+            Close();
         }
 
         private void BTN_Suffix_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             SuffixSubMenu SufSubmenu = new SuffixSubMenu();
             SufSubmenu.Show();
-            this.Hide();
+            Hide();
         }
 
         private void BTN_LS_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             LatinSuffixMenu LSmenu = new LatinSuffixMenu();
             LSmenu.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            MainMenu m = new MainMenu();
-            m.Show();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }

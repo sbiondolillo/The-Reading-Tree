@@ -33,7 +33,7 @@
             this.BTN_NP = new System.Windows.Forms.Button();
             this.BTN_LP = new System.Windows.Forms.Button();
             this.BTN_LCP = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonMainMenu = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -90,15 +90,15 @@
             this.BTN_LCP.UseVisualStyleBackColor = true;
             this.BTN_LCP.Click += new System.EventHandler(this.BTN_LCP_Click);
             // 
-            // button4
+            // buttonMainMenu
             // 
-            this.button4.Location = new System.Drawing.Point(337, 310);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 33);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Main Menu";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonMainMenu.Location = new System.Drawing.Point(337, 310);
+            this.buttonMainMenu.Name = "buttonMainMenu";
+            this.buttonMainMenu.Size = new System.Drawing.Size(83, 33);
+            this.buttonMainMenu.TabIndex = 5;
+            this.buttonMainMenu.Text = "Main Menu";
+            this.buttonMainMenu.UseVisualStyleBackColor = true;
+            this.buttonMainMenu.Click += new System.EventHandler(this.buttonMainMenu_Click);
             // 
             // btn_back
             // 
@@ -118,7 +118,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonMainMenu);
             this.Controls.Add(this.BTN_LCP);
             this.Controls.Add(this.BTN_LP);
             this.Controls.Add(this.BTN_NP);
@@ -139,7 +139,7 @@
         private System.Windows.Forms.Button BTN_NP;
         private System.Windows.Forms.Button BTN_LP;
         private System.Windows.Forms.Button BTN_LCP;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonMainMenu;
         private System.Windows.Forms.Button btn_back;
     }
 }
