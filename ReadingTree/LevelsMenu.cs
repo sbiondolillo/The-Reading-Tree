@@ -72,5 +72,18 @@ namespace ReadingTree
                 radioButtonLevel5.Select();
             }
         }
+
+        private void btnExportChosen_Click(object sender, EventArgs e)
+        {
+            //Creates and prints ChosenWordsBox items to a text file in the project directory
+            const string sPath = "save.txt";
+            System.IO.StreamWriter SaveFile = new System.IO.StreamWriter(sPath);
+            foreach (var item in ChosenWordsBox.Items)
+            {
+                SaveFile.WriteLine(item);
+            }
+            SaveFile.Close();
+            MessageBox.Show("Chosen Words List Saved!");
+        }
     }
 }
