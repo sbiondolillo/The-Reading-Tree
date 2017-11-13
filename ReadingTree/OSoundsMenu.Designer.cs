@@ -37,6 +37,7 @@
             this.OSoundslabel = new System.Windows.Forms.Label();
             this.btnOE2 = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_vcO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMainMenu
@@ -52,7 +53,7 @@
             // 
             // btnOWasOSnow
             // 
-            this.btnOWasOSnow.Location = new System.Drawing.Point(260, 149);
+            this.btnOWasOSnow.Location = new System.Drawing.Point(217, 149);
             this.btnOWasOSnow.Margin = new System.Windows.Forms.Padding(2);
             this.btnOWasOSnow.Name = "btnOWasOSnow";
             this.btnOWasOSnow.Size = new System.Drawing.Size(83, 45);
@@ -63,7 +64,7 @@
             // 
             // btnOI
             // 
-            this.btnOI.Location = new System.Drawing.Point(174, 149);
+            this.btnOI.Location = new System.Drawing.Point(131, 149);
             this.btnOI.Margin = new System.Windows.Forms.Padding(2);
             this.btnOI.Name = "btnOI";
             this.btnOI.Size = new System.Drawing.Size(83, 45);
@@ -139,12 +140,24 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_vcO
+            // 
+            this.btn_vcO.Location = new System.Drawing.Point(305, 149);
+            this.btn_vcO.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_vcO.Name = "btn_vcO";
+            this.btn_vcO.Size = new System.Drawing.Size(83, 45);
+            this.btn_vcO.TabIndex = 38;
+            this.btn_vcO.Text = "V/C o /O/ (open)";
+            this.btn_vcO.UseVisualStyleBackColor = true;
+            this.btn_vcO.Click += new System.EventHandler(this.btn_vcO_Click);
+            // 
             // OSoundsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_vcO);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnOE2);
             this.Controls.Add(this.btnMainMenu);
@@ -175,5 +188,6 @@
         private System.Windows.Forms.Label OSoundslabel;
         private System.Windows.Forms.Button btnOE2;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_vcO;
     }
 }

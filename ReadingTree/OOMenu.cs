@@ -120,5 +120,23 @@ namespace ReadingTree
             previous.Show();
             Close();
         }
+
+        private void btn_vcU_oo_Click(object sender, EventArgs e)
+        {
+            History.SetPrev(this);
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Hide();
+        }
+
+        private void btn_vcU_yoo_Click(object sender, EventArgs e)
+        {
+            History.SetPrev(this);
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Hide();
+        }
     }
 }

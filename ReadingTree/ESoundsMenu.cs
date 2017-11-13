@@ -111,5 +111,23 @@ namespace ReadingTree
             previous.Show();
             Close();
         }
+
+        private void btn_vcE_Click(object sender, EventArgs e)
+        {
+            History.SetPrev(this);
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Hide();
+        }
+
+        private void BTN_Crete_Click(object sender, EventArgs e)
+        {
+            History.SetPrev(this);
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Hide();
+        }
     }
 }

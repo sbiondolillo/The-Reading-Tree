@@ -42,6 +42,8 @@
             this.BTN_Argue = new System.Windows.Forms.Button();
             this.BTN_MainMenu = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_vcU_oo = new System.Windows.Forms.Button();
+            this.btn_vcU_yoo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LB_OO
@@ -124,7 +126,7 @@
             // 
             // BTN_FEW
             // 
-            this.BTN_FEW.Location = new System.Drawing.Point(175, 204);
+            this.BTN_FEW.Location = new System.Drawing.Point(86, 204);
             this.BTN_FEW.Name = "BTN_FEW";
             this.BTN_FEW.Size = new System.Drawing.Size(83, 45);
             this.BTN_FEW.TabIndex = 8;
@@ -134,7 +136,7 @@
             // 
             // BTN_School
             // 
-            this.BTN_School.Location = new System.Drawing.Point(264, 204);
+            this.BTN_School.Location = new System.Drawing.Point(175, 204);
             this.BTN_School.Name = "BTN_School";
             this.BTN_School.Size = new System.Drawing.Size(83, 45);
             this.BTN_School.TabIndex = 9;
@@ -183,12 +185,34 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_vcU_oo
+            // 
+            this.btn_vcU_oo.Location = new System.Drawing.Point(264, 204);
+            this.btn_vcU_oo.Name = "btn_vcU_oo";
+            this.btn_vcU_oo.Size = new System.Drawing.Size(83, 45);
+            this.btn_vcU_oo.TabIndex = 28;
+            this.btn_vcU_oo.Text = "V/C u as /oo/ (ruby)";
+            this.btn_vcU_oo.UseVisualStyleBackColor = true;
+            this.btn_vcU_oo.Click += new System.EventHandler(this.btn_vcU_oo_Click);
+            // 
+            // btn_vcU_yoo
+            // 
+            this.btn_vcU_yoo.Location = new System.Drawing.Point(353, 204);
+            this.btn_vcU_yoo.Name = "btn_vcU_yoo";
+            this.btn_vcU_yoo.Size = new System.Drawing.Size(83, 45);
+            this.btn_vcU_yoo.TabIndex = 29;
+            this.btn_vcU_yoo.Text = "V/C u as /yoo/ (music)";
+            this.btn_vcU_yoo.UseVisualStyleBackColor = true;
+            this.btn_vcU_yoo.Click += new System.EventHandler(this.btn_vcU_yoo_Click);
+            // 
             // OOMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_vcU_yoo);
+            this.Controls.Add(this.btn_vcU_oo);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.BTN_MainMenu);
             this.Controls.Add(this.BTN_Argue);
@@ -227,5 +251,7 @@
         private System.Windows.Forms.Button BTN_Argue;
         private System.Windows.Forms.Button BTN_MainMenu;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_vcU_oo;
+        private System.Windows.Forms.Button btn_vcU_yoo;
     }
 }

@@ -31,16 +31,7 @@ namespace ReadingTree
             MainMenu main = new MainMenu();
             main.Show();
             Close();
-        }
-
-        private void btnSUE_Click(object sender, EventArgs e)
-        {
-            History.SetPrev(this);
-            Button clickedButton = (Button)sender;
-            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
-            level.Show();
-            Hide();
-        }
+        }       
 
         private void btnUE_Click(object sender, EventArgs e)
         {

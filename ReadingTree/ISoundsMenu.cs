@@ -71,5 +71,14 @@ namespace ReadingTree
             previous.Show();
             Close();
         }
+
+        private void btn_vcI_Click(object sender, EventArgs e)
+        {
+            History.SetPrev(this);
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Hide();
+        }
     }
 }

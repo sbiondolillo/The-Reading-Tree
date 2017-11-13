@@ -19,6 +19,7 @@ namespace ReadingTree
 
         private void btnILD_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -27,6 +28,7 @@ namespace ReadingTree
 
         private void btnINDMixed_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -35,6 +37,7 @@ namespace ReadingTree
 
         private void btnIND_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -43,6 +46,7 @@ namespace ReadingTree
 
         private void btnKN_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -51,6 +55,7 @@ namespace ReadingTree
 
         private void btnNGNK_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -59,6 +64,7 @@ namespace ReadingTree
 
         private void btnOLD_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -67,6 +73,7 @@ namespace ReadingTree
 
         private void btnOLL_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -75,6 +82,7 @@ namespace ReadingTree
 
         private void btnOLT_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -83,6 +91,7 @@ namespace ReadingTree
 
         private void btnOST_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -91,6 +100,7 @@ namespace ReadingTree
 
         private void btnConsonantLESyllable_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -109,6 +119,24 @@ namespace ReadingTree
             System.Windows.Forms.Form previous = History.GetPrev();
             previous.Show();
             Close();
+        }
+
+        private void btn_le_silent_Click(object sender, EventArgs e)
+        {
+            History.SetPrev(this);
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Hide();
+        }
+
+        private void btn_ist_Click(object sender, EventArgs e)
+        {
+            History.SetPrev(this);
+            Button clickedButton = (Button)sender;
+            LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
+            level.Show();
+            Hide();
         }
     }
 }

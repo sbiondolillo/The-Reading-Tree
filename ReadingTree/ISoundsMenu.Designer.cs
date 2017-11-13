@@ -36,12 +36,13 @@
             this.ISoundsPromptLabel = new System.Windows.Forms.Label();
             this.ISoundslabel = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_vcI = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 28;
@@ -52,7 +53,7 @@
             // btnIasECalcium
             // 
             this.btnIasECalcium.Location = new System.Drawing.Point(261, 148);
-            this.btnIasECalcium.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIasECalcium.Margin = new System.Windows.Forms.Padding(2);
             this.btnIasECalcium.Name = "btnIasECalcium";
             this.btnIasECalcium.Size = new System.Drawing.Size(83, 45);
             this.btnIasECalcium.TabIndex = 25;
@@ -63,7 +64,7 @@
             // btnIGH
             // 
             this.btnIGH.Location = new System.Drawing.Point(175, 148);
-            this.btnIGH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIGH.Margin = new System.Windows.Forms.Padding(2);
             this.btnIGH.Name = "btnIGH";
             this.btnIGH.Size = new System.Drawing.Size(83, 45);
             this.btnIGH.TabIndex = 24;
@@ -74,7 +75,7 @@
             // btnIEasIPie
             // 
             this.btnIEasIPie.Location = new System.Drawing.Point(261, 94);
-            this.btnIEasIPie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIEasIPie.Margin = new System.Windows.Forms.Padding(2);
             this.btnIEasIPie.Name = "btnIEasIPie";
             this.btnIEasIPie.Size = new System.Drawing.Size(83, 45);
             this.btnIEasIPie.TabIndex = 23;
@@ -85,7 +86,7 @@
             // btnIE
             // 
             this.btnIE.Location = new System.Drawing.Point(175, 94);
-            this.btnIE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIE.Margin = new System.Windows.Forms.Padding(2);
             this.btnIE.Name = "btnIE";
             this.btnIE.Size = new System.Drawing.Size(83, 45);
             this.btnIE.TabIndex = 22;
@@ -127,12 +128,24 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_vcI
+            // 
+            this.btn_vcI.Location = new System.Drawing.Point(215, 197);
+            this.btn_vcI.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_vcI.Name = "btn_vcI";
+            this.btn_vcI.Size = new System.Drawing.Size(83, 45);
+            this.btn_vcI.TabIndex = 30;
+            this.btn_vcI.Text = "V/C i /I/ (ivy)";
+            this.btn_vcI.UseVisualStyleBackColor = true;
+            this.btn_vcI.Click += new System.EventHandler(this.btn_vcI_Click);
+            // 
             // ISoundsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_vcI);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnIasECalcium);
@@ -141,7 +154,7 @@
             this.Controls.Add(this.btnIE);
             this.Controls.Add(this.ISoundsPromptLabel);
             this.Controls.Add(this.ISoundslabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "ISoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -161,5 +174,6 @@
         private System.Windows.Forms.Label ISoundsPromptLabel;
         private System.Windows.Forms.Label ISoundslabel;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_vcI;
     }
 }

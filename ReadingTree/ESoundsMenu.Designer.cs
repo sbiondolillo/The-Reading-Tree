@@ -41,12 +41,14 @@
             this.btnEIReindeer = new System.Windows.Forms.Button();
             this.btnEAA = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_vcE = new System.Windows.Forms.Button();
+            this.BTN_Crete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 30;
@@ -56,8 +58,8 @@
             // 
             // btnEIlongELongA
             // 
-            this.btnEIlongELongA.Location = new System.Drawing.Point(217, 146);
-            this.btnEIlongELongA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEIlongELongA.Location = new System.Drawing.Point(217, 145);
+            this.btnEIlongELongA.Margin = new System.Windows.Forms.Padding(2);
             this.btnEIlongELongA.Name = "btnEIlongELongA";
             this.btnEIlongELongA.Size = new System.Drawing.Size(83, 45);
             this.btnEIlongELongA.TabIndex = 29;
@@ -67,8 +69,8 @@
             // 
             // btnEICeiling
             // 
-            this.btnEICeiling.Location = new System.Drawing.Point(131, 146);
-            this.btnEICeiling.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEICeiling.Location = new System.Drawing.Point(131, 145);
+            this.btnEICeiling.Margin = new System.Windows.Forms.Padding(2);
             this.btnEICeiling.Name = "btnEICeiling";
             this.btnEICeiling.Size = new System.Drawing.Size(83, 45);
             this.btnEICeiling.TabIndex = 28;
@@ -79,7 +81,7 @@
             // btnEAEach
             // 
             this.btnEAEach.Location = new System.Drawing.Point(217, 96);
-            this.btnEAEach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEAEach.Margin = new System.Windows.Forms.Padding(2);
             this.btnEAEach.Name = "btnEAEach";
             this.btnEAEach.Size = new System.Drawing.Size(83, 45);
             this.btnEAEach.TabIndex = 27;
@@ -90,7 +92,7 @@
             // btnEABread
             // 
             this.btnEABread.Location = new System.Drawing.Point(131, 96);
-            this.btnEABread.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEABread.Margin = new System.Windows.Forms.Padding(2);
             this.btnEABread.Name = "btnEABread";
             this.btnEABread.Size = new System.Drawing.Size(83, 45);
             this.btnEABread.TabIndex = 26;
@@ -123,8 +125,8 @@
             // 
             // btnEYValley
             // 
-            this.btnEYValley.Location = new System.Drawing.Point(305, 146);
-            this.btnEYValley.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEYValley.Location = new System.Drawing.Point(305, 194);
+            this.btnEYValley.Margin = new System.Windows.Forms.Padding(2);
             this.btnEYValley.Name = "btnEYValley";
             this.btnEYValley.Size = new System.Drawing.Size(83, 45);
             this.btnEYValley.TabIndex = 32;
@@ -135,7 +137,7 @@
             // btnEE
             // 
             this.btnEE.Location = new System.Drawing.Point(305, 96);
-            this.btnEE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEE.Margin = new System.Windows.Forms.Padding(2);
             this.btnEE.Name = "btnEE";
             this.btnEE.Size = new System.Drawing.Size(83, 45);
             this.btnEE.TabIndex = 31;
@@ -145,8 +147,8 @@
             // 
             // btnEighNeighbor
             // 
-            this.btnEighNeighbor.Location = new System.Drawing.Point(305, 195);
-            this.btnEighNeighbor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEighNeighbor.Location = new System.Drawing.Point(305, 145);
+            this.btnEighNeighbor.Margin = new System.Windows.Forms.Padding(2);
             this.btnEighNeighbor.Name = "btnEighNeighbor";
             this.btnEighNeighbor.Size = new System.Drawing.Size(83, 45);
             this.btnEighNeighbor.TabIndex = 35;
@@ -156,8 +158,8 @@
             // 
             // btnEIReindeer
             // 
-            this.btnEIReindeer.Location = new System.Drawing.Point(217, 195);
-            this.btnEIReindeer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEIReindeer.Location = new System.Drawing.Point(217, 194);
+            this.btnEIReindeer.Margin = new System.Windows.Forms.Padding(2);
             this.btnEIReindeer.Name = "btnEIReindeer";
             this.btnEIReindeer.Size = new System.Drawing.Size(83, 45);
             this.btnEIReindeer.TabIndex = 34;
@@ -167,8 +169,8 @@
             // 
             // btnEAA
             // 
-            this.btnEAA.Location = new System.Drawing.Point(131, 195);
-            this.btnEAA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEAA.Location = new System.Drawing.Point(131, 194);
+            this.btnEAA.Margin = new System.Windows.Forms.Padding(2);
             this.btnEAA.Name = "btnEAA";
             this.btnEAA.Size = new System.Drawing.Size(83, 45);
             this.btnEAA.TabIndex = 33;
@@ -187,12 +189,35 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_vcE
+            // 
+            this.btn_vcE.Location = new System.Drawing.Point(172, 243);
+            this.btn_vcE.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_vcE.Name = "btn_vcE";
+            this.btn_vcE.Size = new System.Drawing.Size(83, 45);
+            this.btn_vcE.TabIndex = 37;
+            this.btn_vcE.Text = "V/C e /E/ (before)";
+            this.btn_vcE.UseVisualStyleBackColor = true;
+            this.btn_vcE.Click += new System.EventHandler(this.btn_vcE_Click);
+            // 
+            // BTN_Crete
+            // 
+            this.BTN_Crete.Location = new System.Drawing.Point(260, 244);
+            this.BTN_Crete.Name = "BTN_Crete";
+            this.BTN_Crete.Size = new System.Drawing.Size(83, 45);
+            this.BTN_Crete.TabIndex = 38;
+            this.BTN_Crete.Text = "e-e";
+            this.BTN_Crete.UseVisualStyleBackColor = true;
+            this.BTN_Crete.Click += new System.EventHandler(this.BTN_Crete_Click);
+            // 
             // ESoundsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.BTN_Crete);
+            this.Controls.Add(this.btn_vcE);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnEighNeighbor);
             this.Controls.Add(this.btnEIReindeer);
@@ -206,7 +231,7 @@
             this.Controls.Add(this.btnEABread);
             this.Controls.Add(this.ASoundsPromptLabel);
             this.Controls.Add(this.ESoundsLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "ESoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -231,5 +256,7 @@
         private System.Windows.Forms.Button btnEIReindeer;
         private System.Windows.Forms.Button btnEAA;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_vcE;
+        private System.Windows.Forms.Button BTN_Crete;
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.BTN_Compound = new System.Windows.Forms.Button();
-            this.BTN_Crete = new System.Windows.Forms.Button();
+            this.BTN_syllable_division = new System.Windows.Forms.Button();
             this.BTN_MainMenu = new System.Windows.Forms.Button();
             this.LB_Title = new System.Windows.Forms.Label();
             this.LB_Select = new System.Windows.Forms.Label();
@@ -46,15 +46,15 @@
             this.BTN_Compound.UseVisualStyleBackColor = true;
             this.BTN_Compound.Click += new System.EventHandler(this.BTN_Compound_Click);
             // 
-            // BTN_Crete
+            // BTN_syllable_division
             // 
-            this.BTN_Crete.Location = new System.Drawing.Point(262, 118);
-            this.BTN_Crete.Name = "BTN_Crete";
-            this.BTN_Crete.Size = new System.Drawing.Size(83, 45);
-            this.BTN_Crete.TabIndex = 1;
-            this.BTN_Crete.Text = "e-e";
-            this.BTN_Crete.UseVisualStyleBackColor = true;
-            this.BTN_Crete.Click += new System.EventHandler(this.BTN_Crete_Click);
+            this.BTN_syllable_division.Location = new System.Drawing.Point(262, 118);
+            this.BTN_syllable_division.Name = "BTN_syllable_division";
+            this.BTN_syllable_division.Size = new System.Drawing.Size(83, 45);
+            this.BTN_syllable_division.TabIndex = 1;
+            this.BTN_syllable_division.Text = "V/V syllable division";
+            this.BTN_syllable_division.UseVisualStyleBackColor = true;
+            this.BTN_syllable_division.Click += new System.EventHandler(this.BTN_Crete_Click);
             // 
             // BTN_MainMenu
             // 
@@ -105,7 +105,7 @@
             this.Controls.Add(this.LB_Select);
             this.Controls.Add(this.LB_Title);
             this.Controls.Add(this.BTN_MainMenu);
-            this.Controls.Add(this.BTN_Crete);
+            this.Controls.Add(this.BTN_syllable_division);
             this.Controls.Add(this.BTN_Compound);
             this.Name = "MiscMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -118,7 +118,7 @@
         #endregion
 
         private System.Windows.Forms.Button BTN_Compound;
-        private System.Windows.Forms.Button BTN_Crete;
+        private System.Windows.Forms.Button BTN_syllable_division;
         private System.Windows.Forms.Button BTN_MainMenu;
         private System.Windows.Forms.Label LB_Title;
         private System.Windows.Forms.Label LB_Select;

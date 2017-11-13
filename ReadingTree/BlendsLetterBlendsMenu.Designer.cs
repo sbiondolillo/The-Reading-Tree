@@ -44,6 +44,8 @@
             this.BlendsLetterBlendslabel = new System.Windows.Forms.Label();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_al = new System.Windows.Forms.Button();
+            this.btn_aw = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSchwaAAlaska
@@ -226,12 +228,36 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_al
+            // 
+            this.btn_al.Location = new System.Drawing.Point(174, 247);
+            this.btn_al.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_al.Name = "btn_al";
+            this.btn_al.Size = new System.Drawing.Size(83, 45);
+            this.btn_al.TabIndex = 30;
+            this.btn_al.Text = "al";
+            this.btn_al.UseVisualStyleBackColor = true;
+            this.btn_al.Click += new System.EventHandler(this.btn_al_Click);
+            // 
+            // btn_aw
+            // 
+            this.btn_aw.Location = new System.Drawing.Point(261, 247);
+            this.btn_aw.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_aw.Name = "btn_aw";
+            this.btn_aw.Size = new System.Drawing.Size(83, 45);
+            this.btn_aw.TabIndex = 31;
+            this.btn_aw.Text = "aw";
+            this.btn_aw.UseVisualStyleBackColor = true;
+            this.btn_aw.Click += new System.EventHandler(this.btn_aw_Click);
+            // 
             // BlendsLetterBlendsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_aw);
+            this.Controls.Add(this.btn_al);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnSchwaAAlaska);
@@ -275,5 +301,7 @@
         private System.Windows.Forms.Label BlendsLetterBlendslabel;
         private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_al;
+        private System.Windows.Forms.Button btn_aw;
     }
 }

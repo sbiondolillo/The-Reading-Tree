@@ -36,12 +36,13 @@
             this.ASoundsLabel = new System.Windows.Forms.Label();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_vcA = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAYSounds
             // 
             this.btnAYSounds.Location = new System.Drawing.Point(261, 145);
-            this.btnAYSounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAYSounds.Margin = new System.Windows.Forms.Padding(2);
             this.btnAYSounds.Name = "btnAYSounds";
             this.btnAYSounds.Size = new System.Drawing.Size(83, 45);
             this.btnAYSounds.TabIndex = 22;
@@ -52,7 +53,7 @@
             // btnAUSounds
             // 
             this.btnAUSounds.Location = new System.Drawing.Point(175, 145);
-            this.btnAUSounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAUSounds.Margin = new System.Windows.Forms.Padding(2);
             this.btnAUSounds.Name = "btnAUSounds";
             this.btnAUSounds.Size = new System.Drawing.Size(83, 45);
             this.btnAUSounds.TabIndex = 21;
@@ -63,7 +64,7 @@
             // btnAISounds
             // 
             this.btnAISounds.Location = new System.Drawing.Point(261, 91);
-            this.btnAISounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAISounds.Margin = new System.Windows.Forms.Padding(2);
             this.btnAISounds.Name = "btnAISounds";
             this.btnAISounds.Size = new System.Drawing.Size(83, 45);
             this.btnAISounds.TabIndex = 20;
@@ -74,7 +75,7 @@
             // btnAESounds
             // 
             this.btnAESounds.Location = new System.Drawing.Point(175, 91);
-            this.btnAESounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAESounds.Margin = new System.Windows.Forms.Padding(2);
             this.btnAESounds.Name = "btnAESounds";
             this.btnAESounds.Size = new System.Drawing.Size(83, 45);
             this.btnAESounds.TabIndex = 19;
@@ -108,7 +109,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 23;
@@ -127,12 +128,24 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_vcA
+            // 
+            this.btn_vcA.Location = new System.Drawing.Point(214, 205);
+            this.btn_vcA.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_vcA.Name = "btn_vcA";
+            this.btn_vcA.Size = new System.Drawing.Size(83, 45);
+            this.btn_vcA.TabIndex = 25;
+            this.btn_vcA.Text = "V/C a /A/ (acorn)";
+            this.btn_vcA.UseVisualStyleBackColor = true;
+            this.btn_vcA.Click += new System.EventHandler(this.btn_vcA_Click);
+            // 
             // ASoundsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_vcA);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnAYSounds);
@@ -141,7 +154,7 @@
             this.Controls.Add(this.btnAESounds);
             this.Controls.Add(this.ASoundsPromptLabel);
             this.Controls.Add(this.ASoundsLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "ASoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -161,5 +174,6 @@
         private System.Windows.Forms.Label ASoundsLabel;
         private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_vcA;
     }
 }
