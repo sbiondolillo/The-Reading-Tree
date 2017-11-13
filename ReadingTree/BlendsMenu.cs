@@ -21,48 +21,53 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitial_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             BlendsInitialMenu blendsInitialMenu = new BlendsInitialMenu();
             blendsInitialMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsFinalDigraph_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             BlendsFinalDigraphMenu blendsFinalDigraphMenu = new BlendsFinalDigraphMenu();
             blendsFinalDigraphMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnLetterBlends_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             BlendsLetterBlendsMenu blendsLetterBlendsMenu = new BlendsLetterBlendsMenu();
             blendsLetterBlendsMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnSpellingRules_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             BlendsSpellingRulesMenu blendsSpellingRulesMenu = new BlendsSpellingRulesMenu();
             blendsSpellingRulesMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnPhonics_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             BlendsPhonicsMenu blendsPhonicsMenu = new BlendsPhonicsMenu();
             blendsPhonicsMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            MainMenu m = new MainMenu();
-            m.Show();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }

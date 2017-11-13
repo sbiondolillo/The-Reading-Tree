@@ -19,105 +19,114 @@ namespace ReadingTree
 
         private void btnVowelSounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             VowelSoundsMenu vsmenu = new VowelSoundsMenu();
             vsmenu.Show();
-            Hide();
-        }
-
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-
+            Close();
         }
 
         private void btnPrefix_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             PrefixesMenu prefixmenu = new PrefixesMenu();
             prefixmenu.Show();
-            this.Hide();
+            Close();
         }
 
         private void btnSuffix_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             SuffixesMenu suffixmenu = new SuffixesMenu();
             suffixmenu.Show();
-            this.Hide();
+            Close();
         }
 
         private void btnRoots_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             RootMenu rootmenu = new RootMenu();
             rootmenu.Show();
-            this.Hide();
+            Close();
         }
 
         private void btnOOSounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             OOMenu oomenu = new OOMenu();
             oomenu.Show();
-            this.Hide();
+            Close();
         }
 
         private void btnMisc_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             MiscMenu miscmenu = new MiscMenu();
             miscmenu.Show();
-            this.Hide();
+            Close();
         }
 
         private void btnRs_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             RsMenu rsMenu = new RsMenu();
             rsMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlends_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             BlendsMenu blendsMenu = new BlendsMenu();
             blendsMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnCVC_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             CVCMenu cvcMenu = new CVCMenu();
             cvcMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCVariables_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             VCVariablesMenu vcvVariablesMenu = new VCVariablesMenu();
             vcvVariablesMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnDigraph_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             DigraphMenu digraphMenu = new DigraphMenu();
             digraphMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnConsonantManipulation_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             ConsonantManipulationMenu consonantManipulationMenu = new ConsonantManipulationMenu();
             consonantManipulationMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnPossessiveNoun_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             PossessiveNounMenu possessiveNounMenu = new PossessiveNounMenu();
             possessiveNounMenu.Show();
-            Hide();
+            Close();
         }
 
         private void btnContractions_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             ContractionsMenu contractionsMenu = new ContractionsMenu();
             contractionsMenu.Show();
-            Hide();
+            Close();
         }
     }
 }

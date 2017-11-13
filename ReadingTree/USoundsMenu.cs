@@ -24,7 +24,6 @@ namespace ReadingTree
         public USoundsMenu()
         {
             InitializeComponent();
-            history.prev = "USoundsMenu";
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
@@ -36,6 +35,7 @@ namespace ReadingTree
 
         private void btnSUE_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -44,6 +44,7 @@ namespace ReadingTree
 
         private void btnUE_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -52,6 +53,7 @@ namespace ReadingTree
 
         private void btnUECute_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -60,6 +62,7 @@ namespace ReadingTree
 
         private void btnUEJune_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -68,8 +71,8 @@ namespace ReadingTree
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            VowelSoundsMenu v = new VowelSoundsMenu();
-            v.Show();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }

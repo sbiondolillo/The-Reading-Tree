@@ -106,8 +106,8 @@ namespace ReadingTree
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            BlendsMenu b = new BlendsMenu();
-            b.Show();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }

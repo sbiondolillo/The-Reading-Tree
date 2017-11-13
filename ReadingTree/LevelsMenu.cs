@@ -75,7 +75,8 @@ namespace ReadingTree
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            history.doTheStuff();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }

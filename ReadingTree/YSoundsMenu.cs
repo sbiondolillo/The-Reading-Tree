@@ -24,7 +24,6 @@ namespace ReadingTree
         public YSoundsMenu()
         {
             InitializeComponent();
-            history.prev = "YSoundsMenu";
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
@@ -36,6 +35,7 @@ namespace ReadingTree
 
         private void btnYasECandy_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -44,6 +44,7 @@ namespace ReadingTree
 
         private void btnYasIMy_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -52,8 +53,8 @@ namespace ReadingTree
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            VowelSoundsMenu v = new VowelSoundsMenu();
-            v.Show();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }

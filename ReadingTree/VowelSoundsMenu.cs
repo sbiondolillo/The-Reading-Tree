@@ -19,6 +19,7 @@ namespace ReadingTree
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             MainMenu main = new MainMenu();
             main.Show();
             Close();
@@ -26,6 +27,7 @@ namespace ReadingTree
 
         private void btnASounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             ASoundsMenu asounds = new ASoundsMenu();
             asounds.Show();
             Close();
@@ -33,6 +35,7 @@ namespace ReadingTree
 
         private void btnESounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             ESoundsMenu esounds = new ESoundsMenu();
             esounds.Show();
             Close();
@@ -40,6 +43,7 @@ namespace ReadingTree
 
         private void btnISounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             ISoundsMenu isounds = new ISoundsMenu();
             isounds.Show();
             Close();
@@ -47,6 +51,7 @@ namespace ReadingTree
 
         private void btnOSounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             OSoundsMenu osounds = new OSoundsMenu();
             osounds.Show();
             Close();
@@ -54,6 +59,7 @@ namespace ReadingTree
 
         private void btnUSounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             USoundsMenu usounds = new USoundsMenu();
             usounds.Show();
             Close();
@@ -61,6 +67,7 @@ namespace ReadingTree
 
         private void btnYSounds_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             YSoundsMenu ysounds = new YSoundsMenu();
             ysounds.Show();
             Close();
@@ -68,8 +75,8 @@ namespace ReadingTree
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            MainMenu m = new MainMenu();
-            m.Show();
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
             Close();
         }
     }
