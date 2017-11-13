@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,15 +76,21 @@ namespace ReadingTree
 
         private void btnExportChosen_Click(object sender, EventArgs e)
         {
-            //Creates and prints ChosenWordsBox items to a text file in the project directory
-            const string sPath = "save.txt";
-            System.IO.StreamWriter SaveFile = new System.IO.StreamWriter(sPath);
-            foreach (var item in ChosenWordsBox.Items)
+            //Uses StreamWriter to write a text file to a specific location
+            SaveFileDialog savefile = new SaveFileDialog();
+            // set a default file name
+            savefile.FileName = "unknown.txt";
+            // set filters - this can be done in properties as well
+            savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            if (savefile.ShowDialog() == DialogResult.OK)
             {
-                SaveFile.WriteLine(item);
+                using (StreamWriter sw = new StreamWriter(savefile.FileName))
+                    foreach (var item in ChosenWordsBox.Items)
+                    {
+                        sw.WriteLine(item);
+                    }
             }
-            SaveFile.Close();
-            MessageBox.Show("Chosen Words List Saved!");
         }
     }
 }
