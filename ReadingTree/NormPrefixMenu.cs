@@ -18,7 +18,7 @@ namespace ReadingTree
         }
 
         private void BTN_MainMenu_Click(object sender, EventArgs e)
-        {
+        {         
             MainMenu main = new MainMenu();
             main.Show();
             Close();
@@ -26,6 +26,7 @@ namespace ReadingTree
 
         private void BTN_Mis_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -34,6 +35,7 @@ namespace ReadingTree
 
         private void BTN_Non_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -42,6 +44,7 @@ namespace ReadingTree
 
         private void BTN_Dis_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -50,6 +53,7 @@ namespace ReadingTree
 
         private void BTN_Sub_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
@@ -58,10 +62,18 @@ namespace ReadingTree
 
         private void BTN_Un_Click(object sender, EventArgs e)
         {
+            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
             Hide();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
+            Close();
         }
     }
 }
