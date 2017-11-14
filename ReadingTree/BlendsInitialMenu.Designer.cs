@@ -46,7 +46,7 @@
             // btnBlendsInitialT
             // 
             this.btnBlendsInitialT.Location = new System.Drawing.Point(304, 210);
-            this.btnBlendsInitialT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialT.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialT.Name = "btnBlendsInitialT";
             this.btnBlendsInitialT.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialT.TabIndex = 21;
@@ -57,7 +57,7 @@
             // btnBlendsInitialS
             // 
             this.btnBlendsInitialS.Location = new System.Drawing.Point(218, 210);
-            this.btnBlendsInitialS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialS.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialS.Name = "btnBlendsInitialS";
             this.btnBlendsInitialS.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialS.TabIndex = 20;
@@ -68,7 +68,7 @@
             // btnBlendsInitialP
             // 
             this.btnBlendsInitialP.Location = new System.Drawing.Point(132, 210);
-            this.btnBlendsInitialP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialP.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialP.Name = "btnBlendsInitialP";
             this.btnBlendsInitialP.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialP.TabIndex = 19;
@@ -79,7 +79,7 @@
             // btnBlendsInitialMixed
             // 
             this.btnBlendsInitialMixed.Location = new System.Drawing.Point(304, 152);
-            this.btnBlendsInitialMixed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialMixed.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialMixed.Name = "btnBlendsInitialMixed";
             this.btnBlendsInitialMixed.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialMixed.TabIndex = 18;
@@ -90,7 +90,7 @@
             // btnBlendsInitialG
             // 
             this.btnBlendsInitialG.Location = new System.Drawing.Point(218, 152);
-            this.btnBlendsInitialG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialG.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialG.Name = "btnBlendsInitialG";
             this.btnBlendsInitialG.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialG.TabIndex = 17;
@@ -101,7 +101,7 @@
             // btnBlendsInitialF
             // 
             this.btnBlendsInitialF.Location = new System.Drawing.Point(132, 152);
-            this.btnBlendsInitialF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialF.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialF.Name = "btnBlendsInitialF";
             this.btnBlendsInitialF.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialF.TabIndex = 16;
@@ -112,7 +112,7 @@
             // btnBlendsInitialD
             // 
             this.btnBlendsInitialD.Location = new System.Drawing.Point(304, 98);
-            this.btnBlendsInitialD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialD.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialD.Name = "btnBlendsInitialD";
             this.btnBlendsInitialD.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialD.TabIndex = 15;
@@ -123,7 +123,7 @@
             // btnBlendsInitialC
             // 
             this.btnBlendsInitialC.Location = new System.Drawing.Point(218, 98);
-            this.btnBlendsInitialC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialC.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialC.Name = "btnBlendsInitialC";
             this.btnBlendsInitialC.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialC.TabIndex = 14;
@@ -134,7 +134,7 @@
             // btnBlendsInitialB
             // 
             this.btnBlendsInitialB.Location = new System.Drawing.Point(132, 98);
-            this.btnBlendsInitialB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitialB.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitialB.Name = "btnBlendsInitialB";
             this.btnBlendsInitialB.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitialB.TabIndex = 13;
@@ -168,7 +168,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 25;
@@ -206,10 +206,12 @@
             this.Controls.Add(this.btnBlendsInitialD);
             this.Controls.Add(this.btnBlendsInitialC);
             this.Controls.Add(this.btnBlendsInitialB);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BlendsInitialMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

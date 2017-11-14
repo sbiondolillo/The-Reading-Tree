@@ -147,7 +147,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(267, 445);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(111, 45);
             this.btnMainMenu.TabIndex = 20;
@@ -158,7 +158,7 @@
             // btnExportChosen
             // 
             this.btnExportChosen.Location = new System.Drawing.Point(22, 310);
-            this.btnExportChosen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportChosen.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportChosen.Name = "btnExportChosen";
             this.btnExportChosen.Size = new System.Drawing.Size(111, 45);
             this.btnExportChosen.TabIndex = 23;
@@ -186,7 +186,7 @@
             // btnClearChosen
             // 
             this.btnClearChosen.Location = new System.Drawing.Point(22, 359);
-            this.btnClearChosen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClearChosen.Margin = new System.Windows.Forms.Padding(2);
             this.btnClearChosen.Name = "btnClearChosen";
             this.btnClearChosen.Size = new System.Drawing.Size(111, 45);
             this.btnClearChosen.TabIndex = 27;
@@ -196,7 +196,7 @@
             // btnBack
             // 
             this.btnBack.Location = new System.Drawing.Point(143, 445);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(111, 45);
             this.btnBack.TabIndex = 28;
@@ -207,7 +207,7 @@
             // btnRemovedFromChosen
             // 
             this.btnRemovedFromChosen.Location = new System.Drawing.Point(387, 359);
-            this.btnRemovedFromChosen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemovedFromChosen.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemovedFromChosen.Name = "btnRemovedFromChosen";
             this.btnRemovedFromChosen.Size = new System.Drawing.Size(111, 45);
             this.btnRemovedFromChosen.TabIndex = 30;
@@ -217,7 +217,7 @@
             // btnChooseWordsFromSelected
             // 
             this.btnChooseWordsFromSelected.Location = new System.Drawing.Point(387, 310);
-            this.btnChooseWordsFromSelected.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChooseWordsFromSelected.Margin = new System.Windows.Forms.Padding(2);
             this.btnChooseWordsFromSelected.Name = "btnChooseWordsFromSelected";
             this.btnChooseWordsFromSelected.Size = new System.Drawing.Size(111, 45);
             this.btnChooseWordsFromSelected.TabIndex = 29;
@@ -227,7 +227,7 @@
             // btnMaintainSelectedLevel
             // 
             this.btnMaintainSelectedLevel.Location = new System.Drawing.Point(192, 238);
-            this.btnMaintainSelectedLevel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMaintainSelectedLevel.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaintainSelectedLevel.Name = "btnMaintainSelectedLevel";
             this.btnMaintainSelectedLevel.Size = new System.Drawing.Size(132, 45);
             this.btnMaintainSelectedLevel.TabIndex = 31;
@@ -238,7 +238,7 @@
             // 
             this.radioButtonLevel1.AutoSize = true;
             this.radioButtonLevel1.Location = new System.Drawing.Point(50, 5);
-            this.radioButtonLevel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLevel1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonLevel1.Name = "radioButtonLevel1";
             this.radioButtonLevel1.Size = new System.Drawing.Size(14, 13);
             this.radioButtonLevel1.TabIndex = 32;
@@ -249,7 +249,7 @@
             // 
             this.radioButtonLevel2.AutoSize = true;
             this.radioButtonLevel2.Location = new System.Drawing.Point(147, 5);
-            this.radioButtonLevel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLevel2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonLevel2.Name = "radioButtonLevel2";
             this.radioButtonLevel2.Size = new System.Drawing.Size(14, 13);
             this.radioButtonLevel2.TabIndex = 33;
@@ -260,7 +260,7 @@
             // 
             this.radioButtonLevel3.AutoSize = true;
             this.radioButtonLevel3.Location = new System.Drawing.Point(245, 5);
-            this.radioButtonLevel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLevel3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonLevel3.Name = "radioButtonLevel3";
             this.radioButtonLevel3.Size = new System.Drawing.Size(14, 13);
             this.radioButtonLevel3.TabIndex = 34;
@@ -271,7 +271,7 @@
             // 
             this.radioButtonLevel4.AutoSize = true;
             this.radioButtonLevel4.Location = new System.Drawing.Point(342, 5);
-            this.radioButtonLevel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLevel4.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonLevel4.Name = "radioButtonLevel4";
             this.radioButtonLevel4.Size = new System.Drawing.Size(14, 13);
             this.radioButtonLevel4.TabIndex = 35;
@@ -282,7 +282,7 @@
             // 
             this.radioButtonLevel5.AutoSize = true;
             this.radioButtonLevel5.Location = new System.Drawing.Point(439, 5);
-            this.radioButtonLevel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLevel5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonLevel5.Name = "radioButtonLevel5";
             this.radioButtonLevel5.Size = new System.Drawing.Size(14, 13);
             this.radioButtonLevel5.TabIndex = 36;
@@ -303,7 +303,7 @@
             this.panelLevelLists.Controls.Add(this.level4Label);
             this.panelLevelLists.Controls.Add(this.level5label);
             this.panelLevelLists.Location = new System.Drawing.Point(8, 8);
-            this.panelLevelLists.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelLevelLists.Margin = new System.Windows.Forms.Padding(2);
             this.panelLevelLists.Name = "panelLevelLists";
             this.panelLevelLists.Size = new System.Drawing.Size(503, 200);
             this.panelLevelLists.TabIndex = 38;
@@ -328,7 +328,7 @@
             this.panel1.Controls.Add(this.radioButtonLevel2);
             this.panel1.Controls.Add(this.radioButtonLevel5);
             this.panel1.Location = new System.Drawing.Point(8, 212);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(503, 22);
             this.panel1.TabIndex = 40;
@@ -353,6 +353,8 @@
             this.Name = "LevelsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose your words";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.Load += new System.EventHandler(this.LevelsMenu_Load);
             this.panelLevelLists.ResumeLayout(false);
             this.panelLevelLists.PerformLayout();

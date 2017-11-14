@@ -50,7 +50,7 @@
             this.btnDoubleConsonants.Name = "btnDoubleConsonants";
             this.btnDoubleConsonants.Size = new System.Drawing.Size(83, 45);
             this.btnDoubleConsonants.TabIndex = 13;
-            this.btnDoubleConsonants.Text = "Double consonants (rabbit words)";
+            this.btnDoubleConsonants.Text = "Double consonants";
             this.btnDoubleConsonants.UseVisualStyleBackColor = true;
             this.btnDoubleConsonants.Click += new System.EventHandler(this.btnDoubleConsonants_Click);
             // 
@@ -209,6 +209,8 @@
             this.Name = "ConsonantManipulationMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

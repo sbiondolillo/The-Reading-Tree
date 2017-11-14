@@ -129,6 +129,10 @@ namespace ReadingTree
             contractionsMenu.Show();
             Hide();
         }
-     
+        private void Form_Closed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
