@@ -42,6 +42,7 @@
             this.BTN_Stuct = new System.Windows.Forms.Button();
             this.BTN_Tract = new System.Windows.Forms.Button();
             this.BTN_MainMenu = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LB_Root
@@ -64,7 +65,7 @@
             // 
             // BTN_Duct
             // 
-            this.BTN_Duct.Location = new System.Drawing.Point(58, 99);
+            this.BTN_Duct.Location = new System.Drawing.Point(93, 92);
             this.BTN_Duct.Name = "BTN_Duct";
             this.BTN_Duct.Size = new System.Drawing.Size(83, 45);
             this.BTN_Duct.TabIndex = 2;
@@ -74,7 +75,7 @@
             // 
             // BTN_Flex
             // 
-            this.BTN_Flex.Location = new System.Drawing.Point(157, 99);
+            this.BTN_Flex.Location = new System.Drawing.Point(182, 92);
             this.BTN_Flex.Name = "BTN_Flex";
             this.BTN_Flex.Size = new System.Drawing.Size(83, 45);
             this.BTN_Flex.TabIndex = 3;
@@ -84,7 +85,7 @@
             // 
             // BTN_Form
             // 
-            this.BTN_Form.Location = new System.Drawing.Point(258, 99);
+            this.BTN_Form.Location = new System.Drawing.Point(271, 92);
             this.BTN_Form.Name = "BTN_Form";
             this.BTN_Form.Size = new System.Drawing.Size(83, 45);
             this.BTN_Form.TabIndex = 4;
@@ -94,7 +95,7 @@
             // 
             // BTN_Ject
             // 
-            this.BTN_Ject.Location = new System.Drawing.Point(365, 99);
+            this.BTN_Ject.Location = new System.Drawing.Point(360, 92);
             this.BTN_Ject.Name = "BTN_Ject";
             this.BTN_Ject.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ject.TabIndex = 5;
@@ -104,7 +105,7 @@
             // 
             // BTN_Mit
             // 
-            this.BTN_Mit.Location = new System.Drawing.Point(58, 160);
+            this.BTN_Mit.Location = new System.Drawing.Point(93, 143);
             this.BTN_Mit.Name = "BTN_Mit";
             this.BTN_Mit.Size = new System.Drawing.Size(83, 45);
             this.BTN_Mit.TabIndex = 6;
@@ -114,7 +115,7 @@
             // 
             // BTN_Port
             // 
-            this.BTN_Port.Location = new System.Drawing.Point(157, 160);
+            this.BTN_Port.Location = new System.Drawing.Point(182, 143);
             this.BTN_Port.Name = "BTN_Port";
             this.BTN_Port.Size = new System.Drawing.Size(83, 45);
             this.BTN_Port.TabIndex = 7;
@@ -124,7 +125,7 @@
             // 
             // BTN_Rupt
             // 
-            this.BTN_Rupt.Location = new System.Drawing.Point(258, 160);
+            this.BTN_Rupt.Location = new System.Drawing.Point(271, 143);
             this.BTN_Rupt.Name = "BTN_Rupt";
             this.BTN_Rupt.Size = new System.Drawing.Size(83, 45);
             this.BTN_Rupt.TabIndex = 8;
@@ -134,7 +135,7 @@
             // 
             // BTN_Sist
             // 
-            this.BTN_Sist.Location = new System.Drawing.Point(365, 160);
+            this.BTN_Sist.Location = new System.Drawing.Point(360, 143);
             this.BTN_Sist.Name = "BTN_Sist";
             this.BTN_Sist.Size = new System.Drawing.Size(83, 45);
             this.BTN_Sist.TabIndex = 9;
@@ -144,7 +145,7 @@
             // 
             // BTN_Spect
             // 
-            this.BTN_Spect.Location = new System.Drawing.Point(109, 224);
+            this.BTN_Spect.Location = new System.Drawing.Point(137, 194);
             this.BTN_Spect.Name = "BTN_Spect";
             this.BTN_Spect.Size = new System.Drawing.Size(83, 45);
             this.BTN_Spect.TabIndex = 10;
@@ -154,7 +155,7 @@
             // 
             // BTN_Stuct
             // 
-            this.BTN_Stuct.Location = new System.Drawing.Point(221, 224);
+            this.BTN_Stuct.Location = new System.Drawing.Point(226, 194);
             this.BTN_Stuct.Name = "BTN_Stuct";
             this.BTN_Stuct.Size = new System.Drawing.Size(83, 45);
             this.BTN_Stuct.TabIndex = 11;
@@ -164,7 +165,7 @@
             // 
             // BTN_Tract
             // 
-            this.BTN_Tract.Location = new System.Drawing.Point(333, 224);
+            this.BTN_Tract.Location = new System.Drawing.Point(315, 194);
             this.BTN_Tract.Name = "BTN_Tract";
             this.BTN_Tract.Size = new System.Drawing.Size(83, 45);
             this.BTN_Tract.TabIndex = 12;
@@ -174,20 +175,32 @@
             // 
             // BTN_MainMenu
             // 
-            this.BTN_MainMenu.Location = new System.Drawing.Point(221, 315);
+            this.BTN_MainMenu.Location = new System.Drawing.Point(337, 309);
             this.BTN_MainMenu.Name = "BTN_MainMenu";
-            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 45);
+            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 33);
             this.BTN_MainMenu.TabIndex = 13;
             this.BTN_MainMenu.Text = "Main Menu";
             this.BTN_MainMenu.UseVisualStyleBackColor = true;
             this.BTN_MainMenu.Click += new System.EventHandler(this.BTN_MainMenu_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(425, 310);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 33);
+            this.btn_back.TabIndex = 27;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // RootMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(520, 385);
+            this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.BTN_MainMenu);
             this.Controls.Add(this.BTN_Tract);
             this.Controls.Add(this.BTN_Stuct);
@@ -226,5 +239,6 @@
         private System.Windows.Forms.Button BTN_Stuct;
         private System.Windows.Forms.Button BTN_Tract;
         private System.Windows.Forms.Button BTN_MainMenu;
+        private System.Windows.Forms.Button btn_back;
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,23 +73,11 @@ namespace ReadingTree
             }
         }
 
-        private void btnExportChosen_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            //Uses StreamWriter to write a text file to a specific location
-            SaveFileDialog savefile = new SaveFileDialog();
-            // set a default file name
-            savefile.FileName = "unknown.txt";
-            // set filters - this can be done in properties as well
-            savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-
-            if (savefile.ShowDialog() == DialogResult.OK)
-            {
-                using (StreamWriter sw = new StreamWriter(savefile.FileName))
-                    foreach (var item in ChosenWordsBox.Items)
-                    {
-                        sw.WriteLine(item);
-                    }
-            }
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
+            Close();
         }
     }
 }
