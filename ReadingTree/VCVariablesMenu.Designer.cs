@@ -41,7 +41,6 @@
             this.btnVCCCCVmixed = new System.Windows.Forms.Button();
             this.btnVCCCVmixed = new System.Windows.Forms.Button();
             this.btnMainMenu = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // VCVariablesPromptLabel
@@ -179,25 +178,14 @@
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
+            this.btnMainMenu.Location = new System.Drawing.Point(218, 286);
             this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
             this.btnMainMenu.TabIndex = 31;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
-            // 
-            // btn_back
-            // 
-            this.btn_back.Location = new System.Drawing.Point(425, 310);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 33);
-            this.btn_back.TabIndex = 32;
-            this.btn_back.Text = "Back";
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // VCVariablesMenu
             // 
@@ -205,7 +193,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
-            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnVCCCVmixed);
             this.Controls.Add(this.btnVCCCCVmixed);
@@ -242,6 +229,5 @@
         private System.Windows.Forms.Button btnVCCCCVmixed;
         private System.Windows.Forms.Button btnVCCCVmixed;
         private System.Windows.Forms.Button btnMainMenu;
-        private System.Windows.Forms.Button btn_back;
     }
 }

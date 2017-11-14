@@ -15,60 +15,57 @@ namespace ReadingTree
         public MainMenu()
         {
             InitializeComponent();
-            History.ClearHistory();
         }
 
         private void btnVowelSounds_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             VowelSoundsMenu vsmenu = new VowelSoundsMenu();
             vsmenu.Show();
             Hide();
         }
 
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnPrefix_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             PrefixesMenu prefixmenu = new PrefixesMenu();
             prefixmenu.Show();
-            Hide();
+            this.Hide();
         }
 
         private void btnSuffix_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             SuffixesMenu suffixmenu = new SuffixesMenu();
             suffixmenu.Show();
-            Hide();
+            this.Hide();
         }
 
         private void btnRoots_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             RootMenu rootmenu = new RootMenu();
             rootmenu.Show();
-            Hide();
+            this.Hide();
         }
 
         private void btnOOSounds_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             OOMenu oomenu = new OOMenu();
             oomenu.Show();
-            Hide();
+            this.Hide();
         }
 
         private void btnMisc_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             MiscMenu miscmenu = new MiscMenu();
             miscmenu.Show();
-            Hide();
+            this.Hide();
         }
 
         private void btnRs_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             RsMenu rsMenu = new RsMenu();
             rsMenu.Show();
             Hide();
@@ -76,7 +73,6 @@ namespace ReadingTree
 
         private void btnBlends_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             BlendsMenu blendsMenu = new BlendsMenu();
             blendsMenu.Show();
             Hide();
@@ -84,7 +80,6 @@ namespace ReadingTree
 
         private void btnCVC_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             CVCMenu cvcMenu = new CVCMenu();
             cvcMenu.Show();
             Hide();
@@ -92,7 +87,6 @@ namespace ReadingTree
 
         private void btnVCVariables_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             VCVariablesMenu vcvVariablesMenu = new VCVariablesMenu();
             vcvVariablesMenu.Show();
             Hide();
@@ -100,7 +94,6 @@ namespace ReadingTree
 
         private void btnDigraph_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             DigraphMenu digraphMenu = new DigraphMenu();
             digraphMenu.Show();
             Hide();
@@ -108,7 +101,6 @@ namespace ReadingTree
 
         private void btnConsonantManipulation_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             ConsonantManipulationMenu consonantManipulationMenu = new ConsonantManipulationMenu();
             consonantManipulationMenu.Show();
             Hide();
@@ -116,7 +108,6 @@ namespace ReadingTree
 
         private void btnPossessiveNoun_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             PossessiveNounMenu possessiveNounMenu = new PossessiveNounMenu();
             possessiveNounMenu.Show();
             Hide();
@@ -124,11 +115,9 @@ namespace ReadingTree
 
         private void btnContractions_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             ContractionsMenu contractionsMenu = new ContractionsMenu();
             contractionsMenu.Show();
             Hide();
         }
-     
     }
 }

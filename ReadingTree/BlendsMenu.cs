@@ -21,12 +21,11 @@ namespace ReadingTree
         {
             MainMenu main = new MainMenu();
             main.Show();
-            Close();
+            Hide();
         }
 
         private void btnBlendsInitial_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             BlendsInitialMenu blendsInitialMenu = new BlendsInitialMenu();
             blendsInitialMenu.Show();
             Hide();
@@ -34,7 +33,6 @@ namespace ReadingTree
 
         private void btnBlendsFinalDigraph_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             BlendsFinalDigraphMenu blendsFinalDigraphMenu = new BlendsFinalDigraphMenu();
             blendsFinalDigraphMenu.Show();
             Hide();
@@ -42,7 +40,6 @@ namespace ReadingTree
 
         private void btnLetterBlends_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             BlendsLetterBlendsMenu blendsLetterBlendsMenu = new BlendsLetterBlendsMenu();
             blendsLetterBlendsMenu.Show();
             Hide();
@@ -50,7 +47,6 @@ namespace ReadingTree
 
         private void btnSpellingRules_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             BlendsSpellingRulesMenu blendsSpellingRulesMenu = new BlendsSpellingRulesMenu();
             blendsSpellingRulesMenu.Show();
             Hide();
@@ -58,17 +54,9 @@ namespace ReadingTree
 
         private void btnPhonics_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             BlendsPhonicsMenu blendsPhonicsMenu = new BlendsPhonicsMenu();
             blendsPhonicsMenu.Show();
             Hide();
-        }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Form previous = History.GetPrev();
-            previous.Show();
-            Close();
         }
     }
 }

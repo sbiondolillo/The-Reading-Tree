@@ -36,7 +36,6 @@
             this.BTN_Sub = new System.Windows.Forms.Button();
             this.BTN_Un = new System.Windows.Forms.Button();
             this.BTN_MainMenu = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LB_Title
@@ -109,24 +108,13 @@
             // 
             // BTN_MainMenu
             // 
-            this.BTN_MainMenu.Location = new System.Drawing.Point(237, 252);
+            this.BTN_MainMenu.Location = new System.Drawing.Point(156, 239);
             this.BTN_MainMenu.Name = "BTN_MainMenu";
-            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 33);
+            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 45);
             this.BTN_MainMenu.TabIndex = 12;
             this.BTN_MainMenu.Text = "Main Menu";
             this.BTN_MainMenu.UseVisualStyleBackColor = true;
             this.BTN_MainMenu.Click += new System.EventHandler(this.BTN_MainMenu_Click);
-            // 
-            // btn_back
-            // 
-            this.btn_back.Location = new System.Drawing.Point(325, 252);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 33);
-            this.btn_back.TabIndex = 30;
-            this.btn_back.Text = "Back";
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // NormPrefixMenu
             // 
@@ -134,7 +122,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(419, 296);
-            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.BTN_MainMenu);
             this.Controls.Add(this.BTN_Un);
             this.Controls.Add(this.BTN_Sub);
@@ -161,6 +148,5 @@
         private System.Windows.Forms.Button BTN_Sub;
         private System.Windows.Forms.Button BTN_Un;
         private System.Windows.Forms.Button BTN_MainMenu;
-        private System.Windows.Forms.Button btn_back;
     }
 }

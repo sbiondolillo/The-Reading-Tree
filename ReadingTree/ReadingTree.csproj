@@ -119,7 +119,6 @@
     <Compile Include="ESoundsMenu.Designer.cs">
       <DependentUpon>ESoundsMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="History.cs" />
     <Compile Include="ISoundsMenu.cs">
       <SubType>Form</SubType>
     </Compile>

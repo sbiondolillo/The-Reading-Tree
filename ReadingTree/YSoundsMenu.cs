@@ -35,26 +35,17 @@ namespace ReadingTree
 
         private void btnYasECandy_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnYasIMy_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
-        }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Form previous = History.GetPrev();
-            previous.Show();
             Close();
         }
     }

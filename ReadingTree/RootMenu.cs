@@ -26,107 +26,89 @@ namespace ReadingTree
 
         private void BTN_Duct_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Flex_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Form_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Ject_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Mit_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Port_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Rupt_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Sist_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Spect_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Stuct_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void BTN_Tract_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
-        }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Form previous = History.GetPrev();
-            previous.Show();
             Close();
         }
     }

@@ -37,14 +37,13 @@
             this.BTN_zhun = new System.Windows.Forms.Button();
             this.BTN_Tion = new System.Windows.Forms.Button();
             this.BTN_Ture = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BTN_MainMenu
             // 
-            this.BTN_MainMenu.Location = new System.Drawing.Point(337, 309);
+            this.BTN_MainMenu.Location = new System.Drawing.Point(166, 254);
             this.BTN_MainMenu.Name = "BTN_MainMenu";
-            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 33);
+            this.BTN_MainMenu.Size = new System.Drawing.Size(83, 45);
             this.BTN_MainMenu.TabIndex = 19;
             this.BTN_MainMenu.Text = "Main Menu";
             this.BTN_MainMenu.UseVisualStyleBackColor = true;
@@ -53,7 +52,7 @@
             // LB_Select
             // 
             this.LB_Select.AutoSize = true;
-            this.LB_Select.Location = new System.Drawing.Point(148, 75);
+            this.LB_Select.Location = new System.Drawing.Point(105, 62);
             this.LB_Select.Name = "LB_Select";
             this.LB_Select.Size = new System.Drawing.Size(213, 13);
             this.LB_Select.TabIndex = 20;
@@ -62,7 +61,7 @@
             // LB_Title
             // 
             this.LB_Title.AutoSize = true;
-            this.LB_Title.Location = new System.Drawing.Point(221, 36);
+            this.LB_Title.Location = new System.Drawing.Point(178, 23);
             this.LB_Title.Name = "LB_Title";
             this.LB_Title.Size = new System.Drawing.Size(59, 13);
             this.LB_Title.TabIndex = 21;
@@ -70,7 +69,7 @@
             // 
             // BTN_Ive
             // 
-            this.BTN_Ive.Location = new System.Drawing.Point(102, 120);
+            this.BTN_Ive.Location = new System.Drawing.Point(59, 107);
             this.BTN_Ive.Name = "BTN_Ive";
             this.BTN_Ive.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ive.TabIndex = 22;
@@ -80,7 +79,7 @@
             // 
             // BTN_Chun
             // 
-            this.BTN_Chun.Location = new System.Drawing.Point(209, 120);
+            this.BTN_Chun.Location = new System.Drawing.Point(166, 107);
             this.BTN_Chun.Name = "BTN_Chun";
             this.BTN_Chun.Size = new System.Drawing.Size(83, 45);
             this.BTN_Chun.TabIndex = 23;
@@ -90,7 +89,7 @@
             // 
             // BTN_Shun
             // 
-            this.BTN_Shun.Location = new System.Drawing.Point(317, 120);
+            this.BTN_Shun.Location = new System.Drawing.Point(274, 107);
             this.BTN_Shun.Name = "BTN_Shun";
             this.BTN_Shun.Size = new System.Drawing.Size(83, 45);
             this.BTN_Shun.TabIndex = 24;
@@ -100,7 +99,7 @@
             // 
             // BTN_zhun
             // 
-            this.BTN_zhun.Location = new System.Drawing.Point(102, 184);
+            this.BTN_zhun.Location = new System.Drawing.Point(59, 171);
             this.BTN_zhun.Name = "BTN_zhun";
             this.BTN_zhun.Size = new System.Drawing.Size(83, 45);
             this.BTN_zhun.TabIndex = 25;
@@ -110,7 +109,7 @@
             // 
             // BTN_Tion
             // 
-            this.BTN_Tion.Location = new System.Drawing.Point(209, 184);
+            this.BTN_Tion.Location = new System.Drawing.Point(166, 171);
             this.BTN_Tion.Name = "BTN_Tion";
             this.BTN_Tion.Size = new System.Drawing.Size(83, 45);
             this.BTN_Tion.TabIndex = 26;
@@ -120,7 +119,7 @@
             // 
             // BTN_Ture
             // 
-            this.BTN_Ture.Location = new System.Drawing.Point(317, 184);
+            this.BTN_Ture.Location = new System.Drawing.Point(274, 171);
             this.BTN_Ture.Name = "BTN_Ture";
             this.BTN_Ture.Size = new System.Drawing.Size(83, 45);
             this.BTN_Ture.TabIndex = 27;
@@ -128,24 +127,12 @@
             this.BTN_Ture.UseVisualStyleBackColor = true;
             this.BTN_Ture.Click += new System.EventHandler(this.BTN_Ture_Click);
             // 
-            // btn_back
-            // 
-            this.btn_back.Location = new System.Drawing.Point(425, 310);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 33);
-            this.btn_back.TabIndex = 37;
-            this.btn_back.Text = "Back";
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
-            // 
             // LatinSuffixMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(519, 354);
-            this.Controls.Add(this.btn_back);
+            this.ClientSize = new System.Drawing.Size(410, 332);
             this.Controls.Add(this.BTN_Ture);
             this.Controls.Add(this.BTN_Tion);
             this.Controls.Add(this.BTN_zhun);
@@ -174,6 +161,5 @@
         private System.Windows.Forms.Button BTN_zhun;
         private System.Windows.Forms.Button BTN_Tion;
         private System.Windows.Forms.Button BTN_Ture;
-        private System.Windows.Forms.Button btn_back;
     }
 }

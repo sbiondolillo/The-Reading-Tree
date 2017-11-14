@@ -36,16 +36,13 @@
             this.OSoundsPromptLabel = new System.Windows.Forms.Label();
             this.OSoundslabel = new System.Windows.Forms.Label();
             this.btnOE2 = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
-            this.btn_vcO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMainMenu.Location = new System.Drawing.Point(326, 346);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
+            this.btnMainMenu.Size = new System.Drawing.Size(125, 70);
             this.btnMainMenu.TabIndex = 35;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -53,10 +50,9 @@
             // 
             // btnOWasOSnow
             // 
-            this.btnOWasOSnow.Location = new System.Drawing.Point(217, 149);
-            this.btnOWasOSnow.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOWasOSnow.Location = new System.Drawing.Point(390, 230);
             this.btnOWasOSnow.Name = "btnOWasOSnow";
-            this.btnOWasOSnow.Size = new System.Drawing.Size(83, 45);
+            this.btnOWasOSnow.Size = new System.Drawing.Size(125, 70);
             this.btnOWasOSnow.TabIndex = 34;
             this.btnOWasOSnow.Text = "ow as /O/ (snow)";
             this.btnOWasOSnow.UseVisualStyleBackColor = true;
@@ -64,10 +60,9 @@
             // 
             // btnOI
             // 
-            this.btnOI.Location = new System.Drawing.Point(131, 149);
-            this.btnOI.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOI.Location = new System.Drawing.Point(261, 230);
             this.btnOI.Name = "btnOI";
-            this.btnOI.Size = new System.Drawing.Size(83, 45);
+            this.btnOI.Size = new System.Drawing.Size(125, 70);
             this.btnOI.TabIndex = 33;
             this.btnOI.Text = "oi";
             this.btnOI.UseVisualStyleBackColor = true;
@@ -75,10 +70,9 @@
             // 
             // btnOE
             // 
-            this.btnOE.Location = new System.Drawing.Point(217, 100);
-            this.btnOE.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOE.Location = new System.Drawing.Point(326, 154);
             this.btnOE.Name = "btnOE";
-            this.btnOE.Size = new System.Drawing.Size(83, 45);
+            this.btnOE.Size = new System.Drawing.Size(125, 70);
             this.btnOE.TabIndex = 32;
             this.btnOE.Text = "oe";
             this.btnOE.UseVisualStyleBackColor = true;
@@ -86,10 +80,9 @@
             // 
             // btnOA
             // 
-            this.btnOA.Location = new System.Drawing.Point(131, 100);
-            this.btnOA.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOA.Location = new System.Drawing.Point(197, 154);
             this.btnOA.Name = "btnOA";
-            this.btnOA.Size = new System.Drawing.Size(83, 45);
+            this.btnOA.Size = new System.Drawing.Size(125, 70);
             this.btnOA.TabIndex = 31;
             this.btnOA.Text = "oa";
             this.btnOA.UseVisualStyleBackColor = true;
@@ -101,64 +94,37 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OSoundsPromptLabel.AutoSize = true;
-            this.OSoundsPromptLabel.Location = new System.Drawing.Point(155, 57);
-            this.OSoundsPromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.OSoundsPromptLabel.Location = new System.Drawing.Point(232, 88);
             this.OSoundsPromptLabel.Name = "OSoundsPromptLabel";
-            this.OSoundsPromptLabel.Size = new System.Drawing.Size(213, 13);
+            this.OSoundsPromptLabel.Size = new System.Drawing.Size(313, 20);
             this.OSoundsPromptLabel.TabIndex = 30;
             this.OSoundsPromptLabel.Text = "Please select a category below to continue!";
             // 
             // OSoundslabel
             // 
             this.OSoundslabel.AutoSize = true;
-            this.OSoundslabel.Location = new System.Drawing.Point(235, 27);
-            this.OSoundslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.OSoundslabel.Location = new System.Drawing.Point(352, 41);
             this.OSoundslabel.Name = "OSoundslabel";
-            this.OSoundslabel.Size = new System.Drawing.Size(54, 13);
+            this.OSoundslabel.Size = new System.Drawing.Size(80, 20);
             this.OSoundslabel.TabIndex = 29;
             this.OSoundslabel.Text = "O Sounds";
             // 
             // btnOE2
             // 
-            this.btnOE2.Location = new System.Drawing.Point(305, 100);
-            this.btnOE2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOE2.Location = new System.Drawing.Point(457, 154);
             this.btnOE2.Name = "btnOE2";
-            this.btnOE2.Size = new System.Drawing.Size(83, 45);
+            this.btnOE2.Size = new System.Drawing.Size(125, 70);
             this.btnOE2.TabIndex = 36;
             this.btnOE2.Text = "o-e";
             this.btnOE2.UseVisualStyleBackColor = true;
             this.btnOE2.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btn_back
-            // 
-            this.btn_back.Location = new System.Drawing.Point(425, 310);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 33);
-            this.btn_back.TabIndex = 37;
-            this.btn_back.Text = "Back";
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
-            // 
-            // btn_vcO
-            // 
-            this.btn_vcO.Location = new System.Drawing.Point(305, 149);
-            this.btn_vcO.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_vcO.Name = "btn_vcO";
-            this.btn_vcO.Size = new System.Drawing.Size(83, 45);
-            this.btn_vcO.TabIndex = 38;
-            this.btn_vcO.Text = "V/C o /O/ (open)";
-            this.btn_vcO.UseVisualStyleBackColor = true;
-            this.btn_vcO.Click += new System.EventHandler(this.btn_vcO_Click);
-            // 
             // OSoundsMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(519, 354);
-            this.Controls.Add(this.btn_vcO);
-            this.Controls.Add(this.btn_back);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.btnOE2);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnOWasOSnow);
@@ -167,8 +133,6 @@
             this.Controls.Add(this.btnOA);
             this.Controls.Add(this.OSoundsPromptLabel);
             this.Controls.Add(this.OSoundslabel);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximizeBox = false;
             this.Name = "OSoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
@@ -187,7 +151,5 @@
         private System.Windows.Forms.Label OSoundsPromptLabel;
         private System.Windows.Forms.Label OSoundslabel;
         private System.Windows.Forms.Button btnOE2;
-        private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.Button btn_vcO;
     }
 }

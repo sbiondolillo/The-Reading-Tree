@@ -26,89 +26,73 @@ namespace ReadingTree
 
         private void btnBlendsInitialB_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialC_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialD_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialF_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialG_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialMixed_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialP_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialS_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnBlendsInitialT_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
-        }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Form previous = History.GetPrev();
-            previous.Show();
             Close();
         }
     }

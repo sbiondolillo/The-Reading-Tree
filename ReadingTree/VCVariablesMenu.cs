@@ -26,98 +26,81 @@ namespace ReadingTree
 
         private void btnVCCVE_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCV_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCCV_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVC_CCCV_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVC_CCV_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCC_CCV_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCC_CV_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCCC_CV_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCCCCVmixed_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
+            Close();
         }
 
         private void btnVCCCVmixed_Click(object sender, EventArgs e)
         {
-            History.SetPrev(this);
             Button clickedButton = (Button)sender;
             LevelsMenu level = new LevelsMenu(clickedButton.Text.ToString());
             level.Show();
-            Hide();
-        }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Form previous = History.GetPrev();
-            previous.Show();
             Close();
         }
     }
