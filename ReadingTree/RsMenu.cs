@@ -12,6 +12,7 @@ namespace ReadingTree
 {
     public partial class RsMenu : Form
     {
+        private bool userClosed { get; set; } = false;
         public RsMenu()
         {
             InitializeComponent();
@@ -74,6 +75,22 @@ namespace ReadingTree
             System.Windows.Forms.Form previous = History.GetPrev();
             previous.Show();
             Close();
+        }
+        private void Form_Closing(object sender, FormClosingEventArgs e)
+        {
+            /// tests if the form was closed by the Close() method or by the user clicking the 'X' button
+            /// if the user clicks the 'X' button, we want to exit the application, otherwise, proceed as normal
+            /// adapted from https://stackoverflow.com/questions/13361260/how-to-distinguish-window-close-button-clicked-x-vs-window-close-in-closi
+            bool closedWithXButton = new System.Diagnostics.StackTrace().GetFrames().FirstOrDefault(x => x.GetMethod() == typeof(Form).GetMethod("Close")) == null;
+            if (closedWithXButton)
+            {
+                userClosed = true;
+            }
+        }
+        private void Form_Closed(object sender, FormClosedEventArgs e)
+        {
+            if (userClosed)
+                Application.Exit();
         }
     }
 }

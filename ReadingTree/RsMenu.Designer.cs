@@ -65,7 +65,7 @@
             // btnUR
             // 
             this.btnUR.Location = new System.Drawing.Point(262, 144);
-            this.btnUR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUR.Margin = new System.Windows.Forms.Padding(2);
             this.btnUR.Name = "btnUR";
             this.btnUR.Size = new System.Drawing.Size(83, 45);
             this.btnUR.TabIndex = 26;
@@ -76,7 +76,7 @@
             // btnOR
             // 
             this.btnOR.Location = new System.Drawing.Point(175, 144);
-            this.btnOR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOR.Margin = new System.Windows.Forms.Padding(2);
             this.btnOR.Name = "btnOR";
             this.btnOR.Size = new System.Drawing.Size(83, 45);
             this.btnOR.TabIndex = 25;
@@ -87,7 +87,7 @@
             // btnIR
             // 
             this.btnIR.Location = new System.Drawing.Point(304, 95);
-            this.btnIR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIR.Margin = new System.Windows.Forms.Padding(2);
             this.btnIR.Name = "btnIR";
             this.btnIR.Size = new System.Drawing.Size(83, 45);
             this.btnIR.TabIndex = 24;
@@ -98,7 +98,7 @@
             // btnER
             // 
             this.btnER.Location = new System.Drawing.Point(218, 95);
-            this.btnER.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnER.Margin = new System.Windows.Forms.Padding(2);
             this.btnER.Name = "btnER";
             this.btnER.Size = new System.Drawing.Size(83, 45);
             this.btnER.TabIndex = 23;
@@ -109,7 +109,7 @@
             // btnAR
             // 
             this.btnAR.Location = new System.Drawing.Point(132, 95);
-            this.btnAR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAR.Margin = new System.Windows.Forms.Padding(2);
             this.btnAR.Name = "btnAR";
             this.btnAR.Size = new System.Drawing.Size(83, 45);
             this.btnAR.TabIndex = 22;
@@ -120,7 +120,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 27;
@@ -154,10 +154,12 @@
             this.Controls.Add(this.btnAR);
             this.Controls.Add(this.RsPromptlabel);
             this.Controls.Add(this.Rslabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
