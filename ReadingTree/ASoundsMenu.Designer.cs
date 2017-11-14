@@ -159,6 +159,8 @@
             this.Name = "ASoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ASoundsMenu_OnFormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ASoundsMenu_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
