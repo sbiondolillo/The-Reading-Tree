@@ -12,11 +12,10 @@ namespace ReadingTree
 {
     public partial class ASoundsMenu : Form
     {
-        private bool userClosed { get; set; }
+        private bool userClosed { get; set; } = false;
         public ASoundsMenu()
         {
             InitializeComponent();
-            userClosed = false;
         }
 
         private void btnAESounds_Click(object sender, EventArgs e)
@@ -77,8 +76,7 @@ namespace ReadingTree
             level.Show();
             Hide();
         }
-        
-        private void ASoundsMenu_OnFormClosing(object sender, FormClosingEventArgs e)
+        private void Form_Closing(object sender, FormClosingEventArgs e)
         {
             /// tests if the form was closed by the Close() method or by the user clicking the 'X' button
             /// if the user clicks the 'X' button, we want to exit the application, otherwise, proceed as normal
@@ -89,7 +87,7 @@ namespace ReadingTree
                 userClosed = true;
             }
         }
-        private void ASoundsMenu_FormClosed(object sender, FormClosedEventArgs e)
+        private void Form_Closed(object sender, FormClosedEventArgs e)
         {
             if (userClosed)
                 Application.Exit();

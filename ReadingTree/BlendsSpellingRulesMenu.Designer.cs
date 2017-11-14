@@ -39,7 +39,7 @@
             // btn211SpellingRule
             // 
             this.btn211SpellingRule.Location = new System.Drawing.Point(261, 99);
-            this.btn211SpellingRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn211SpellingRule.Margin = new System.Windows.Forms.Padding(2);
             this.btn211SpellingRule.Name = "btn211SpellingRule";
             this.btn211SpellingRule.Size = new System.Drawing.Size(83, 45);
             this.btn211SpellingRule.TabIndex = 24;
@@ -50,7 +50,7 @@
             // btn111SpellingRule
             // 
             this.btn111SpellingRule.Location = new System.Drawing.Point(175, 99);
-            this.btn111SpellingRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn111SpellingRule.Margin = new System.Windows.Forms.Padding(2);
             this.btn111SpellingRule.Name = "btn111SpellingRule";
             this.btn111SpellingRule.Size = new System.Drawing.Size(83, 45);
             this.btn111SpellingRule.TabIndex = 23;
@@ -84,7 +84,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 25;
@@ -115,10 +115,12 @@
             this.Controls.Add(this.btn111SpellingRule);
             this.Controls.Add(this.BlendsSpellingRulesPromptlabel);
             this.Controls.Add(this.BlendsSpellingRuleslabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BlendsSpellingRulesMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

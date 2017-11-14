@@ -65,7 +65,7 @@
             // btnPhonics
             // 
             this.btnPhonics.Location = new System.Drawing.Point(261, 145);
-            this.btnPhonics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPhonics.Margin = new System.Windows.Forms.Padding(2);
             this.btnPhonics.Name = "btnPhonics";
             this.btnPhonics.Size = new System.Drawing.Size(83, 45);
             this.btnPhonics.TabIndex = 23;
@@ -76,7 +76,7 @@
             // btnSpellingRules
             // 
             this.btnSpellingRules.Location = new System.Drawing.Point(174, 145);
-            this.btnSpellingRules.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSpellingRules.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpellingRules.Name = "btnSpellingRules";
             this.btnSpellingRules.Size = new System.Drawing.Size(83, 45);
             this.btnSpellingRules.TabIndex = 22;
@@ -87,7 +87,7 @@
             // btnLetterBlends
             // 
             this.btnLetterBlends.Location = new System.Drawing.Point(305, 96);
-            this.btnLetterBlends.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLetterBlends.Margin = new System.Windows.Forms.Padding(2);
             this.btnLetterBlends.Name = "btnLetterBlends";
             this.btnLetterBlends.Size = new System.Drawing.Size(83, 45);
             this.btnLetterBlends.TabIndex = 21;
@@ -98,7 +98,7 @@
             // btnBlendsFinalDigraph
             // 
             this.btnBlendsFinalDigraph.Location = new System.Drawing.Point(217, 96);
-            this.btnBlendsFinalDigraph.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsFinalDigraph.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsFinalDigraph.Name = "btnBlendsFinalDigraph";
             this.btnBlendsFinalDigraph.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsFinalDigraph.TabIndex = 20;
@@ -109,7 +109,7 @@
             // btnBlendsInitial
             // 
             this.btnBlendsInitial.Location = new System.Drawing.Point(131, 96);
-            this.btnBlendsInitial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlendsInitial.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlendsInitial.Name = "btnBlendsInitial";
             this.btnBlendsInitial.Size = new System.Drawing.Size(83, 45);
             this.btnBlendsInitial.TabIndex = 19;
@@ -120,7 +120,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 24;
@@ -154,10 +154,12 @@
             this.Controls.Add(this.btnBlendsInitial);
             this.Controls.Add(this.BlendsPromptLabel);
             this.Controls.Add(this.Blendslabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BlendsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
