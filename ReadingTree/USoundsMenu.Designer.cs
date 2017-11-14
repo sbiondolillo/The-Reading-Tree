@@ -32,17 +32,17 @@
             this.btnUEJune = new System.Windows.Forms.Button();
             this.btnUECute = new System.Windows.Forms.Button();
             this.btnUE = new System.Windows.Forms.Button();
-            this.btnSUE = new System.Windows.Forms.Button();
             this.USoundsPromptLabel = new System.Windows.Forms.Label();
             this.USoundsLabel = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(218, 227);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 30;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -50,8 +50,8 @@
             // 
             // btnUEJune
             // 
-            this.btnUEJune.Location = new System.Drawing.Point(261, 149);
-            this.btnUEJune.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUEJune.Location = new System.Drawing.Point(217, 145);
+            this.btnUEJune.Margin = new System.Windows.Forms.Padding(2);
             this.btnUEJune.Name = "btnUEJune";
             this.btnUEJune.Size = new System.Drawing.Size(83, 45);
             this.btnUEJune.TabIndex = 29;
@@ -61,8 +61,8 @@
             // 
             // btnUECute
             // 
-            this.btnUECute.Location = new System.Drawing.Point(175, 149);
-            this.btnUECute.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUECute.Location = new System.Drawing.Point(174, 96);
+            this.btnUECute.Margin = new System.Windows.Forms.Padding(2);
             this.btnUECute.Name = "btnUECute";
             this.btnUECute.Size = new System.Drawing.Size(83, 45);
             this.btnUECute.TabIndex = 28;
@@ -73,24 +73,13 @@
             // btnUE
             // 
             this.btnUE.Location = new System.Drawing.Point(261, 96);
-            this.btnUE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUE.Margin = new System.Windows.Forms.Padding(2);
             this.btnUE.Name = "btnUE";
             this.btnUE.Size = new System.Drawing.Size(83, 45);
             this.btnUE.TabIndex = 27;
             this.btnUE.Text = "ue";
             this.btnUE.UseVisualStyleBackColor = true;
             this.btnUE.Click += new System.EventHandler(this.btnUE_Click);
-            // 
-            // btnSUE
-            // 
-            this.btnSUE.Location = new System.Drawing.Point(175, 96);
-            this.btnSUE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSUE.Name = "btnSUE";
-            this.btnSUE.Size = new System.Drawing.Size(83, 45);
-            this.btnSUE.TabIndex = 26;
-            this.btnSUE.Text = "sue";
-            this.btnSUE.UseVisualStyleBackColor = true;
-            this.btnSUE.Click += new System.EventHandler(this.btnSUE_Click);
             // 
             // USoundsPromptLabel
             // 
@@ -115,20 +104,32 @@
             this.USoundsLabel.TabIndex = 24;
             this.USoundsLabel.Text = "U Sounds";
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(425, 310);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 33);
+            this.btn_back.TabIndex = 31;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // USoundsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnUEJune);
             this.Controls.Add(this.btnUECute);
             this.Controls.Add(this.btnUE);
-            this.Controls.Add(this.btnSUE);
             this.Controls.Add(this.USoundsPromptLabel);
             this.Controls.Add(this.USoundsLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "USoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
@@ -143,8 +144,8 @@
         private System.Windows.Forms.Button btnUEJune;
         private System.Windows.Forms.Button btnUECute;
         private System.Windows.Forms.Button btnUE;
-        private System.Windows.Forms.Button btnSUE;
         private System.Windows.Forms.Label USoundsPromptLabel;
         private System.Windows.Forms.Label USoundsLabel;
+        private System.Windows.Forms.Button btn_back;
     }
 }

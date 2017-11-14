@@ -36,14 +36,15 @@
             this.btnCVCa = new System.Windows.Forms.Button();
             this.CVCPromptlabel = new System.Windows.Forms.Label();
             this.CVClabel = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(218, 201);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(83, 45);
+            this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 35;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -52,7 +53,7 @@
             // btnCVCu
             // 
             this.btnCVCu.Location = new System.Drawing.Point(262, 141);
-            this.btnCVCu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCVCu.Margin = new System.Windows.Forms.Padding(2);
             this.btnCVCu.Name = "btnCVCu";
             this.btnCVCu.Size = new System.Drawing.Size(83, 45);
             this.btnCVCu.TabIndex = 34;
@@ -63,7 +64,7 @@
             // btnCVCo
             // 
             this.btnCVCo.Location = new System.Drawing.Point(175, 141);
-            this.btnCVCo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCVCo.Margin = new System.Windows.Forms.Padding(2);
             this.btnCVCo.Name = "btnCVCo";
             this.btnCVCo.Size = new System.Drawing.Size(83, 45);
             this.btnCVCo.TabIndex = 33;
@@ -74,7 +75,7 @@
             // btnCVCi
             // 
             this.btnCVCi.Location = new System.Drawing.Point(304, 92);
-            this.btnCVCi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCVCi.Margin = new System.Windows.Forms.Padding(2);
             this.btnCVCi.Name = "btnCVCi";
             this.btnCVCi.Size = new System.Drawing.Size(83, 45);
             this.btnCVCi.TabIndex = 32;
@@ -85,7 +86,7 @@
             // btnCVCe
             // 
             this.btnCVCe.Location = new System.Drawing.Point(218, 92);
-            this.btnCVCe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCVCe.Margin = new System.Windows.Forms.Padding(2);
             this.btnCVCe.Name = "btnCVCe";
             this.btnCVCe.Size = new System.Drawing.Size(83, 45);
             this.btnCVCe.TabIndex = 31;
@@ -96,7 +97,7 @@
             // btnCVCa
             // 
             this.btnCVCa.Location = new System.Drawing.Point(132, 92);
-            this.btnCVCa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCVCa.Margin = new System.Windows.Forms.Padding(2);
             this.btnCVCa.Name = "btnCVCa";
             this.btnCVCa.Size = new System.Drawing.Size(83, 45);
             this.btnCVCa.TabIndex = 30;
@@ -127,12 +128,24 @@
             this.CVClabel.TabIndex = 28;
             this.CVClabel.Text = "CVC";
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(425, 310);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 33);
+            this.btn_back.TabIndex = 36;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // CVCMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnCVCu);
             this.Controls.Add(this.btnCVCo);
@@ -141,7 +154,7 @@
             this.Controls.Add(this.btnCVCa);
             this.Controls.Add(this.CVCPromptlabel);
             this.Controls.Add(this.CVClabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CVCMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
@@ -160,5 +173,6 @@
         private System.Windows.Forms.Button btnCVCa;
         private System.Windows.Forms.Label CVCPromptlabel;
         private System.Windows.Forms.Label CVClabel;
+        private System.Windows.Forms.Button btn_back;
     }
 }
