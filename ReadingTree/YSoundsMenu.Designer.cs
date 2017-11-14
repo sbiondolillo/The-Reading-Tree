@@ -59,7 +59,7 @@
             // btnYasECandy
             // 
             this.btnYasECandy.Location = new System.Drawing.Point(174, 101);
-            this.btnYasECandy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnYasECandy.Margin = new System.Windows.Forms.Padding(2);
             this.btnYasECandy.Name = "btnYasECandy";
             this.btnYasECandy.Size = new System.Drawing.Size(83, 45);
             this.btnYasECandy.TabIndex = 2;
@@ -70,7 +70,7 @@
             // btnYasIMy
             // 
             this.btnYasIMy.Location = new System.Drawing.Point(261, 101);
-            this.btnYasIMy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnYasIMy.Margin = new System.Windows.Forms.Padding(2);
             this.btnYasIMy.Name = "btnYasIMy";
             this.btnYasIMy.Size = new System.Drawing.Size(83, 45);
             this.btnYasIMy.TabIndex = 3;
@@ -81,7 +81,7 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(338, 310);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(83, 33);
             this.btnMainMenu.TabIndex = 4;
@@ -112,11 +112,13 @@
             this.Controls.Add(this.btnYasECandy);
             this.Controls.Add(this.YSoundsPromptLabel);
             this.Controls.Add(this.YSoundsLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "YSoundsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Reading Tree";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
