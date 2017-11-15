@@ -192,6 +192,7 @@
             this.btnClearChosen.TabIndex = 27;
             this.btnClearChosen.Text = "Clear Chosen Words";
             this.btnClearChosen.UseVisualStyleBackColor = true;
+            this.btnClearChosen.Click += new System.EventHandler(this.btnClearChosen_Click);
             // 
             // btnBack
             // 

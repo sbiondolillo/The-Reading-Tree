@@ -16,7 +16,6 @@ namespace ReadingTree
         private bool userClosed { get; set; } = false;
         private List<List<string>> words { get; set; }
         private int SelectedLevel { get; set; }
-        private List<string> ChosenWordsList { get; set; } = new List<string>();
         public LevelsMenu(string group_name)
         {
             InitializeComponent();
@@ -27,7 +26,7 @@ namespace ReadingTree
             GroupNameLabel.Text = group_name;
             InitializeLevelsListBoxes();
             SelectDefaultRadioButton();
-            ChosenWordsBox.DataSource = ChosenWordsList;
+            RefreshChosenWordsBox();
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
@@ -74,7 +73,11 @@ namespace ReadingTree
                 SelectedLevel = 5;
             }
         }
-
+        private void RefreshChosenWordsBox()
+        {
+            ChosenWordsBox.DataSource = null;
+            ChosenWordsBox.DataSource = History.ChosenWordsList;
+        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Form previous = History.GetPrev();
@@ -105,16 +108,11 @@ namespace ReadingTree
                 chooser.ShowDialog(this);
                 if (chooser.DialogResult == DialogResult.OK)
                 {
-                    AddToChosenWords(chooser.returnedWords);
+                    History.AddToChosenWords(chooser.returnedWords);
+                    RefreshChosenWordsBox();
                 }
                 chooser.Close();
             }
-        }
-        private void AddToChosenWords(List<string> wordsToAdd)
-        {
-            ChosenWordsList.AddRange(wordsToAdd);
-            ChosenWordsBox.DataSource = null;
-            ChosenWordsBox.DataSource = ChosenWordsList;
         }
         private void RadioButtons_CheckChanged(object sender, EventArgs e)
         {
@@ -138,6 +136,11 @@ namespace ReadingTree
             {
                 SelectedLevel = 5;
             }
+        }
+        private void btnClearChosen_Click(object sender, EventArgs e)
+        {
+            History.ClearChosenWords();
+            RefreshChosenWordsBox();
         }
     }
 }
