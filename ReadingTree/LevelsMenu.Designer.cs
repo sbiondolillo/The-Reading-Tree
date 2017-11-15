@@ -215,6 +215,7 @@
             this.btnRemovedFromChosen.TabIndex = 30;
             this.btnRemovedFromChosen.Text = "Remove from Chosen Words";
             this.btnRemovedFromChosen.UseVisualStyleBackColor = true;
+            this.btnRemovedFromChosen.Click += new System.EventHandler(this.btnRemovedFromChosen_Click);
             // 
             // btnChooseWordsFromSelected
             // 

@@ -43,6 +43,10 @@ namespace ReadingTree
         {
             ChosenWordsList.AddRange(wordsToAdd);
         }
+        public static void RemoveFromChosenWords(string word)
+        {
+            ChosenWordsList.Remove(word);
+        }
         public static void ClearChosenWords()
         {
             ChosenWordsList = new List<string>();

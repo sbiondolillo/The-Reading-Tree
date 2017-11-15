@@ -29,12 +29,6 @@ namespace ReadingTree
             SelectDefaultRadioButton();
             RefreshChosenWordsBox();
         }
-        private void btnMainMenu_Click(object sender, EventArgs e)
-        {
-            MainMenu main = new MainMenu();
-            main.Show();
-            Close();
-        }
         private void InitializeLevelsListBoxes()
         {
             words = Methods.GetAllWords(group_name);
@@ -77,42 +71,6 @@ namespace ReadingTree
             ChosenWordsBox.DataSource = null;
             ChosenWordsBox.DataSource = History.ChosenWordsList;
         }
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Form previous = History.GetPrev();
-            previous.Show();
-            Close();
-        }
-        private void Form_Closing(object sender, FormClosingEventArgs e)
-        {
-            /// tests if the form was closed by the Close() method or by the user clicking the 'X' button
-            /// if the user clicks the 'X' button, we want to exit the application, otherwise, proceed as normal
-            /// adapted from https://stackoverflow.com/questions/13361260/how-to-distinguish-window-close-button-clicked-x-vs-window-close-in-closi
-            bool closedWithXButton = new System.Diagnostics.StackTrace().GetFrames().FirstOrDefault(x => x.GetMethod() == typeof(Form).GetMethod("Close")) == null;
-            if (closedWithXButton)
-            {
-                userClosed = true;
-            }
-        }
-        private void Form_Closed(object sender, FormClosedEventArgs e)
-        {
-            if (userClosed)
-                Application.Exit();
-        }
-        private void btnChooseWordsFromSelected_Click(object sender, EventArgs e)
-        {
-            List<string> selectedWords = words[SelectedLevel - 1];
-            using (ChooseFromLevelDialog chooser = new ChooseFromLevelDialog(selectedWords))
-            {
-                chooser.ShowDialog(this);
-                if (chooser.DialogResult == DialogResult.OK)
-                {
-                    History.AddToChosenWords(chooser.returnedWords);
-                    RefreshChosenWordsBox();
-                }
-                chooser.Close();
-            }
-        }
         private void RadioButtons_CheckChanged(object sender, EventArgs e)
         {
             if (radioButtonLevel1.Checked)
@@ -136,11 +94,6 @@ namespace ReadingTree
                 SelectedLevel = 5;
             }
         }
-        private void btnClearChosen_Click(object sender, EventArgs e)
-        {
-            History.ClearChosenWords();
-            RefreshChosenWordsBox();
-        }
         private void btnExportChosen_Click(object sender, EventArgs e)
         {
             //Uses StreamWriter to write a text file to a specific location
@@ -158,6 +111,59 @@ namespace ReadingTree
                         sw.WriteLine(item);
                     }
             }
+        }
+        private void btnClearChosen_Click(object sender, EventArgs e)
+        {
+            History.ClearChosenWords();
+            RefreshChosenWordsBox();
+        }
+        private void btnChooseWordsFromSelected_Click(object sender, EventArgs e)
+        {
+            List<string> selectedWords = words[SelectedLevel - 1];
+            using (ChooseFromLevelDialog chooser = new ChooseFromLevelDialog(selectedWords))
+            {
+                chooser.ShowDialog(this);
+                if (chooser.DialogResult == DialogResult.OK)
+                {
+                    History.AddToChosenWords(chooser.returnedWords);
+                    RefreshChosenWordsBox();
+                }
+                chooser.Close();
+            }
+        }
+        private void btnRemovedFromChosen_Click(object sender, EventArgs e)
+        {
+            string selectedWord = ChosenWordsBox.SelectedItem.ToString();
+            History.RemoveFromChosenWords(selectedWord);
+            RefreshChosenWordsBox();
+        }
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Form previous = History.GetPrev();
+            previous.Show();
+            Close();
+        }
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            MainMenu main = new MainMenu();
+            main.Show();
+            Close();
+        }
+        private void Form_Closing(object sender, FormClosingEventArgs e)
+        {
+            /// tests if the form was closed by the Close() method or by the user clicking the 'X' button
+            /// if the user clicks the 'X' button, we want to exit the application, otherwise, proceed as normal
+            /// adapted from https://stackoverflow.com/questions/13361260/how-to-distinguish-window-close-button-clicked-x-vs-window-close-in-closi
+            bool closedWithXButton = new System.Diagnostics.StackTrace().GetFrames().FirstOrDefault(x => x.GetMethod() == typeof(Form).GetMethod("Close")) == null;
+            if (closedWithXButton)
+            {
+                userClosed = true;
+            }
+        }
+        private void Form_Closed(object sender, FormClosedEventArgs e)
+        {
+            if (userClosed)
+                Application.Exit();
         }
     }
 }
