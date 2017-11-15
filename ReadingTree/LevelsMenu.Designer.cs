@@ -164,6 +164,7 @@
             this.btnExportChosen.TabIndex = 23;
             this.btnExportChosen.Text = "Export Chosen Words";
             this.btnExportChosen.UseVisualStyleBackColor = true;
+            this.btnExportChosen.Click += new System.EventHandler(this.btnExportChosen_Click);
             // 
             // ChosenWordsBox
             // 

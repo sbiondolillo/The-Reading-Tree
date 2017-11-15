@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,14 +29,12 @@ namespace ReadingTree
             SelectDefaultRadioButton();
             RefreshChosenWordsBox();
         }
-
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             MainMenu main = new MainMenu();
             main.Show();
             Close();
         }
-
         private void InitializeLevelsListBoxes()
         {
             words = Methods.GetAllWords(group_name);
@@ -45,10 +44,10 @@ namespace ReadingTree
             level4Box.DataSource = words[3];
             level5Box.DataSource = words[4];
         }
-
         private void SelectDefaultRadioButton()
         {
-            if (level1Box.Items.Count > 0) {
+            if (level1Box.Items.Count > 0)
+            {
                 radioButtonLevel1.Select();
                 SelectedLevel = 1;
             }
@@ -141,6 +140,24 @@ namespace ReadingTree
         {
             History.ClearChosenWords();
             RefreshChosenWordsBox();
+        }
+        private void btnExportChosen_Click(object sender, EventArgs e)
+        {
+            //Uses StreamWriter to write a text file to a specific location
+            SaveFileDialog savefile = new SaveFileDialog();
+            // set a default file name
+            savefile.FileName = "readingtree.txt";
+            // set filters - this can be done in properties as well
+            savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = new StreamWriter(savefile.FileName))
+                    foreach (var item in ChosenWordsBox.Items)
+                    {
+                        sw.WriteLine(item);
+                    }
+            }
         }
     }
 }
