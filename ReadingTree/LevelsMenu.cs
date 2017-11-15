@@ -133,9 +133,17 @@ namespace ReadingTree
         }
         private void btnRemovedFromChosen_Click(object sender, EventArgs e)
         {
-            string selectedWord = ChosenWordsBox.SelectedItem.ToString();
-            History.RemoveFromChosenWords(selectedWord);
-            RefreshChosenWordsBox();
+            //Checks to see if a null value is returned.  If so it throws a message box, if not it removes the word from the Chosen Words List
+            if (ChosenWordsBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a word from the Chosen Words List to remove!");
+            }
+            else
+            {
+                string selectedWord = ChosenWordsBox.SelectedItem.ToString();
+                History.RemoveFromChosenWords(selectedWord);
+                RefreshChosenWordsBox();
+            }
         }
         private void btnBack_Click(object sender, EventArgs e)
         {

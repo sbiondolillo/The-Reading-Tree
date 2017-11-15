@@ -146,7 +146,7 @@
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(267, 445);
+            this.btnMainMenu.Location = new System.Drawing.Point(146, 445);
             this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(111, 45);
@@ -197,7 +197,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(143, 445);
+            this.btnBack.Location = new System.Drawing.Point(268, 445);
             this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(111, 45);
