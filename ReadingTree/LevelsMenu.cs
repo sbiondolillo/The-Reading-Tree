@@ -14,6 +14,9 @@ namespace ReadingTree
     {
         private string group_name = "";
         private bool userClosed { get; set; } = false;
+        private List<List<string>> words { get; set; }
+        private int SelectedLevel { get; set; }
+        private List<string> ChosenWordsList { get; set; } = new List<string>();
         public LevelsMenu(string group_name)
         {
             InitializeComponent();
@@ -24,6 +27,7 @@ namespace ReadingTree
             GroupNameLabel.Text = group_name;
             InitializeLevelsListBoxes();
             SelectDefaultRadioButton();
+            ChosenWordsBox.DataSource = ChosenWordsList;
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
@@ -35,7 +39,7 @@ namespace ReadingTree
 
         private void InitializeLevelsListBoxes()
         {
-            List<List<string>> words = Methods.GetAllWords(group_name);
+            words = Methods.GetAllWords(group_name);
             level1Box.DataSource = words[0];
             level2Box.DataSource = words[1];
             level3Box.DataSource = words[2];
@@ -47,22 +51,27 @@ namespace ReadingTree
         {
             if (level1Box.Items.Count > 0) {
                 radioButtonLevel1.Select();
+                SelectedLevel = 1;
             }
             else if (level2Box.Items.Count > 0)
             {
                 radioButtonLevel2.Select();
+                SelectedLevel = 2;
             }
             else if (level3Box.Items.Count > 0)
             {
                 radioButtonLevel3.Select();
+                SelectedLevel = 3;
             }
             else if (level4Box.Items.Count > 0)
             {
                 radioButtonLevel4.Select();
+                SelectedLevel = 4;
             }
             else
             {
                 radioButtonLevel5.Select();
+                SelectedLevel = 5;
             }
         }
 
@@ -87,6 +96,48 @@ namespace ReadingTree
         {
             if (userClosed)
                 Application.Exit();
+        }
+        private void btnChooseWordsFromSelected_Click(object sender, EventArgs e)
+        {
+            List<string> selectedWords = words[SelectedLevel - 1];
+            using (ChooseFromLevelDialog chooser = new ChooseFromLevelDialog(selectedWords))
+            {
+                chooser.ShowDialog(this);
+                if (chooser.DialogResult == DialogResult.OK)
+                {
+                    AddToChosenWords(chooser.returnedWords);
+                }
+                chooser.Close();
+            }
+        }
+        private void AddToChosenWords(List<string> wordsToAdd)
+        {
+            ChosenWordsList.AddRange(wordsToAdd);
+            ChosenWordsBox.DataSource = null;
+            ChosenWordsBox.DataSource = ChosenWordsList;
+        }
+        private void RadioButtons_CheckChanged(object sender, EventArgs e)
+        {
+            if (radioButtonLevel1.Checked)
+            {
+                SelectedLevel = 1;
+            }
+            else if (radioButtonLevel2.Checked)
+            {
+                SelectedLevel = 2;
+            }
+            else if (radioButtonLevel3.Checked)
+            {
+                SelectedLevel = 3;
+            }
+            else if (radioButtonLevel4.Checked)
+            {
+                SelectedLevel = 4;
+            }
+            else
+            {
+                SelectedLevel = 5;
+            }
         }
     }
 }

@@ -209,6 +209,12 @@
     <Compile Include="RsMenu.Designer.cs">
       <DependentUpon>RsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChooseFromLevelDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseFromLevelDialog.Designer.cs">
+      <DependentUpon>ChooseFromLevelDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="SuffixesMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -359,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RsMenu.resx">
       <DependentUpon>RsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseFromLevelDialog.resx">
+      <DependentUpon>ChooseFromLevelDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuffixesMenu.resx">
       <DependentUpon>SuffixesMenu.cs</DependentUpon>

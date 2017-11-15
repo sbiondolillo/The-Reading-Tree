@@ -223,6 +223,7 @@
             this.btnChooseWordsFromSelected.TabIndex = 29;
             this.btnChooseWordsFromSelected.Text = "Choose Words from Selected Level";
             this.btnChooseWordsFromSelected.UseVisualStyleBackColor = true;
+            this.btnChooseWordsFromSelected.Click += new System.EventHandler(this.btnChooseWordsFromSelected_Click);
             // 
             // btnMaintainSelectedLevel
             // 
@@ -244,6 +245,7 @@
             this.radioButtonLevel1.TabIndex = 32;
             this.radioButtonLevel1.TabStop = true;
             this.radioButtonLevel1.UseVisualStyleBackColor = true;
+            this.radioButtonLevel1.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckChanged);
             // 
             // radioButtonLevel2
             // 
@@ -255,6 +257,7 @@
             this.radioButtonLevel2.TabIndex = 33;
             this.radioButtonLevel2.TabStop = true;
             this.radioButtonLevel2.UseVisualStyleBackColor = true;
+            this.radioButtonLevel2.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckChanged);
             // 
             // radioButtonLevel3
             // 
@@ -266,6 +269,7 @@
             this.radioButtonLevel3.TabIndex = 34;
             this.radioButtonLevel3.TabStop = true;
             this.radioButtonLevel3.UseVisualStyleBackColor = true;
+            this.radioButtonLevel3.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckChanged);
             // 
             // radioButtonLevel4
             // 
@@ -277,6 +281,7 @@
             this.radioButtonLevel4.TabIndex = 35;
             this.radioButtonLevel4.TabStop = true;
             this.radioButtonLevel4.UseVisualStyleBackColor = true;
+            this.radioButtonLevel4.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckChanged);
             // 
             // radioButtonLevel5
             // 
@@ -288,6 +293,7 @@
             this.radioButtonLevel5.TabIndex = 36;
             this.radioButtonLevel5.TabStop = true;
             this.radioButtonLevel5.UseVisualStyleBackColor = true;
+            this.radioButtonLevel5.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckChanged);
             // 
             // panelLevelLists
             // 
