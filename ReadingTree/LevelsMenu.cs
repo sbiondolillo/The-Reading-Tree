@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace ReadingTree
     {
         private string group_name = "";
         private bool userClosed { get; set; } = false;
+        private List<List<string>> words { get; set; }
+        private int SelectedLevel { get; set; }
         public LevelsMenu(string group_name)
         {
             InitializeComponent();
@@ -24,52 +27,126 @@ namespace ReadingTree
             GroupNameLabel.Text = group_name;
             InitializeLevelsListBoxes();
             SelectDefaultRadioButton();
+            RefreshChosenWordsBox();
         }
-
-        private void btnMainMenu_Click(object sender, EventArgs e)
-        {
-            MainMenu main = new MainMenu();
-            main.Show();
-            Close();
-        }
-
         private void InitializeLevelsListBoxes()
         {
-            List<List<string>> words = Methods.GetAllWords(group_name);
+            words = Methods.GetAllWords(group_name);
             level1Box.DataSource = words[0];
             level2Box.DataSource = words[1];
             level3Box.DataSource = words[2];
             level4Box.DataSource = words[3];
             level5Box.DataSource = words[4];
         }
-
         private void SelectDefaultRadioButton()
         {
-            if (level1Box.Items.Count > 0) {
+            if (level1Box.Items.Count > 0)
+            {
                 radioButtonLevel1.Select();
+                SelectedLevel = 1;
             }
             else if (level2Box.Items.Count > 0)
             {
                 radioButtonLevel2.Select();
+                SelectedLevel = 2;
             }
             else if (level3Box.Items.Count > 0)
             {
                 radioButtonLevel3.Select();
+                SelectedLevel = 3;
             }
             else if (level4Box.Items.Count > 0)
             {
                 radioButtonLevel4.Select();
+                SelectedLevel = 4;
             }
             else
             {
                 radioButtonLevel5.Select();
+                SelectedLevel = 5;
             }
         }
+        private void RefreshChosenWordsBox()
+        {
+            ChosenWordsBox.DataSource = null;
+            ChosenWordsBox.DataSource = History.ChosenWordsList;
+        }
+        private void RadioButtons_CheckChanged(object sender, EventArgs e)
+        {
+            if (radioButtonLevel1.Checked)
+            {
+                SelectedLevel = 1;
+            }
+            else if (radioButtonLevel2.Checked)
+            {
+                SelectedLevel = 2;
+            }
+            else if (radioButtonLevel3.Checked)
+            {
+                SelectedLevel = 3;
+            }
+            else if (radioButtonLevel4.Checked)
+            {
+                SelectedLevel = 4;
+            }
+            else
+            {
+                SelectedLevel = 5;
+            }
+        }
+        private void btnExportChosen_Click(object sender, EventArgs e)
+        {
+            //Uses StreamWriter to write a text file to a specific location
+            SaveFileDialog savefile = new SaveFileDialog();
+            // set a default file name
+            savefile.FileName = "readingtree.txt";
+            // set filters - this can be done in properties as well
+            savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
 
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = new StreamWriter(savefile.FileName))
+                    foreach (var item in ChosenWordsBox.Items)
+                    {
+                        sw.WriteLine(item);
+                    }
+            }
+        }
+        private void btnClearChosen_Click(object sender, EventArgs e)
+        {
+            History.ClearChosenWords();
+            RefreshChosenWordsBox();
+        }
+        private void btnChooseWordsFromSelected_Click(object sender, EventArgs e)
+        {
+            List<string> selectedWords = words[SelectedLevel - 1];
+            using (ChooseFromLevelDialog chooser = new ChooseFromLevelDialog(selectedWords))
+            {
+                chooser.ShowDialog(this);
+                if (chooser.DialogResult == DialogResult.OK)
+                {
+                    History.AddToChosenWords(chooser.returnedWords);
+                    RefreshChosenWordsBox();
+                }
+                chooser.Close();
+            }
+        }
+        private void btnRemovedFromChosen_Click(object sender, EventArgs e)
+        {
+            string selectedWord = ChosenWordsBox.SelectedItem.ToString();
+            History.RemoveFromChosenWords(selectedWord);
+            RefreshChosenWordsBox();
+        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Form previous = History.GetPrev();
             previous.Show();
+            Close();
+        }
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            MainMenu main = new MainMenu();
+            main.Show();
             Close();
         }
         private void Form_Closing(object sender, FormClosingEventArgs e)

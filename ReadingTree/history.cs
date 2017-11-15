@@ -13,7 +13,8 @@ namespace ReadingTree
             prev = new Stack<System.Windows.Forms.Form>();
         }
         public static Stack<System.Windows.Forms.Form> prev { get; set; }
-        
+        public static List<string> ChosenWordsList { get; set; } = new List<string>();
+
         public static void SetPrev(System.Windows.Forms.Form parentForm)
         {
             prev.Push(parentForm);
@@ -37,6 +38,18 @@ namespace ReadingTree
                 }
             }
             prev = new Stack<System.Windows.Forms.Form>();
+        }
+        public static void AddToChosenWords(List<string> wordsToAdd)
+        {
+            ChosenWordsList.AddRange(wordsToAdd);
+        }
+        public static void RemoveFromChosenWords(string word)
+        {
+            ChosenWordsList.Remove(word);
+        }
+        public static void ClearChosenWords()
+        {
+            ChosenWordsList = new List<string>();
         }
     }
 }
