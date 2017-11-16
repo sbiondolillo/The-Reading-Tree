@@ -105,47 +105,6 @@ C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.exe
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.pdb
 C:\Users\Matthew\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.exe.config
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.exe
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.pdb
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ASoundsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsFinalDigraphMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsInitialMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsLetterBlendsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsPhonicsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsSpellingRulesMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ConsonantManipulationMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ContractionsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.CVCMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.DigraphMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ESoundsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ISoundsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LatinChamPrefixMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LatinPrefixMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LatinSuffixMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LevelsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.MainMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.MiscMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.NormPrefixMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.OOMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.OSoundsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.PossessiveNounMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.PrefixesMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.Properties.Resources.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.RootMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.RsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.SuffixesMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.SuffixSubMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.USoundsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.VCVariablesMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.VowelSoundsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.YSoundsMenu.resources
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csproj.GenerateResource.Cache
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csproj.CoreCompileInputs.cache
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.exe
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.pdb
-E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
 C:\Users\Sam\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ChooseFromLevelDialog.resources
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\bin\Debug\ReadingTree.exe.config
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\bin\Debug\ReadingTree.exe
@@ -189,3 +148,44 @@ C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.exe
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.pdb
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.exe.config
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.exe
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\bin\Debug\ReadingTree.pdb
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ASoundsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsFinalDigraphMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsInitialMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsLetterBlendsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsPhonicsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.BlendsSpellingRulesMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ConsonantManipulationMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ContractionsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.CVCMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.DigraphMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ESoundsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ISoundsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LatinChamPrefixMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LatinPrefixMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LatinSuffixMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.LevelsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.MainMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.MiscMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.NormPrefixMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.OOMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.OSoundsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.PossessiveNounMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.PrefixesMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.Properties.Resources.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.RootMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.RsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ChooseFromLevelDialog.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.SuffixesMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.SuffixSubMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.USoundsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.VCVariablesMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.VowelSoundsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.YSoundsMenu.resources
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csproj.GenerateResource.Cache
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csproj.CoreCompileInputs.cache
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.exe
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.pdb

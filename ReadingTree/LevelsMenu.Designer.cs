@@ -66,6 +66,7 @@
             this.level1Box.Name = "level1Box";
             this.level1Box.Size = new System.Drawing.Size(95, 160);
             this.level1Box.TabIndex = 0;
+            this.level1Box.DoubleClick += new System.EventHandler(this.Double_Click);
             // 
             // level1Label
             // 
@@ -119,6 +120,7 @@
             this.level2Box.Name = "level2Box";
             this.level2Box.Size = new System.Drawing.Size(95, 160);
             this.level2Box.TabIndex = 6;
+            this.level2Box.DoubleClick += new System.EventHandler(this.Double_Click);
             // 
             // level3Box
             // 
@@ -127,6 +129,7 @@
             this.level3Box.Name = "level3Box";
             this.level3Box.Size = new System.Drawing.Size(95, 160);
             this.level3Box.TabIndex = 7;
+            this.level3Box.DoubleClick += new System.EventHandler(this.Double_Click);
             // 
             // level4Box
             // 
@@ -135,6 +138,7 @@
             this.level4Box.Name = "level4Box";
             this.level4Box.Size = new System.Drawing.Size(95, 160);
             this.level4Box.TabIndex = 8;
+            this.level4Box.DoubleClick += new System.EventHandler(this.Double_Click);
             // 
             // level5Box
             // 
@@ -143,6 +147,7 @@
             this.level5Box.Name = "level5Box";
             this.level5Box.Size = new System.Drawing.Size(95, 160);
             this.level5Box.TabIndex = 9;
+            this.level5Box.DoubleClick += new System.EventHandler(this.Double_Click);
             // 
             // btnMainMenu
             // 

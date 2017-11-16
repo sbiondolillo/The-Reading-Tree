@@ -173,5 +173,18 @@ namespace ReadingTree
             if (userClosed)
                 Application.Exit();
         }
+
+        private void Double_Click(object sender, EventArgs e)
+        {            
+            List<string> picked_word = new List<string>();
+            picked_word.Clear();
+            ListBox x = (ListBox)sender;
+            if (x.SelectedItem != null)
+            {
+                picked_word.Add(level1Box.SelectedItem.ToString());
+                History.AddToChosenWords(picked_word);
+                RefreshChosenWordsBox();
+            }                     
+        }
     }
 }

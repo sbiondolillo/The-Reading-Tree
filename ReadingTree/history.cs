@@ -40,8 +40,13 @@ namespace ReadingTree
             prev = new Stack<System.Windows.Forms.Form>();
         }
         public static void AddToChosenWords(List<string> wordsToAdd)
-        {
-            ChosenWordsList.AddRange(wordsToAdd);
+        {           
+            foreach(String w in wordsToAdd)
+            {
+                if (!ChosenWordsList.Contains(w))
+                    ChosenWordsList.Add(w);
+            }
+                //ChosenWordsList.AddRange(wordsToAdd);                                  
         }
         public static void RemoveFromChosenWords(string word)
         {
