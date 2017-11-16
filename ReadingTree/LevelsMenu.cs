@@ -175,33 +175,16 @@ namespace ReadingTree
         }
 
         private void Double_Click(object sender, EventArgs e)
-        {
+        {            
             List<string> picked_word = new List<string>();
-            if(level1Box.SelectedItem != null)
+            picked_word.Clear();
+            ListBox x = (ListBox)sender;
+            if (x.SelectedItem != null)
             {
                 picked_word.Add(level1Box.SelectedItem.ToString());
-            }
-            else if (level2Box.SelectedItem != null)
-            {
-                picked_word.Add(level2Box.SelectedItem.ToString());
-            }
-            else if (level3Box.SelectedItem != null)
-            {
-                picked_word.Add(level3Box.SelectedItem.ToString());
-            }
-            else if (level4Box.SelectedItem != null)
-            {
-                picked_word.Add(level4Box.SelectedItem.ToString());
-            }
-            else if (level5Box.SelectedItem != null)
-            {
-                picked_word.Add(level5Box.SelectedItem.ToString());
-            }
-            
-            History.AddToChosenWords(picked_word);
-            RefreshChosenWordsBox();
-            picked_word.Clear();
-
+                History.AddToChosenWords(picked_word);
+                RefreshChosenWordsBox();
+            }                     
         }
     }
 }
