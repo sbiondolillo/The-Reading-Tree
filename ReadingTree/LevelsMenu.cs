@@ -133,9 +133,16 @@ namespace ReadingTree
         }
         private void btnRemovedFromChosen_Click(object sender, EventArgs e)
         {
-            string selectedWord = ChosenWordsBox.SelectedItem.ToString();
-            History.RemoveFromChosenWords(selectedWord);
-            RefreshChosenWordsBox();
+            try
+            {
+                string selectedWord = ChosenWordsBox.SelectedItem.ToString();
+                History.RemoveFromChosenWords(selectedWord);
+                RefreshChosenWordsBox();
+            }
+            catch
+            {
+                MessageBox.Show("Must choose a word in choice word box");
+            }
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
