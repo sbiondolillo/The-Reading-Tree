@@ -105,6 +105,7 @@
             this.Controls.Add(this.DelBtn);
             this.Controls.Add(this.AddBtn);
             this.Name = "MaintainList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MaintainList";
             this.Load += new System.EventHandler(this.MaintainList_Load);
             this.ResumeLayout(false);

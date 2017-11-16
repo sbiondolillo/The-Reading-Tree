@@ -25,17 +25,27 @@ namespace ReadingTree
         private void LevelsMenu_Load(object sender, EventArgs e)
         {
             GroupNameLabel.Text = group_name;
-            InitializeLevelsListBoxes();
+            RefreshLevelsListBoxes();
             SelectDefaultRadioButton();
             RefreshChosenWordsBox();
         }
-        private void InitializeLevelsListBoxes()
+        private void RefreshLevelsListBoxes()
         {
             words = Methods.GetAllWords(group_name);
+            level1Box.DataSource = null;
+            words[0].Sort();
             level1Box.DataSource = words[0];
+            level2Box.DataSource = null;
+            words[1].Sort();
             level2Box.DataSource = words[1];
+            level3Box.DataSource = null;
+            words[2].Sort();
             level3Box.DataSource = words[2];
+            level4Box.DataSource = null;
+            words[3].Sort();
             level4Box.DataSource = words[3];
+            level5Box.DataSource = null;
+            words[4].Sort();
             level5Box.DataSource = words[4];
         }
         private void SelectDefaultRadioButton()
@@ -96,9 +106,12 @@ namespace ReadingTree
         }
         private void btnMaintainSelectedLevel_Click(object sender, EventArgs e)
         {
-            MaintainList Change = new MaintainList(group_name, SelectedLevel.ToString());
-            Change.Show();
-            Hide();
+            using (MaintainList Change = new MaintainList(group_name, SelectedLevel))
+            {
+                Change.ShowDialog(this);
+            }
+            RefreshLevelsListBoxes();
+
         }
         private void btnExportChosen_Click(object sender, EventArgs e)
         {
