@@ -133,16 +133,15 @@ namespace ReadingTree
         }
         private void btnRemovedFromChosen_Click(object sender, EventArgs e)
         {
-            //Checks to see if a null value is returned.  If so it throws a message box, if not it removes the word from the Chosen Words List
-            if (ChosenWordsBox.SelectedItem == null)
-            {
-                MessageBox.Show("Please select a word from the Chosen Words List to remove!");
-            }
-            else
+            try
             {
                 string selectedWord = ChosenWordsBox.SelectedItem.ToString();
                 History.RemoveFromChosenWords(selectedWord);
                 RefreshChosenWordsBox();
+            }
+            catch
+            {
+                MessageBox.Show("Must choose a word in choice word box");
             }
         }
         private void btnBack_Click(object sender, EventArgs e)
@@ -172,19 +171,6 @@ namespace ReadingTree
         {
             if (userClosed)
                 Application.Exit();
-        }
-
-        private void Double_Click(object sender, EventArgs e)
-        {            
-            List<string> picked_word = new List<string>();
-            picked_word.Clear();
-            ListBox x = (ListBox)sender;
-            if (x.SelectedItem != null)
-            {
-                picked_word.Add(level1Box.SelectedItem.ToString());
-                History.AddToChosenWords(picked_word);
-                RefreshChosenWordsBox();
-            }                     
         }
     }
 }
