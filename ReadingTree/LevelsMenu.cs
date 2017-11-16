@@ -94,6 +94,12 @@ namespace ReadingTree
                 SelectedLevel = 5;
             }
         }
+        private void btnMaintainSelectedLevel_Click(object sender, EventArgs e)
+        {
+            MaintainList Change = new MaintainList(group_name, SelectedLevel.ToString());
+            Change.Show();
+            Hide();
+        }
         private void btnExportChosen_Click(object sender, EventArgs e)
         {
             //Uses StreamWriter to write a text file to a specific location
@@ -141,8 +147,37 @@ namespace ReadingTree
             }
             catch
             {
-                MessageBox.Show("Must choose a word in choice word box");
+                MessageBox.Show("Please select one of your chosen words to remove.");
             }
+        }
+        private void Double_Click(object sender, EventArgs e)
+        {
+            List<string> picked_word = new List<string>();
+            if(level1Box.SelectedItem != null)
+            {
+                picked_word.Add(level1Box.SelectedItem.ToString());
+            }
+            else if (level2Box.SelectedItem != null)
+            {
+                picked_word.Add(level2Box.SelectedItem.ToString());
+            }
+            else if (level3Box.SelectedItem != null)
+            {
+                picked_word.Add(level3Box.SelectedItem.ToString());
+            }
+            else if (level4Box.SelectedItem != null)
+            {
+                picked_word.Add(level4Box.SelectedItem.ToString());
+            }
+            else if (level5Box.SelectedItem != null)
+            {
+                picked_word.Add(level5Box.SelectedItem.ToString());
+            }
+            
+            History.AddToChosenWords(picked_word);
+            RefreshChosenWordsBox();
+            picked_word.Clear();
+
         }
         private void btnBack_Click(object sender, EventArgs e)
         {

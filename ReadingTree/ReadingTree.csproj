@@ -156,6 +156,12 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaintainList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintainList.Designer.cs">
+      <DependentUpon>MaintainList.cs</DependentUpon>
+    </Compile>
     <Compile Include="MiscMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintainList.resx">
+      <DependentUpon>MaintainList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MiscMenu.resx">
       <DependentUpon>MiscMenu.cs</DependentUpon>

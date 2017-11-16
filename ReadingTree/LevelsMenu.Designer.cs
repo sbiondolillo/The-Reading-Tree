@@ -242,6 +242,7 @@
             this.btnMaintainSelectedLevel.TabIndex = 31;
             this.btnMaintainSelectedLevel.Text = "Maintain Selected Level";
             this.btnMaintainSelectedLevel.UseVisualStyleBackColor = true;
+            this.btnMaintainSelectedLevel.Click += new System.EventHandler(this.btnMaintainSelectedLevel_Click);
             // 
             // radioButtonLevel1
             // 
