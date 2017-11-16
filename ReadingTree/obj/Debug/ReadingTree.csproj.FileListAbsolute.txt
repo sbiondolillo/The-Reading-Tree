@@ -189,3 +189,4 @@ C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.exe
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.pdb
 C:\Users\Kevin\Source\Repos\The-Reading-Tree4\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.ChooseFromLevelDialog.resources
