@@ -232,3 +232,5 @@ C:\Users\cispupil\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTre
 C:\Users\cispupil\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csproj.GenerateResource.Cache
 C:\Users\cispupil\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.exe
 C:\Users\cispupil\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.pdb
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
+E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.MaintainList.resources
