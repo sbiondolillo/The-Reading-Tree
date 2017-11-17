@@ -111,7 +111,6 @@ namespace ReadingTree
                 Change.ShowDialog(this);
             }
             RefreshLevelsListBoxes();
-
         }
         private void btnExportChosen_Click(object sender, EventArgs e)
         {
@@ -147,7 +146,6 @@ namespace ReadingTree
                     History.AddToChosenWords(chooser.returnedWords);
                     RefreshChosenWordsBox();
                 }
-                chooser.Close();
             }
         }
         private void btnRemovedFromChosen_Click(object sender, EventArgs e)

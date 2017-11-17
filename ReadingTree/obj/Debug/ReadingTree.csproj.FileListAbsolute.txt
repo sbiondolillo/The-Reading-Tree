@@ -190,3 +190,4 @@ E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\R
 E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.exe
 E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.pdb
 E:\Fall 2017\Computer Science in Action\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Source\Repos\The-Reading-Tree\ReadingTree\obj\Debug\ReadingTree.MaintainList.resources
