@@ -25,19 +25,20 @@ namespace ReadingTree
             return prev.Pop();
         }
         
-        public static void ClearHistory()
+        public static void Show_MainMenu()
         {
             if (prev != null)
             {
                 foreach (System.Windows.Forms.Form form in prev)
                 {
                     if (form is MainMenu)
-                        form.Hide();
+                        form.Show();
                     else
                         form.Close();
                 }
             }
-            prev = new Stack<System.Windows.Forms.Form>();
+            prev.Clear();
+            
         }
         public static void AddToChosenWords(List<string> wordsToAdd)
         {           
@@ -45,8 +46,7 @@ namespace ReadingTree
             {
                 if (!ChosenWordsList.Contains(w))
                     ChosenWordsList.Add(w);
-            }
-                //ChosenWordsList.AddRange(wordsToAdd);                                  
+            }                                  
         }
         public static void RemoveFromChosenWords(string word)
         {

@@ -20,8 +20,7 @@ namespace ReadingTree
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
+            History.Show_MainMenu();
             Close();
         }
 
