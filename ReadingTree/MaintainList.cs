@@ -56,23 +56,23 @@ namespace ReadingTree
         }
         private void DelBtn_Click(object sender, EventArgs e)
         {
-            if (GroupBox.SelectedItem == null)
-            {
-                // Do Nothing
-            }
-            else
+            if (GroupBox.SelectedItem != null)
             {
                 string NewWord = GroupBox.SelectedItem.ToString();
                 DialogResult res = MessageBox.Show("Are you sure you want to delete " + NewWord, "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                 {
-                    MessageBox.Show(NewWord + " deleted");
-                    CsvWriter.DeleteWord(Level, group_name, NewWord);
+                    try
+                    {
+                        CsvWriter.DeleteWord(Level, group_name, NewWord);
+                        MessageBox.Show(NewWord + " deleted");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to delete " + NewWord + ": " + ex.Message);
+                    }
                     RefreshDataSource();
-                }
-                if (res == DialogResult.Cancel)
-                {
-                    //Do Nothing
                 }
             }
         }
