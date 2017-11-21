@@ -114,26 +114,46 @@ namespace ReadingTree
         }
         private void btnExportChosen_Click(object sender, EventArgs e)
         {
-            //Uses StreamWriter to write a text file to a specific location
-            SaveFileDialog savefile = new SaveFileDialog();
-            // set a default file name
-            savefile.FileName = "readingtree.txt";
-            // set filters - this can be done in properties as well
-            savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-
-            if (savefile.ShowDialog() == DialogResult.OK)
+            if (ChosenWordsBox.Items.Count != 0)
             {
-                using (StreamWriter sw = new StreamWriter(savefile.FileName))
-                    foreach (var item in ChosenWordsBox.Items)
+                //Uses StreamWriter to write a text file to a specific location
+                SaveFileDialog savefile = new SaveFileDialog();
+                // set a default file name
+                savefile.FileName = "readingtree.txt";
+                // set filters - this can be done in properties as well
+                savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+
+                if (savefile.ShowDialog() == DialogResult.OK)
+                {
+                    using (StreamWriter sw = new StreamWriter(savefile.FileName))
                     {
-                        sw.WriteLine(item);
+                        foreach (var item in ChosenWordsBox.Items)
+                        {
+                            sw.WriteLine(item);
+                        }
                     }
+                }
             }
         }
         private void btnClearChosen_Click(object sender, EventArgs e)
         {
-            History.ClearChosenWords();
-            RefreshChosenWordsBox();
+            if (ChosenWordsBox.Items.Count != 0)
+            {
+                DialogResult res = MessageBox.Show("Are you sure you want to clear all chosen words?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (res == DialogResult.OK)
+                {
+                    try
+                    {
+                        History.ClearChosenWords();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to clear the list: " + ex.Message);
+                    }
+                    RefreshChosenWordsBox();
+                }
+            }
         }
         private void btnChooseWordsFromSelected_Click(object sender, EventArgs e)
         {
@@ -150,15 +170,23 @@ namespace ReadingTree
         }
         private void btnRemovedFromChosen_Click(object sender, EventArgs e)
         {
-            try
+            if (ChosenWordsBox.SelectedItem != null)
             {
                 string selectedWord = ChosenWordsBox.SelectedItem.ToString();
-                History.RemoveFromChosenWords(selectedWord);
-                RefreshChosenWordsBox();
-            }
-            catch
-            {
-                MessageBox.Show("Please select one of your chosen words to remove.");
+                DialogResult res = MessageBox.Show("Are you sure you want to remove '" + selectedWord + "' ?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (res == DialogResult.OK)
+                {
+                    try
+                    {
+                        History.RemoveFromChosenWords(selectedWord);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to remove " + selectedWord + ": " + ex.Message);
+                    }
+                    RefreshChosenWordsBox();
+                }
             }
         }
         private void Double_Click(object sender, EventArgs e)
