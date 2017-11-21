@@ -34,9 +34,25 @@ namespace ReadingTree
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            string NewWord = Inputbox.Text;
-            CsvWriter.AddWord(Level, group_name, NewWord);
-            RefreshDataSource();
+            if (!Inputbox.Text.Equals(""))
+            {
+                string NewWord = Inputbox.Text;
+                DialogResult res = MessageBox.Show("Are you sure you want to add " + NewWord, "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (res == DialogResult.OK)
+                {
+                    try
+                    {
+                        CsvWriter.AddWord(Level, group_name, NewWord);
+                        MessageBox.Show(NewWord + " added");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to add " + NewWord + ": " + ex.Message);
+                    }
+                    RefreshDataSource();
+                }
+            }
         }
         private void DelBtn_Click(object sender, EventArgs e)
         {
