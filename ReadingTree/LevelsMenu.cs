@@ -114,20 +114,25 @@ namespace ReadingTree
         }
         private void btnExportChosen_Click(object sender, EventArgs e)
         {
-            //Uses StreamWriter to write a text file to a specific location
-            SaveFileDialog savefile = new SaveFileDialog();
-            // set a default file name
-            savefile.FileName = "readingtree.txt";
-            // set filters - this can be done in properties as well
-            savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-
-            if (savefile.ShowDialog() == DialogResult.OK)
+            if (ChosenWordsBox.Items.Count != 0)
             {
-                using (StreamWriter sw = new StreamWriter(savefile.FileName))
-                    foreach (var item in ChosenWordsBox.Items)
+                //Uses StreamWriter to write a text file to a specific location
+                SaveFileDialog savefile = new SaveFileDialog();
+                // set a default file name
+                savefile.FileName = "readingtree.txt";
+                // set filters - this can be done in properties as well
+                savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+
+                if (savefile.ShowDialog() == DialogResult.OK)
+                {
+                    using (StreamWriter sw = new StreamWriter(savefile.FileName))
                     {
-                        sw.WriteLine(item);
+                        foreach (var item in ChosenWordsBox.Items)
+                        {
+                            sw.WriteLine(item);
+                        }
                     }
+                }
             }
         }
         private void btnClearChosen_Click(object sender, EventArgs e)
