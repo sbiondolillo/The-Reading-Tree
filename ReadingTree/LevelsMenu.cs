@@ -132,8 +132,23 @@ namespace ReadingTree
         }
         private void btnClearChosen_Click(object sender, EventArgs e)
         {
-            History.ClearChosenWords();
-            RefreshChosenWordsBox();
+            if (ChosenWordsBox.Items.Count != 0)
+            {
+                DialogResult res = MessageBox.Show("Are you sure you want to clear all chosen words?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (res == DialogResult.OK)
+                {
+                    try
+                    {
+                        History.ClearChosenWords();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to clear the list: " + ex.Message);
+                    }
+                    RefreshChosenWordsBox();
+                }
+            }
         }
         private void btnChooseWordsFromSelected_Click(object sender, EventArgs e)
         {
@@ -150,15 +165,23 @@ namespace ReadingTree
         }
         private void btnRemovedFromChosen_Click(object sender, EventArgs e)
         {
-            try
+            if (ChosenWordsBox.SelectedItem != null)
             {
                 string selectedWord = ChosenWordsBox.SelectedItem.ToString();
-                History.RemoveFromChosenWords(selectedWord);
-                RefreshChosenWordsBox();
-            }
-            catch
-            {
-                MessageBox.Show("Please select one of your chosen words to remove.");
+                DialogResult res = MessageBox.Show("Are you sure you want to remove '" + selectedWord + "' ?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (res == DialogResult.OK)
+                {
+                    try
+                    {
+                        History.RemoveFromChosenWords(selectedWord);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to remove " + selectedWord + ": " + ex.Message);
+                    }
+                    RefreshChosenWordsBox();
+                }
             }
         }
         private void Double_Click(object sender, EventArgs e)
