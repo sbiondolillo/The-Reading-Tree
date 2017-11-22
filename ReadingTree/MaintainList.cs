@@ -34,29 +34,45 @@ namespace ReadingTree
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            string NewWord = Inputbox.Text;
-            CsvWriter.AddWord(Level, group_name, NewWord);
-            RefreshDataSource();
+            if (!Inputbox.Text.Equals(""))
+            {
+                string NewWord = Inputbox.Text;
+                DialogResult res = MessageBox.Show("Are you sure you want to add '" + NewWord + "' ?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (res == DialogResult.OK)
+                {
+                    try
+                    {
+                        CsvWriter.AddWord(Level, group_name, NewWord);
+                        MessageBox.Show(NewWord + " added");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to add " + NewWord + ": " + ex.Message);
+                    }
+                    RefreshDataSource();
+                }
+            }
         }
         private void DelBtn_Click(object sender, EventArgs e)
         {
-            if (GroupBox.SelectedItem == null)
-            {
-                // Do Nothing
-            }
-            else
+            if (GroupBox.SelectedItem != null)
             {
                 string NewWord = GroupBox.SelectedItem.ToString();
-                DialogResult res = MessageBox.Show("Are you sure you want to delete " + NewWord, "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show("Are you sure you want to delete '" + NewWord + "' ?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                 {
-                    MessageBox.Show(NewWord + " deleted");
-                    CsvWriter.DeleteWord(Level, group_name, NewWord);
+                    try
+                    {
+                        CsvWriter.DeleteWord(Level, group_name, NewWord);
+                        MessageBox.Show(NewWord + " deleted");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        MessageBox.Show("Unable to delete " + NewWord + ": " + ex.Message);
+                    }
                     RefreshDataSource();
-                }
-                if (res == DialogResult.Cancel)
-                {
-                    //Do Nothing
                 }
             }
         }
