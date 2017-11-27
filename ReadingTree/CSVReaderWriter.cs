@@ -24,7 +24,8 @@ namespace ReadingTree
         {
         }
 
-        public static string masterFP = "..\\resources\\all_levels.csv";
+        public static string workingDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+        public static string masterFP = workingDirectory + "\\resources\\all_levels.csv";
 
         // Read a row from the file
         public bool ReadRow(CsvRow row)
@@ -72,8 +73,9 @@ namespace ReadingTree
     // Class to write to a csv file
     public class CsvWriter : StreamWriter
     {
-        public static string masterFP = "..\\resources\\all_levels.csv";
-        public static string tempFP = "..\\resources\\tempFP.csv";
+        public static string workingDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+        public static string masterFP = workingDirectory + "\\resources\\all_levels.csv";
+        public static string tempFP = workingDirectory + "\\resources\\tempFP.csv";
         public CsvWriter(string file) : base(file)
         {
         }
