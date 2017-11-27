@@ -414,7 +414,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="bin\resources\all_levels.csv" />
     <None Include="resources\all_levels.csv" />
   </ItemGroup>
   <ItemGroup>
