@@ -13,7 +13,7 @@ namespace ReadingTree
             prev = new Stack<System.Windows.Forms.Form>();
         }
         public static Stack<System.Windows.Forms.Form> prev { get; set; }
-        public static List<string> ChosenWordsList { get; set; } = new List<string>();
+        public static List<List<string>> chosenWordsList { get; set; } = new List<List<string>>();
 
         public static void SetPrev(System.Windows.Forms.Form parentForm)
         {
@@ -40,21 +40,49 @@ namespace ReadingTree
             prev.Clear();
             
         }
-        public static void AddToChosenWords(List<string> wordsToAdd)
-        {           
-            foreach(String w in wordsToAdd)
+        public static void AddToChosenWords(List<string> wordsToAdd, string groupName, int level)
+        {
+            bool wordAlreadyChosen = false;
+
+            foreach (string wordToBeAdded in wordsToAdd)
             {
-                if (!ChosenWordsList.Contains(w))
-                    ChosenWordsList.Add(w);
-            }                                  
+                List<string> newEntry = new List<string>();
+                newEntry.Add(wordToBeAdded);
+                newEntry.Add(groupName);
+                newEntry.Add(level.ToString());
+
+                foreach (List<string> activeList in chosenWordsList)
+                {
+                    if (newEntry.SequenceEqual(activeList))
+                    {
+                        wordAlreadyChosen = true;
+                    }
+                }
+
+                if (!wordAlreadyChosen)
+                {
+                    chosenWordsList.Add(newEntry);
+                }
+            }                              
         }
         public static void RemoveFromChosenWords(string word)
         {
-            ChosenWordsList.Remove(word);
+            List<string> selectedEntry = null;
+            foreach (List<string> entry in chosenWordsList)
+            {
+                if (entry[0].Equals(word))
+                {
+                    selectedEntry = entry;
+                }
+            }
+            if (selectedEntry != null)
+            {
+                chosenWordsList.Remove(selectedEntry);
+            }
         }
         public static void ClearChosenWords()
         {
-            ChosenWordsList = new List<string>();
+            chosenWordsList = new List<List<string>>();
         }
     }
 }
