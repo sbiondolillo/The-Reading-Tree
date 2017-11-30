@@ -134,7 +134,8 @@ namespace ReadingTree
                     {
                         foreach (var item in ChosenWordsBox.Items)
                         {
-                            sw.WriteLine(item);
+                            List<string> entry = History.FindInChosenWords(item.ToString());
+                            sw.WriteLine(String.Join(",", entry.ToArray()));
                         }
                     }
                 }

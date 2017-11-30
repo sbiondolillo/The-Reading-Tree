@@ -84,5 +84,18 @@ namespace ReadingTree
         {
             chosenWordsList = new List<List<string>>();
         }
+        
+        public static List<string> FindInChosenWords(string word)
+        {
+            List<string> output = new List<string>();
+            foreach (List<string> entry in chosenWordsList)
+            {
+                if (entry[0].Equals(word))
+                {
+                    output = entry;
+                }
+            }
+            return output;
+        }
     }
 }
