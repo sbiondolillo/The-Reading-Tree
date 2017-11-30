@@ -201,11 +201,23 @@ namespace ReadingTree
             ListBox x = (ListBox)sender;
             if (x.SelectedItem != null)
             {
+                selectedLevel = int.Parse(x.Tag.ToString());
+                checkSelectedRadioButton();
                 picked_word.Add(x.SelectedItem.ToString());
                 History.AddToChosenWords(picked_word, group_name, selectedLevel);
                 RefreshChosenWordsBox();
             }
 
+        }
+        private void checkSelectedRadioButton()
+        {
+            foreach (RadioButton radiobutton in panel1.Controls)
+            {
+                if (int.Parse(radiobutton.Tag.ToString()) == selectedLevel)
+                {
+                    radiobutton.Checked = true;
+                }
+            }
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
