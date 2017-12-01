@@ -108,9 +108,12 @@ namespace ReadingTree
             List<string> output = new List<string>();
             foreach (List<string> entry in chosenWordsList)
             {
-                if (entry[0].Equals(word))
+                foreach (string s in entry)
                 {
-                    output = entry;
+                    if (s == word)
+                    {
+                        output.Add(s);
+                    }
                 }
             }
             return output;
