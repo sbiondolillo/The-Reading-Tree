@@ -82,7 +82,10 @@ namespace ReadingTree
             List<string> chosenWords = new List<string>();
             foreach (List<string> entry in History.chosenWordsList)
             {
-                chosenWords.Add(entry[0]);
+                foreach(string s in entry)
+                {
+                    chosenWords.Add(s);
+                }
             }
             ChosenWordsBox.DataSource = chosenWords;
         }
