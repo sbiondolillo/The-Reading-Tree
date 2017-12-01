@@ -48,7 +48,7 @@ namespace ReadingTree
             bool wordAlreadyChosen = false;
             foreach(List<string> activeList in chosenWordsList)
             {
-                if (activeList[0] == name_lvl)
+                if (activeList[0].Equals(name_lvl))
                 {
                     id = chosenWordsList.IndexOf(activeList);
                     break;
@@ -61,7 +61,7 @@ namespace ReadingTree
 
                     foreach (string active in chosenWordsList[id])
                     {
-                        if (active == wordToBeAdded)
+                        if (active.Equals(wordToBeAdded))
                         {
                             wordAlreadyChosen = true;
                         }
@@ -110,7 +110,7 @@ namespace ReadingTree
             {
                 foreach (string s in entry)
                 {
-                    if (s == word)
+                    if (s.Equals(word))
                     {
                         output.Add(s);
                     }
