@@ -42,28 +42,46 @@ namespace ReadingTree
         }
         public static void AddToChosenWords(List<string> wordsToAdd, string groupName, int level)
         {
+            List<string> newEntry = new List<string>();
+            int id = -1;
+            string name_lvl = groupName + " " + level.ToString();
             bool wordAlreadyChosen = false;
-
-            foreach (string wordToBeAdded in wordsToAdd)
+            foreach(List<string> activeList in chosenWordsList)
             {
-                List<string> newEntry = new List<string>();
-                newEntry.Add(wordToBeAdded);
-                newEntry.Add(groupName);
-                newEntry.Add(level.ToString());
-
-                foreach (List<string> activeList in chosenWordsList)
+                if (activeList[0].Equals(name_lvl))
                 {
-                    if (newEntry.SequenceEqual(activeList))
+                    id = chosenWordsList.IndexOf(activeList);
+                    break;
+                }
+            }
+            if (id != -1)
+            {
+                foreach (string wordToBeAdded in wordsToAdd)
+                {
+
+                    foreach (string active in chosenWordsList[id])
                     {
-                        wordAlreadyChosen = true;
+                        if (active.Equals(wordToBeAdded))
+                        {
+                            wordAlreadyChosen = true;
+                        }
+                    }
+
+                    if (!wordAlreadyChosen)
+                    {
+                        chosenWordsList[id].Add(wordToBeAdded);
                     }
                 }
-
-                if (!wordAlreadyChosen)
+            }
+            else
+            {
+                newEntry.Add(name_lvl);
+                foreach (string wordToBeAdded in wordsToAdd)
                 {
-                    chosenWordsList.Add(newEntry);
+                    newEntry.Add(wordToBeAdded);
                 }
-            }                              
+                chosenWordsList.Add(newEntry);
+            }
         }
         public static void RemoveFromChosenWords(string word)
         {
@@ -90,9 +108,12 @@ namespace ReadingTree
             List<string> output = new List<string>();
             foreach (List<string> entry in chosenWordsList)
             {
-                if (entry[0].Equals(word))
+                foreach (string s in entry)
                 {
-                    output = entry;
+                    if (s.Equals(word))
+                    {
+                        output.Add(s);
+                    }
                 }
             }
             return output;
