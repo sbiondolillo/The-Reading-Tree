@@ -13,7 +13,7 @@ namespace ReadingTree
             prev = new Stack<System.Windows.Forms.Form>();
         }
         public static Stack<System.Windows.Forms.Form> prev { get; set; }
-        public static List<string> ChosenWordsList { get; set; } = new List<string>();
+        public static List<List<string>> chosenWordsList { get; set; } = new List<List<string>>();
 
         public static void SetPrev(System.Windows.Forms.Form parentForm)
         {
@@ -40,21 +40,83 @@ namespace ReadingTree
             prev.Clear();
             
         }
-        public static void AddToChosenWords(List<string> wordsToAdd)
-        {           
-            foreach(String w in wordsToAdd)
+        public static void AddToChosenWords(List<string> wordsToAdd, string groupName, int level)
+        {
+            List<string> newEntry = new List<string>();
+            int id = -1;
+            string name_lvl = groupName + " " + level.ToString();
+            bool wordAlreadyChosen = false;
+            foreach(List<string> activeList in chosenWordsList)
             {
-                if (!ChosenWordsList.Contains(w))
-                    ChosenWordsList.Add(w);
-            }                                  
+                if (activeList[0].Equals(name_lvl))
+                {
+                    id = chosenWordsList.IndexOf(activeList);
+                    break;
+                }
+            }
+            if (id != -1)
+            {
+                foreach (string wordToBeAdded in wordsToAdd)
+                {
+
+                    foreach (string active in chosenWordsList[id])
+                    {
+                        if (active.Equals(wordToBeAdded))
+                        {
+                            wordAlreadyChosen = true;
+                        }
+                    }
+
+                    if (!wordAlreadyChosen)
+                    {
+                        chosenWordsList[id].Add(wordToBeAdded);
+                    }
+                }
+            }
+            else
+            {
+                newEntry.Add(name_lvl);
+                foreach (string wordToBeAdded in wordsToAdd)
+                {
+                    newEntry.Add(wordToBeAdded);
+                }
+                chosenWordsList.Add(newEntry);
+            }
         }
         public static void RemoveFromChosenWords(string word)
         {
-            ChosenWordsList.Remove(word);
+            List<string> selectedEntry = null;
+            foreach (List<string> entry in chosenWordsList)
+            {
+                if (entry[0].Equals(word))
+                {
+                    selectedEntry = entry;
+                }
+            }
+            if (selectedEntry != null)
+            {
+                chosenWordsList.Remove(selectedEntry);
+            }
         }
         public static void ClearChosenWords()
         {
-            ChosenWordsList = new List<string>();
+            chosenWordsList = new List<List<string>>();
+        }
+        
+        public static List<string> FindInChosenWords(string word)
+        {
+            List<string> output = new List<string>();
+            foreach (List<string> entry in chosenWordsList)
+            {
+                foreach (string s in entry)
+                {
+                    if (s.Equals(word))
+                    {
+                        output.Add(s);
+                    }
+                }
+            }
+            return output;
         }
     }
 }
