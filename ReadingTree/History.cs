@@ -88,12 +88,14 @@ namespace ReadingTree
             List<string> emptyGroup = null;
             foreach (List<string> entry in chosenWordsList)
             {
+                bool found = false;
                 for (int i = 1; i < entry.Count; i++)
                 {
                     string target = entry[i];
                     if (target.Equals(word))
                     {
                         entry.Remove(target);
+                        found = true;
                         break;
                     }
                 }
@@ -101,6 +103,11 @@ namespace ReadingTree
                 if (entry.Count < 2)
                 {
                     emptyGroup = entry;
+                }
+
+                if (found)
+                {
+                    break;
                 }
             }
 
