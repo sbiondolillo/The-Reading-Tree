@@ -83,12 +83,16 @@ namespace ReadingTree
                 chosenWordsList.Add(newEntry);
             }
         }
-        public static void RemoveFromChosenWords(string word)
+        public static int RemoveFromChosenWords(string word)
         {
+            int result = 0;
             List<string> emptyGroup = null;
             foreach (List<string> entry in chosenWordsList)
             {
                 bool found = false;
+                if (entry[0].Equals(word)) {
+                    return 2;
+                }
                 for (int i = 1; i < entry.Count; i++)
                 {
                     string target = entry[i];
@@ -107,6 +111,7 @@ namespace ReadingTree
 
                 if (found)
                 {
+                    result = 1;
                     break;
                 }
             }
@@ -115,6 +120,8 @@ namespace ReadingTree
             {
                 chosenWordsList.Remove(emptyGroup);
             }
+
+            return result;
             
         }
         public static void ClearChosenWords()
