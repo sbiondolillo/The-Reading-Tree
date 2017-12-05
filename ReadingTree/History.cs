@@ -124,6 +124,18 @@ namespace ReadingTree
             return result;
             
         }
+        public static void RemoveGroupFromChosenWords(string word)
+        {
+            foreach (List<string> entry in chosenWordsList)
+            {
+                if (entry[0].Equals(word))
+                {
+                    chosenWordsList.Remove(entry);
+                    break;
+                }
+            }
+
+        }
         public static void ClearChosenWords()
         {
             chosenWordsList = new List<List<string>>();

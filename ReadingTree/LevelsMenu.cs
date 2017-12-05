@@ -182,17 +182,32 @@ namespace ReadingTree
             if (ChosenWordsBox.SelectedItem != null)
             {
                 string selectedWord = ChosenWordsBox.SelectedItem.ToString();
+                DialogResult confirmRemoveGroup = DialogResult.Cancel;
                 DialogResult res = MessageBox.Show("Are you sure you want to remove '" + selectedWord + "' ?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                 {
                     try
                     {
-                        History.RemoveFromChosenWords(selectedWord);
+                        int result = History.RemoveFromChosenWords(selectedWord);
+                        switch (result)
+                        {
+                            case 0: MessageBox.Show("Unable to locate " + selectedWord + ".");
+                                break;
+                            case 1: break;
+                            case 2:
+                                confirmRemoveGroup = MessageBox.Show(text: $"Are you sure you want to remove all words from the group ' {selectedWord} ' ?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
+                                break;
+                            default: break;
+                        }
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex);
                         MessageBox.Show("Unable to remove " + selectedWord + ": " + ex.Message);
+                    }
+                    if (confirmRemoveGroup == DialogResult.OK)
+                    {
+                        History.RemoveGroupFromChosenWords(selectedWord);
                     }
                     RefreshChosenWordsBox();
                 }
