@@ -148,7 +148,7 @@ namespace ReadingTree
         {
             if (ChosenWordsBox.Items.Count != 0)
             {
-                DialogResult res = MessageBox.Show("Are you sure you want to clear all chosen words?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show(text: "Are you sure you want to clear all chosen words?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                 {
                     try
@@ -158,7 +158,7 @@ namespace ReadingTree
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex);
-                        MessageBox.Show("Unable to clear the list: " + ex.Message);
+                        MessageBox.Show(text: $"Unable to clear the list: {ex.Message}");
                     }
                     RefreshChosenWordsBox();
                 }
@@ -183,7 +183,7 @@ namespace ReadingTree
             {
                 string selectedWord = ChosenWordsBox.SelectedItem.ToString();
                 DialogResult confirmRemoveGroup = DialogResult.Cancel;
-                DialogResult res = MessageBox.Show("Are you sure you want to remove '" + selectedWord + "' ?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show(text: $"Are you sure you want to remove '{selectedWord}' ?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                 {
                     try
@@ -195,7 +195,7 @@ namespace ReadingTree
                                 break;
                             case 1: break;
                             case 2:
-                                confirmRemoveGroup = MessageBox.Show(text: $"Are you sure you want to remove all words from the group ' {selectedWord} ' ?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
+                                confirmRemoveGroup = MessageBox.Show(text: $"Are you sure you want to remove all words from the group '{selectedWord}' ?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
                                 break;
                             default: break;
                         }
@@ -203,7 +203,7 @@ namespace ReadingTree
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex);
-                        MessageBox.Show("Unable to remove " + selectedWord + ": " + ex.Message);
+                        MessageBox.Show(text: $"Unable to remove {selectedWord}: {ex.Message}");
                     }
                     if (confirmRemoveGroup == DialogResult.OK)
                     {
