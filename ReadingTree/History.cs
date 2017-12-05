@@ -85,18 +85,19 @@ namespace ReadingTree
         }
         public static void RemoveFromChosenWords(string word)
         {
-            List<string> selectedEntry = null;
+            
             foreach (List<string> entry in chosenWordsList)
             {
-                if (entry[0].Equals(word))
+                foreach (string finder in entry)
                 {
-                    selectedEntry = entry;
-                }
+                    if (finder.Equals(word))
+                    {
+                        entry.Remove(finder);
+                        break;
+                    }
+                }                
             }
-            if (selectedEntry != null)
-            {
-                chosenWordsList.Remove(selectedEntry);
-            }
+            
         }
         public static void ClearChosenWords()
         {
