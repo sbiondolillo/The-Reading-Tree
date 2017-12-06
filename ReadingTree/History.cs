@@ -166,8 +166,12 @@ namespace ReadingTree
 
             foreach(List<string> entry in chosenWordsList)
             {
-                string group_name = entry[0];
-                output.Add($"<h2>{group_name.Substring(0,group_name.Length-1)}Level {group_name.Substring(group_name.Length-1)}</h2>");
+                string groupNameWithLevel = entry[0];
+                string groupName = groupNameWithLevel.Substring(0, groupNameWithLevel.Length - 1);
+                string level = groupNameWithLevel.Substring(groupNameWithLevel.Length - 1);
+
+                output.Add($"<h3>{groupName}Level {level}</h3>");
+
                 for (int i = 1; i < entry.Count; i++)
                 {
                     output.Add($"{entry[i]}<br/>");
