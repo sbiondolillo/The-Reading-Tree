@@ -127,9 +127,9 @@ namespace ReadingTree
                 //Uses StreamWriter to write a text file to a specific location
                 SaveFileDialog savefile = new SaveFileDialog();
                 // set a default file name
-                savefile.FileName = "readingtree.txt";
+                savefile.FileName = "readingtree.html";
                 // set filters - this can be done in properties as well
-                savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                savefile.Filter = "HTML files (*.html)|*.html|All files (*.*)|*.*";
 
                 if (savefile.ShowDialog() == DialogResult.OK)
                 {
