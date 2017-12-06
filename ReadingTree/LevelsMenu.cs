@@ -127,18 +127,18 @@ namespace ReadingTree
                 //Uses StreamWriter to write a text file to a specific location
                 SaveFileDialog savefile = new SaveFileDialog();
                 // set a default file name
-                savefile.FileName = "readingtree.txt";
+                savefile.FileName = "readingtree.html";
                 // set filters - this can be done in properties as well
-                savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                savefile.Filter = "HTML files (*.html)|*.html|All files (*.*)|*.*";
 
                 if (savefile.ShowDialog() == DialogResult.OK)
                 {
                     using (StreamWriter sw = new StreamWriter(savefile.FileName))
                     {
-                        foreach (var item in ChosenWordsBox.Items)
+                        List<string> lines = History.BuildHTMLFile();
+                        foreach (string line in lines)
                         {
-                            List<string> entry = History.FindInChosenWords(item.ToString());
-                            sw.WriteLine(String.Join("", entry.ToArray()));
+                            sw.WriteLine(line);
                         }
                     }
                 }

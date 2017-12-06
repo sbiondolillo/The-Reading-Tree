@@ -156,5 +156,29 @@ namespace ReadingTree
             }
             return output;
         }
+
+        public static List<string> BuildHTMLFile()
+        {
+            List<string> output = new List<string>();
+            output.Add("<!DOCTYPE html><html>");
+            output.Add("<head><title>The Reading Tree</title></head>");
+            output.Add("<body>");
+
+            foreach(List<string> entry in chosenWordsList)
+            {
+                string groupNameWithLevel = entry[0];
+                string groupName = groupNameWithLevel.Substring(0, groupNameWithLevel.Length - 1);
+                string level = groupNameWithLevel.Substring(groupNameWithLevel.Length - 1);
+
+                output.Add($"<h3>{groupName}Level {level}</h3>");
+
+                for (int i = 1; i < entry.Count; i++)
+                {
+                    output.Add($"{entry[i]}<br/>");
+                }
+            }
+            output.Add("</body></html>");
+            return output;
+        }
     }
 }
