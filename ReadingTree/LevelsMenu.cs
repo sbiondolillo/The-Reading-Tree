@@ -135,10 +135,10 @@ namespace ReadingTree
                 {
                     using (StreamWriter sw = new StreamWriter(savefile.FileName))
                     {
-                        foreach (var item in ChosenWordsBox.Items)
+                        List<string> lines = History.BuildHTMLFile();
+                        foreach (string line in lines)
                         {
-                            List<string> entry = History.FindInChosenWords(item.ToString());
-                            sw.WriteLine(String.Join("", entry.ToArray()));
+                            sw.WriteLine(line);
                         }
                     }
                 }
