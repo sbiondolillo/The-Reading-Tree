@@ -16,7 +16,7 @@ namespace ReadingTree
         private string group_name = "";
         private bool userClosed { get; set; } = false;
         private List<List<string>> words { get; set; }
-        private int SelectedLevel { get; set; }
+        private int selectedLevel { get; set; }
         public LevelsMenu(string group_name)
         {
             InitializeComponent();
@@ -53,60 +53,68 @@ namespace ReadingTree
             if (level1Box.Items.Count > 0)
             {
                 radioButtonLevel1.Select();
-                SelectedLevel = 1;
+                selectedLevel = 1;
             }
             else if (level2Box.Items.Count > 0)
             {
                 radioButtonLevel2.Select();
-                SelectedLevel = 2;
+                selectedLevel = 2;
             }
             else if (level3Box.Items.Count > 0)
             {
                 radioButtonLevel3.Select();
-                SelectedLevel = 3;
+                selectedLevel = 3;
             }
             else if (level4Box.Items.Count > 0)
             {
                 radioButtonLevel4.Select();
-                SelectedLevel = 4;
+                selectedLevel = 4;
             }
             else
             {
                 radioButtonLevel5.Select();
-                SelectedLevel = 5;
+                selectedLevel = 5;
             }
         }
         private void RefreshChosenWordsBox()
         {
             ChosenWordsBox.DataSource = null;
-            ChosenWordsBox.DataSource = History.ChosenWordsList;
+            List<string> chosenWords = new List<string>();
+            foreach (List<string> entry in History.chosenWordsList)
+            {
+                foreach(string s in entry)
+                {
+                    chosenWords.Add(s);
+                }
+            }
+            ChosenWordsBox.DataSource = chosenWords;
         }
         private void RadioButtons_CheckChanged(object sender, EventArgs e)
         {
             if (radioButtonLevel1.Checked)
             {
-                SelectedLevel = 1;
+                selectedLevel = 1;
             }
             else if (radioButtonLevel2.Checked)
             {
-                SelectedLevel = 2;
+                selectedLevel = 2;
             }
             else if (radioButtonLevel3.Checked)
             {
-                SelectedLevel = 3;
+                selectedLevel = 3;
             }
             else if (radioButtonLevel4.Checked)
             {
-                SelectedLevel = 4;
+                selectedLevel = 4;
             }
             else
             {
-                SelectedLevel = 5;
+                selectedLevel = 5;
             }
         }
         private void btnMaintainSelectedLevel_Click(object sender, EventArgs e)
         {
-            using (MaintainList Change = new MaintainList(group_name, SelectedLevel))
+            using (MaintainList Change = new MaintainList(group_name, selectedLevel))
             {
                 Change.ShowDialog(this);
             }
@@ -119,17 +127,18 @@ namespace ReadingTree
                 //Uses StreamWriter to write a text file to a specific location
                 SaveFileDialog savefile = new SaveFileDialog();
                 // set a default file name
-                savefile.FileName = "readingtree.txt";
+                savefile.FileName = "readingtree.html";
                 // set filters - this can be done in properties as well
-                savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                savefile.Filter = "HTML files (*.html)|*.html|All files (*.*)|*.*";
 
                 if (savefile.ShowDialog() == DialogResult.OK)
                 {
                     using (StreamWriter sw = new StreamWriter(savefile.FileName))
                     {
-                        foreach (var item in ChosenWordsBox.Items)
+                        List<string> lines = History.BuildHTMLFile();
+                        foreach (string line in lines)
                         {
-                            sw.WriteLine(item);
+                            sw.WriteLine(line);
                         }
                     }
                 }
@@ -139,7 +148,7 @@ namespace ReadingTree
         {
             if (ChosenWordsBox.Items.Count != 0)
             {
-                DialogResult res = MessageBox.Show("Are you sure you want to clear all chosen words?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show(text: "Are you sure you want to clear all chosen words?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                 {
                     try
@@ -149,7 +158,7 @@ namespace ReadingTree
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex);
-                        MessageBox.Show("Unable to clear the list: " + ex.Message);
+                        MessageBox.Show(text: $"Unable to clear the list: {ex.Message}");
                     }
                     RefreshChosenWordsBox();
                 }
@@ -157,13 +166,13 @@ namespace ReadingTree
         }
         private void btnChooseWordsFromSelected_Click(object sender, EventArgs e)
         {
-            List<string> selectedWords = words[SelectedLevel - 1];
+            List<string> selectedWords = words[selectedLevel - 1];
             using (ChooseFromLevelDialog chooser = new ChooseFromLevelDialog(selectedWords))
             {
                 chooser.ShowDialog(this);
                 if (chooser.DialogResult == DialogResult.OK)
                 {
-                    History.AddToChosenWords(chooser.returnedWords);
+                    History.AddToChosenWords(chooser.returnedWords, group_name, selectedLevel);
                     RefreshChosenWordsBox();
                 }
             }
@@ -173,17 +182,32 @@ namespace ReadingTree
             if (ChosenWordsBox.SelectedItem != null)
             {
                 string selectedWord = ChosenWordsBox.SelectedItem.ToString();
-                DialogResult res = MessageBox.Show("Are you sure you want to remove '" + selectedWord + "' ?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult confirmRemoveGroup = DialogResult.Cancel;
+                DialogResult res = MessageBox.Show(text: $"Are you sure you want to remove '{selectedWord}' ?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                 {
                     try
                     {
-                        History.RemoveFromChosenWords(selectedWord);
+                        int result = History.RemoveFromChosenWords(selectedWord);
+                        switch (result)
+                        {
+                            case 0: MessageBox.Show("Unable to locate " + selectedWord + ".");
+                                break;
+                            case 1: break;
+                            case 2:
+                                confirmRemoveGroup = MessageBox.Show(text: $"Are you sure you want to remove all words from the group '{selectedWord}' ?", caption: "Confirmation", buttons: MessageBoxButtons.OKCancel, icon: MessageBoxIcon.Information);
+                                break;
+                            default: break;
+                        }
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex);
-                        MessageBox.Show("Unable to remove " + selectedWord + ": " + ex.Message);
+                        MessageBox.Show(text: $"Unable to remove {selectedWord}: {ex.Message}");
+                    }
+                    if (confirmRemoveGroup == DialogResult.OK)
+                    {
+                        History.RemoveGroupFromChosenWords(selectedWord);
                     }
                     RefreshChosenWordsBox();
                 }
@@ -196,11 +220,23 @@ namespace ReadingTree
             ListBox x = (ListBox)sender;
             if (x.SelectedItem != null)
             {
+                selectedLevel = int.Parse(x.Tag.ToString());
+                checkSelectedRadioButton();
                 picked_word.Add(x.SelectedItem.ToString());
-                History.AddToChosenWords(picked_word);
+                History.AddToChosenWords(picked_word, group_name, selectedLevel);
                 RefreshChosenWordsBox();
             }
 
+        }
+        private void checkSelectedRadioButton()
+        {
+            foreach (RadioButton radiobutton in panel1.Controls)
+            {
+                if (int.Parse(radiobutton.Tag.ToString()) == selectedLevel)
+                {
+                    radiobutton.Checked = true;
+                }
+            }
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
