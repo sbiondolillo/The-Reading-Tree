@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace ReadingTree
@@ -24,8 +25,8 @@ namespace ReadingTree
         {
         }
 
-        public static string workingDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-        public static string masterFP = workingDirectory + "\\resources\\all_levels.csv";
+        public static string workingDirectory = Path.GetDirectoryName((new System.Uri(Assembly.GetExecutingAssembly().CodeBase)).AbsolutePath);
+        public static string masterFP = workingDirectory + "\\all_levels.csv";
 
         // Read a row from the file
         public bool ReadRow(CsvRow row)
