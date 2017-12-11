@@ -54,9 +54,9 @@
             this.radioButtonLevel5 = new System.Windows.Forms.RadioButton();
             this.panelLevelLists = new System.Windows.Forms.Panel();
             this.GroupNameLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelLevelRadioButtons = new System.Windows.Forms.Panel();
             this.panelLevelLists.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelLevelRadioButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // level1Box
@@ -350,18 +350,18 @@
             this.GroupNameLabel.Text = "group_name";
             this.GroupNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // panelLevelRadioButtons
             // 
-            this.panel1.Controls.Add(this.radioButtonLevel4);
-            this.panel1.Controls.Add(this.radioButtonLevel1);
-            this.panel1.Controls.Add(this.radioButtonLevel3);
-            this.panel1.Controls.Add(this.radioButtonLevel2);
-            this.panel1.Controls.Add(this.radioButtonLevel5);
-            this.panel1.Location = new System.Drawing.Point(8, 212);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(503, 22);
-            this.panel1.TabIndex = 40;
+            this.panelLevelRadioButtons.Controls.Add(this.radioButtonLevel4);
+            this.panelLevelRadioButtons.Controls.Add(this.radioButtonLevel1);
+            this.panelLevelRadioButtons.Controls.Add(this.radioButtonLevel3);
+            this.panelLevelRadioButtons.Controls.Add(this.radioButtonLevel2);
+            this.panelLevelRadioButtons.Controls.Add(this.radioButtonLevel5);
+            this.panelLevelRadioButtons.Location = new System.Drawing.Point(8, 212);
+            this.panelLevelRadioButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelLevelRadioButtons.Name = "panelLevelRadioButtons";
+            this.panelLevelRadioButtons.Size = new System.Drawing.Size(503, 22);
+            this.panelLevelRadioButtons.TabIndex = 40;
             // 
             // LevelsMenu
             // 
@@ -369,7 +369,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 497);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelLevelRadioButtons);
             this.Controls.Add(this.panelLevelLists);
             this.Controls.Add(this.btnMaintainSelectedLevel);
             this.Controls.Add(this.btnRemovedFromChosen);
@@ -388,8 +388,8 @@
             this.Load += new System.EventHandler(this.LevelsMenu_Load);
             this.panelLevelLists.ResumeLayout(false);
             this.panelLevelLists.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelLevelRadioButtons.ResumeLayout(false);
+            this.panelLevelRadioButtons.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,6 +423,6 @@
         private System.Windows.Forms.Button btnMaintainSelectedLevel;
         private System.Windows.Forms.Panel panelLevelLists;
         private System.Windows.Forms.Label GroupNameLabel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelLevelRadioButtons;
     }
 }

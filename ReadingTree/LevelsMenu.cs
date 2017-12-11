@@ -50,39 +50,44 @@ namespace ReadingTree
         }
         private void SelectDefaultRadioButton()
         {
-            List<RadioButton> activeRadioButtons = new List<RadioButton>();
-            RadioButton selectedRadioButton;
+            List<int> activeLevels = new List<int>();
+            int min = 6;
 
-            if (level1Box.Items.Count > 0)
+            foreach (Control control in panelLevelLists.Controls)
             {
-                radioButtonLevel1.Enabled = true;
-                activeRadioButtons.Add(radioButtonLevel1);
+                if (control is ListBox)
+                {
+                    ListBox listbox = (ListBox)control;
+                    int level = int.Parse(listbox.Tag.ToString());
+                    if (listbox.Items.Count > 0)
+                    {
+                        activeLevels.Add(level);
+                        if (level < min)
+                        {
+                            min = level;
+                        }
+                    }
+                }
+                
             }
-            if (level2Box.Items.Count > 0)
+
+            selectedLevel = min;
+
+            foreach (Control control in panelLevelRadioButtons.Controls)
             {
-                radioButtonLevel2.Enabled = true;
-                activeRadioButtons.Add(radioButtonLevel2);
-            }
-            if (level3Box.Items.Count > 0)
-            {
-                radioButtonLevel3.Enabled = true;
-                activeRadioButtons.Add(radioButtonLevel3);
-            }
-            if (level4Box.Items.Count > 0)
-            {
-                radioButtonLevel4.Enabled = true;
-                activeRadioButtons.Add(radioButtonLevel4);
-            }
-            if (level5Box.Items.Count > 0)
-            {
-                radioButtonLevel5.Enabled = true;
-                activeRadioButtons.Add(radioButtonLevel5);
-            }
-            if (activeRadioButtons.Count > 0)
-            {
-                selectedRadioButton = activeRadioButtons[0];
-                selectedRadioButton.Select();
-                selectedLevel = int.Parse(selectedRadioButton.Tag.ToString());
+                if (control is RadioButton)
+                {
+                    RadioButton radioButton = (RadioButton)control;
+                    int level = int.Parse(radioButton.Tag.ToString());
+                    if (activeLevels.Contains(level))
+                    {
+                        radioButton.Enabled = true;
+                        if (level == selectedLevel)
+                        {
+                            radioButton.Select();
+                        }
+                    }
+                }
             }
         }
         private void RefreshChosenWordsBox()
@@ -239,7 +244,7 @@ namespace ReadingTree
         }
         private void checkSelectedRadioButton()
         {
-            foreach (RadioButton radiobutton in panel1.Controls)
+            foreach (RadioButton radiobutton in panelLevelRadioButtons.Controls)
             {
                 if (int.Parse(radiobutton.Tag.ToString()) == selectedLevel)
                 {
