@@ -17,6 +17,7 @@ namespace ReadingTree
         private bool userClosed { get; set; } = false;
         private List<List<string>> words { get; set; }
         private int selectedLevel { get; set; }
+        private List<int> activeLevels { get; set; } = new List<int>();
         public LevelsMenu(string group_name)
         {
             InitializeComponent();
@@ -50,7 +51,11 @@ namespace ReadingTree
         }
         private void SelectDefaultRadioButton()
         {
-            List<int> activeLevels = new List<int>();
+            selectedLevel = determineFirstActiveLevel();
+            enableRadioButtonsAndSelectDefault();
+        }
+        private int determineFirstActiveLevel()
+        {
             int min = 6;
 
             foreach (Control control in panelLevelLists.Controls)
@@ -68,11 +73,11 @@ namespace ReadingTree
                         }
                     }
                 }
-                
             }
-
-            selectedLevel = min;
-
+            return min;
+        }
+        private void enableRadioButtonsAndSelectDefault()
+        {
             foreach (Control control in panelLevelRadioButtons.Controls)
             {
                 if (control is RadioButton)
