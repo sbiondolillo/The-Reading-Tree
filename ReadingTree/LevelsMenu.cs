@@ -50,30 +50,39 @@ namespace ReadingTree
         }
         private void SelectDefaultRadioButton()
         {
+            List<RadioButton> activeRadioButtons = new List<RadioButton>();
+            RadioButton selectedRadioButton;
+
             if (level1Box.Items.Count > 0)
             {
-                radioButtonLevel1.Select();
-                selectedLevel = 1;
+                radioButtonLevel1.Enabled = true;
+                activeRadioButtons.Add(radioButtonLevel1);
             }
-            else if (level2Box.Items.Count > 0)
+            if (level2Box.Items.Count > 0)
             {
-                radioButtonLevel2.Select();
-                selectedLevel = 2;
+                radioButtonLevel2.Enabled = true;
+                activeRadioButtons.Add(radioButtonLevel2);
             }
-            else if (level3Box.Items.Count > 0)
+            if (level3Box.Items.Count > 0)
             {
-                radioButtonLevel3.Select();
-                selectedLevel = 3;
+                radioButtonLevel3.Enabled = true;
+                activeRadioButtons.Add(radioButtonLevel3);
             }
-            else if (level4Box.Items.Count > 0)
+            if (level4Box.Items.Count > 0)
             {
-                radioButtonLevel4.Select();
-                selectedLevel = 4;
+                radioButtonLevel4.Enabled = true;
+                activeRadioButtons.Add(radioButtonLevel4);
             }
-            else
+            if (level5Box.Items.Count > 0)
             {
-                radioButtonLevel5.Select();
-                selectedLevel = 5;
+                radioButtonLevel5.Enabled = true;
+                activeRadioButtons.Add(radioButtonLevel5);
+            }
+            if (activeRadioButtons.Count > 0)
+            {
+                selectedRadioButton = activeRadioButtons[0];
+                selectedRadioButton.Select();
+                selectedLevel = int.Parse(selectedRadioButton.Tag.ToString());
             }
         }
         private void RefreshChosenWordsBox()
