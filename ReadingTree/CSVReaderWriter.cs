@@ -146,6 +146,7 @@ namespace ReadingTree
 
             // Rename temp.csv to all_levels
             File.Move(tempFP, masterFP);
+            File.SetAttributes(masterFP, File.GetAttributes(masterFP) | FileAttributes.Hidden);
         }
         public static void DeleteWord(int lvl, string listname, string word)
         {
@@ -185,6 +186,7 @@ namespace ReadingTree
 
             // Rename temp.csv to all_levels
             File.Move(tempFP, masterFP);
+            File.SetAttributes(masterFP, File.GetAttributes(masterFP) | FileAttributes.Hidden);
         }
 
 
