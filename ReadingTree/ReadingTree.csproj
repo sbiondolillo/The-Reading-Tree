@@ -396,6 +396,7 @@
     <EmbeddedResource Include="YSoundsMenu.resx">
       <DependentUpon>YSoundsMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\all_levels.csv" />
     <None Include="bin\Debug\ReadingTree.exe.config" />
     <None Include="bin\Debug\ReadingTree.vshost.exe.config" />
     <None Include="bin\Debug\ReadingTree.vshost.exe.manifest" />
