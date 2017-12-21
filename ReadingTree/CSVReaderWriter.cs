@@ -1,6 +1,5 @@
-﻿/* Based on https://www.codeproject.com/Articles/415732/Reading-and-Writing-CSV-Files-in-Csharp
- * Modified by Brad Wight
- */
+﻿// Based on https://www.codeproject.com/Articles/415732/Reading-and-Writing-CSV-Files-in-Csharp
+
 using System;
 using System.Collections.Generic;
 using System.IO;
