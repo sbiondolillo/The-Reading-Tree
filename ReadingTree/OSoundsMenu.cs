@@ -1,12 +1,3 @@
-﻿/*
- * OSoundsMenu Class
- * Samuel Biondolillo
- * CSCN210M:HY1 Fall 2017
- * Goal: Create a class for the Reading Tree menu which points to the different
- *       sub-groups of words which focus on 'O' Sounds
- * Version  0.0.1   10/10/17
- */
- 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
